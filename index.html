@@ -114,8 +114,8 @@
             <div class="dropdown lg:hidden ml-2 relative">
               <!-- Menu Icon -->
               <div tabindex="0" id="menuIcon" class="ease-in-out z-10 duration-300 lg:hidden text-lg cursor-pointer">
-                  <i class="fa-solid fa-bars" ></i>
-                  <i class="fa-solid fa-x" ></i>
+                  <i class="fa-solid fa-bars" id="bar"></i>
+                  <i class="fa-solid fa-x hidden" id="cross" > </i>
               </div>
               <!-- Dropdown Menu -->
               <ul id="menuDropdown" 
@@ -137,13 +137,25 @@
             </div>
              <!-- Script to toggle dropdown -->
             <script>
+               let ismenuOpen = true;
                const menuIcon = document.getElementById('menuIcon');
                const menuDropdown = document.getElementById('menuDropdown');
                const bar = document.getElementById('bar');
                menuIcon.addEventListener('click', () => {
                menuDropdown.classList.toggle('hidden');
-
-                     bar.toggle('hidden');
+               ismenuOpen=!ismenuOpen; 
+               console.log(ismenuOpen);
+                    //  bar.toggle('hidden');
+                     if(ismenuOpen){
+                         document.getElementById('bar').classList.add('hidden');
+                         document.getElementById('cross').classList.remove('hidden');
+                        
+                         
+                     }
+                     else{
+                         document.getElementById('cross').classList.add('hidden');
+                         document.getElementById('bar').classList.remove('hidden');
+                     }
                    });
             </script>
 
