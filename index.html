@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <!-- favicon -->
     <link rel="shortcut icon" href="images/home3.png" type="image/x-icon">
-    
+    <!-- fontawesome configuration -->
     <script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
-
+    <!-- TailWindCss configuration -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -41,7 +41,7 @@
         }
       }
     }
-</script>
+    </script>
 
 
 
@@ -110,7 +110,41 @@
           </div>
    
           
-            <i class="lg:hidden block fa-solid fa-bars"></i>
+            <!-- <i class="lg:hidden block fa-solid fa-bars"></i> -->
+            <div class="dropdown ml-2 relative">
+              <!-- Menu Icon -->
+              <div tabindex="0" id="menuIcon" class="ease-in-out z-10 duration-300 lg:hidden text-lg cursor-pointer">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+              <!-- Dropdown Menu -->
+              <ul id="menuDropdown" 
+                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">About</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Projects</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Services</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Contact</a>
+                  </li>
+                
+              </ul>
+            </div>
+             <!-- Script to toggle dropdown -->
+            <script>
+               const menuIcon = document.getElementById('menuIcon');
+               const menuDropdown = document.getElementById('menuDropdown');
+
+               menuIcon.addEventListener('click', () => {
+               menuDropdown.classList.toggle('hidden');
+                   });
+            </script>
+
+
            
         </div>
    
@@ -125,7 +159,7 @@
       <div class="about-conatiner pb-12 w-full h-auto grid gap-6 grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 ">
             <!-- left -->
               <div class="about-left border  rounded-md shadow-md   lg:col-span-4 lg:row-span-12">
-                 <img src="images/indrojit3.jpg" class="rounded-r-md" alt="indrojit">
+                 <img src="images/indrojit3.jpg" class="w-full " alt="indrojit">
 
                  <div class="caption text-center space-y-2">
                   <!-- <h1>Indrojit Mondal</h1> -->
@@ -245,7 +279,7 @@
             <!-- Right -->
               <div class="about-right  lg:col-span-8 lg:row-span-12 ">
 
-               <p class="text-justify font-light text-black text-base" >I am a passionate and dedicated <span class="font-medium">Web Developer</span> and <span class="font-medium">Problem Solver</span>, with a background in Computer Science and Engineering from the <a href="https://bu.ac.bd/" target="_blank" class="text-primary hover:underline ">University of Barishal</a> (BU). <br> <br> I have honed my skills in front-end and back-end development, focusing on creating efficient, user-friendly applications. Currently, I'm advancing my expertise in web development with the MERN stack and constantly improving my problem-solving skills through JavaScript practice. My goal is to bring innovative solutions to life, whether for organization or through personal projects, and I want to start my career with software development organization.</p>
+               <p class="text-justify font-light text-black text-base" >I am a passionate and dedicated <span class="font-medium">Web Developer</span> and <span class="font-medium">Problem Solver</span>, with a background in Computer Science and Engineering from the <a href="https://bu.ac.bd/?ref=about" target="_blank" class="text-primary hover:underline ">University of Barishal</a> (BU). <br> <br> I have honed my skills in front-end and back-end development, focusing on creating efficient, user-friendly applications. Currently, I'm advancing my expertise in web development with the MERN stack and constantly improving my problem-solving skills through JavaScript practice. My goal is to bring innovative solutions to life, whether for organization or through personal projects, and I want to start my career with software development organization.</p>
 
 
               <img src="images/aboutright.jpg" class="h-44 mx-auto block" alt="">
