@@ -111,7 +111,7 @@
    
           
       
-            <!-- <div class="dropdown lg:hidden ml-2 relative">
+            <!-- <div class="dropdown lg:hidden ml-2 relative"> 
               
               <div tabindex="0" id="menuIcon" class="   lg:hidden text-lg ">
                   <i class="fa-solid fa-bars" id="bar"></i>
@@ -134,14 +134,14 @@
                   </li>
                 
               </ul>
-            </div> -->
+            </div>  -->
             
 
-             <div class="dropdown ml-2 lg:hidden  relative">
+          <div class="dropdown ml-2 lg:hidden  relative">
               <div tabindex="0" id="menuIcon" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-                  <!-- <i class="fa-solid fa-bars"></i> -->
+                  
                   <i class="fa-solid fa-bars" id="bar"></i>
-                  <i class="fa-solid fa-x hidden" id="cross" > </i>
+                  <!-- <i class="fa-solid fa-x hidden" id="cross" > </i> -->
               </div>
               <ul tabindex="0" id="menuDropdown"
                   class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
@@ -159,7 +159,9 @@
                   </li>
                
               </ul>
-          </div>
+          </div> 
+
+
             <!-- Script to toggle dropdown -->
             <script>
                let ismenuOpen = false;
@@ -172,15 +174,15 @@
                console.log(ismenuOpen);
                     //  bar.toggle('hidden');
                      if(ismenuOpen){
-                         document.getElementById('bar').classList.add('hidden');
-                         document.getElementById('cross').classList.remove('hidden');
+                        //  document.getElementById('bar').classList.add('hidden');
+                        //  document.getElementById('cross').classList.remove('hidden');
                         //  alert("menu is clicked");
                          menuDropdown.classList.remove('hidden');
                          
                      }
                      else{
-                         document.getElementById('cross').classList.add('hidden');
-                         document.getElementById('bar').classList.remove('hidden');
+                        //  document.getElementById('cross').classList.add('hidden');
+                        //  document.getElementById('bar').classList.remove('hidden');
                          menuDropdown.classList.add('hidden');
                      }
                    });

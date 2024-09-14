@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar testing</title>
+    <title>Indrojit Mondal</title>
     <!-- Google font configuration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,6 @@
             primary: '#B509AC',
             light: '#82828A'
             
-
           },
           fontFamily: {
                     'sans': ['ui-sans-serif', 'system-ui'],
@@ -37,46 +36,436 @@
                     'roboto' : ['Roboto', 'sans-serif'],
                    
                 },
-
         }
       }
     }
     </script>
 </head>
-<body>
-    <div class="navbar flex justify-between items-center ">
-        <div class="navbar-left">
+<body class="font-roboto">
+    <header class="sticky top-0 z-50 bg-white">
+        <div class=" flex justify-between items-center w-11/12 mx-auto pt-4 pb-4">
+         <!-- left -->
+          <div class="nav-left flex gap-3 ">
+        
+         
+           
+              <!-- <button class="btn">Hover me</button> -->
+              <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+               </a> -->
+               <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+               </a>
+               
+        
+           <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="block">
+            <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+           </a> -->
+        
+        
+          <a href="https://github.com/indrojitmondal" title="Github" target="_blank"  class="block">
+            <i class="fa-brands fa-github text-3xl hover:text-primary"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/" title="Linkedin" class="block" target="_blank">
+            <i class="fa-brands fa-linkedin text-3xl hover:text-primary"></i>
+          </a>
+          <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block" target="_blank">
+            <i class="fa-brands fa-twitter text-3xl hover:text-primary"></i>
+          </a>
+    
+          <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube" class="block" target="_blank">
+            <i class="fa-brands fa-youtube text-3xl hover:text-primary"></i>
+          </a>
+          <div class="">
+            <a href="https://wa.me/8801966796110" title="WhatsApp" target="_blank" class="block">
+              <i class="fa-brands fa-whatsapp text-3xl hover:text-primary "></i>
+            </a>
+            
+         
           
-          <a class="btn btn-ghost text-xl">Indrojit Mondal</a>
-        </div>
-      
-        <div class="navbar-right">
-          <a class="btn hidden lg:block">Button</a>
-          <div class="dropdown  ml-2">
-            <div tabindex="0"  class=" ease-in-out duration-300   lg:hidden lg:bg-primary text-lg">
-                <i class="fa-solid fa-bars "></i>
+         </div>
+    
+   
+          </div>
+          <!-- Right -->
+          <div class="nav-right hidden lg:flex justify-around gap-7 text-xl ">
+  
+         <!-- <a class="block" class="block" href="">Home</a> -->
+         <a class="block text-primary" href="">About</a>
+ 
+         <a class="block hover:text-primary" href="">Projects</a>
+         <a class="block hover:text-primary" href="">Services</a>
+         <a class="block hover:text-primary" href="">Contact</a>
+          </div>
+   
+          
+            <!-- <i class="lg:hidden block fa-solid fa-bars"></i> -->
+            <div class="dropdown lg:hidden ml-2 relative">
+              <!-- Menu Icon -->
+              <div tabindex="0" id="menuIcon" class="ease-in-out z-10 duration-300 lg:hidden text-lg cursor-pointer">
+                  <i class="fa-solid fa-bars" id="bar"></i>
+                  <i class="fa-solid fa-x hidden" id="cross" > </i>
+              </div>
+              <!-- Dropdown Menu -->
+              <ul id="menuDropdown" 
+                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <li class="text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">About</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Projects</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Services</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Contact</a>
+                  </li>
+                
+              </ul>
             </div>
-            <ul tabindex="0"
-                class="dropdown-content  rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-base  flex flex-col gap-5">
-                <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                    <a href="#">About</a>
-                </li>
-                <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                    <a href="#">Projects</a>
-                </li>
-                <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                    <a href="#">Services</a>
-                </li>
-                <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                    <a href="#">Contact</a>
-                </li>
-                <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                    <a href="#">Contact Us</a>
-                </li>
-            </ul>
+             <!-- Script to toggle dropdown -->
+            <script>
+               let ismenuOpen = true;
+               const menuIcon = document.getElementById('menuIcon');
+               const menuDropdown = document.getElementById('menuDropdown');
+               const bar = document.getElementById('bar');
+               menuIcon.addEventListener('click', () => {
+               menuDropdown.classList.toggle('hidden');
+               ismenuOpen=!ismenuOpen; 
+               console.log(ismenuOpen);
+                    //  bar.toggle('hidden');
+                     if(ismenuOpen){
+                         document.getElementById('bar').classList.add('hidden');
+                         document.getElementById('cross').classList.remove('hidden');
+                        
+                         
+                     }
+                     else{
+                         document.getElementById('cross').classList.add('hidden');
+                         document.getElementById('bar').classList.remove('hidden');
+                     }
+                   });
+            </script>
+           
         </div>
-        </div>
-      </div>
+   
+        <hr class="border-gray-400  ">
+    </header>
+   
+    <main class="w-11/12 mx-auto pt-8">
+      <h1 class="text-3xl "> <span class="">Indrojit</span>   <span class="font-bold">Mondal </span></h1>
+      <h3 class="pb-3">Programmer | Bsc in CSE | Front-end Developer</h3>
+        
+      <div class="about-conatiner pb-12 w-full h-auto grid gap-6 grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 ">
+            <!-- left -->
+              <div class="about-left border  rounded-md shadow-md   lg:col-span-4 lg:row-span-12">
+                 <img src="images/indrojit3.jpg" class="w-full " alt="indrojit">
+                 <div class="caption text-center space-y-2">
+                  <!-- <h1>Indrojit Mondal</h1> -->
+                  <h1 class="text-2xl pt-4"> <span class="">Indrojit</span>   <span class="">Mondal </span></h1>
+                   <span class="text-primary">indro.cse.bu</span>@<span class="text-primary">gmail.com </span>
+                 <div class="flex gap-3 justify-center  ">
+                  <button  class="block bg-primary text-white px-2"> <a href="assests/Indrojit Mondal_Resume.pdf" target="_blank">Resume </a> </button>
+                  <button class="block bg-primary text-white px-2"><a href="assests/Indrojit_MondalCV.pdf" target="_blank">CV </a>   </button>
+                   
+                 </div>
+                 <hr>
+                
+                 
+                 </div>
+                 <div class="progrss mt-6 p-2">
+                  
+                  <p class="text-justify font-light text-black text-base">As a programmer, web developer, and problem solver, I specialize in HTML, CSS, JavaScript, and the MERN stack. I build responsive, user-friendly websites and solve complex technical challenges through efficient programming.</p>
+            
+                  <!-- Working Interest -->
+                 <div class="Working-Interest">
+                    <div class="pt-2 pb-1">
+                      <i class="fa-solid fa-computer"></i>
+                      <h1 class="inline-block font-medium">Working Interest:</h1>
+                     </div>
+                   
+                    <div class="pl-20">
+                     
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block "></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        
+                        <a  href="https://www.leewayhertz.com/what-is-custom-software-development/" target="_blank" >
+                        <h2 class=""> ✓ Custom Software Development</h2>
+                      </a>
+                      </div>
+  
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Web Application Development</h2>
+                      </div>
+  
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Mobile Application Development</h2>
+                      </div>
+  
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Quality Assurance & Testing</h2>
+                      </div>
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ DevOps Engineering</h2>
+                      </div>
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Cybersecurity</h2>
+                      </div>
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Computer Networking</h2>
+                      </div>
+                      <div class="flex items-center ">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Machine Learning</h2>
+                      </div>
+                     
+                      
+                      <div class="flex items-center">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Robotics</h2>
+                      </div>
+                      <div class="flex items-center">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Internet of Things(IoT)</h2>
+                      </div>
+                      <div class="flex items-center">
+                        <!-- <i class="fa-solid fa-check block"></i>  -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+                        
+                        <h2>✓ Embedded Systems</h2>
+                      </div>
+  
+                     
+                    </div>
+                 </div>
+                 <!-- Home -->
+                 
+                 <div class="LivesIn">
+                  <div class="pt-3 pb-1">
+                    
+                    <i class="fa-solid fa-house"></i>
+                    <h1 class="inline-block font-medium">Lives in</h1> <a href="https://maps.app.goo.gl/SoqjTH11UWKLgeRc6" target="_blank" class="text-primary hover:underline">Paikgacha, Khulna, Bangladesh</a>
+                       
+                   </div>
+                 
+                  
+               </div>
+                  
+              
+                  
+                  
+                 </div>
+               </div>
+            <!-- Right -->
+              <div class="about-right  lg:col-span-8 lg:row-span-12 ">
+               <p class="text-justify font-light text-black text-base" >I am a passionate and dedicated <span class="font-medium">Web Developer</span> and <span class="font-medium">Problem Solver</span>, with a background in Computer Science and Engineering from the <a href="https://bu.ac.bd/?ref=about" target="_blank" class="text-primary hover:underline ">University of Barishal</a> (BU). <br> <br> I have honed my skills in front-end and back-end development, focusing on creating efficient, user-friendly applications. Currently, I'm advancing my expertise in web development with the MERN stack and constantly improving my problem-solving skills through JavaScript practice. My goal is to bring innovative solutions to life, whether for organization or through personal projects, and I want to start my career with software development organization.</p>
+              <img src="images/aboutright.jpg" class="h-44 mx-auto block" alt="">
+
+
+             <h2 class="pb-2">I try to solve problems here when I get free times and love to solve problem here.</h2>
+             <h2 class="pb-2 text-justify font-light text-black text-base">I try to solve problems here when I get free times and love to solve problem here.</h2>
+
+               <div class="flex gap-5">
+
+           
+                 <a href="https://leetcode.com/u/user6457sK/" target="_blank" class="block text-primary hover:underline  ">
+                <img src="images/leetcode.png" class="w-11 h-11 "  alt="leetcode">LeetCode   
+        
+  
+                 </a>
+           
+            
+                <a href="https://codeforces.com/profile/Zerotoinfinity" target="_blank" class="block text-primary hover:underline">
+                    <img src="images/codeforces.png" class="w-11 h-11" alt="cf">Codeforces  
+                 </a>
+                <a href="https://uhunt.onlinejudge.org/id/774977" target="_blank" class="block text-primary hover:underline">
+                    <img src="images/uvaonline.jpeg" class="w-11 h-11" alt="cf">Online Judge 
+                </a>
+                 <a href="https://www.hackerrank.com/dashboard" target="_blank" class="block text-primary hover:underline">
+                   <img src="images/hackerank.png" class="w-11 h-11" alt="cf"> HackerRank 
+                </a>
+           
+  
+            
+              </div>
+              <div class="skills">
+                <h1 class="text-black text-lg mt-3 mb-3 font-bold">Skills</h1>
+              <p class="text-justify font-light text-black text-base">With a focus on continuous learning and innovation, I stay up-to-date with the latest technologies to deliver top-quality solutions across my projects. I continuously strive to improve my expertise across various domains of web development and programming. Below is a visual representation of my current proficiency in key skills:</p>
+               <div class="w-full lg:w-1/2 pl-11 pt-6">
+                <div class="w-full flex justify-between ">
+                  
+                  <h2>HTML/CSS</h2>
+                  <h2>90%</h2>
+                   
+                </div>
+               <progress class="progress progress-info w-ful" value="90" max="100"></progress> <br>
+               <div class="w-full flex justify-between ">
+                
+                <h2>JavaScript</h2>
+                <h2>80%</h2>
+                 
+              </div>
+               <progress class="progress progress-primary w-full" value="80" max="100"></progress> <br>
+               <div class="w-full flex justify-between ">
+                
+                <h2>MERN Stack</h2>
+                <h2>75%</h2>
+                 
+              </div>
+               <progress class="progress progress-secondary  w-full" value="75" max="100"></progress> <br>
+               <div class="w-full flex justify-between ">
+                
+                <h2>Problem Solving</h2>
+                <h2>85%</h2>
+                 
+               </div>
+               <progress class="progress progress-success  w-full" value="85" max="100"></progress>
+               <div class="w-full flex justify-between ">
+                
+                <h2>Responsive Design</h2>
+                <h2>85%</h2>
+                 
+              </div>
+               <progress class="progress  progress-accent  w-full" value="85" max="100"></progress>
+                   
+               <div class="w-full flex justify-between ">
+                
+                <h2>Version Control (GiT)</h2>
+                <h2>75%</h2>
+                 
+              </div>
+               <progress class="progress progress-warning w-full" value="75" max="100"></progress>
+                   
+      
+               <div class="w-full flex justify-between ">
+                
+                <h2>C++/Java/Python</h2>
+                <h2>70%</h2>
+                 
+              </div>
+               <progress class="progress progress-error w-full" value="70" max="100"></progress>
+                  
+              </div>
+             
+      
+              </div>
+              <div class="contact  pt-10 flex gap-3 lg:gap-5 ">
+        
+           
+                <!-- <button class="btn">Hover me</button> -->
+                <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                  <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+                 </a> -->
+                 <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                  <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                 </a>
+          
+  
+             <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="block">
+              <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+             </a> -->
+          
+          
+            <a href="https://github.com/indrojitmondal" title="Github" target="_blank"  class="block">
+              <i class="fa-brands fa-github text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/" title="Linkedin" class="block" target="_blank">
+              <i class="fa-brands fa-linkedin text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+  
+            <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block" target="_blank">
+              <i class="fa-brands fa-twitter text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+      
+            <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube" class="block" target="_blank">
+              <i class="fa-brands fa-youtube text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+            <div class="">
+              <a href="https://wa.me/8801966796110" title="WhatsApp" target="_blank" class="block">
+                <i class="fa-brands fa-whatsapp text-5xl lg:text-6xl hover:text-primary "></i>
+              </a>
+              
+           
+            
+            </div>
+            <br>
+            
+      
      
+             </div> 
+              
+             
+             <p class="p-2 text-justify font-light text-black text-sm">Best way to contact me is to <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="text-sm text-primary hover:underline">email</a>. I try to reply each and every email.</p>
+              
+             
+              
+              
+       
+              </div>
+      </div> 
+      
+    </main>
+    <hr class="border-gray-400  ">
+    <footer class="footer footer-center  p-10">
+      <aside>
+          <p class="text-justify font-light text-black text-base">© Copyright <span id="current-year"></span> Indrojit Mondal</p>
+      </aside>
+   </footer>
+  
+  <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+  
 </body>
 </html>
