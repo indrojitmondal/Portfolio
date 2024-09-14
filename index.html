@@ -110,15 +110,15 @@
           </div>
    
           
-            <!-- <i class="lg:hidden block fa-solid fa-bars"></i> -->
-            <div class="dropdown lg:hidden ml-2 relative">
-              <!-- Menu Icon -->
-              <div tabindex="0" id="menuIcon" class="ease-in-out z-10 duration-300 lg:hidden text-lg cursor-pointer">
+      
+            <!-- <div class="dropdown lg:hidden ml-2 relative">
+              
+              <div tabindex="0" id="menuIcon" class="   lg:hidden text-lg ">
                   <i class="fa-solid fa-bars" id="bar"></i>
                   <i class="fa-solid fa-x hidden" id="cross" > </i>
               </div>
-              <!-- Dropdown Menu -->
-              <ul id="menuDropdown" 
+             
+              <ul tabindex="0" id="menuDropdown" 
                   class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
                   <li class="text-primary transition-colors ease-in-out duration-300">
                       <a href="#">About</a>
@@ -134,27 +134,54 @@
                   </li>
                 
               </ul>
-            </div>
-             <!-- Script to toggle dropdown -->
+            </div> -->
+            
+
+             <div class="dropdown ml-2 lg:hidden  relative">
+              <div tabindex="0" id="menuIcon" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+                  <!-- <i class="fa-solid fa-bars"></i> -->
+                  <i class="fa-solid fa-bars" id="bar"></i>
+                  <i class="fa-solid fa-x hidden" id="cross" > </i>
+              </div>
+              <ul tabindex="0" id="menuDropdown"
+                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">About</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Projects</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Services</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Contact</a>
+                  </li>
+               
+              </ul>
+          </div>
+            <!-- Script to toggle dropdown -->
             <script>
-               let ismenuOpen = true;
+               let ismenuOpen = false;
                const menuIcon = document.getElementById('menuIcon');
                const menuDropdown = document.getElementById('menuDropdown');
                const bar = document.getElementById('bar');
                menuIcon.addEventListener('click', () => {
-               menuDropdown.classList.toggle('hidden');
+              
                ismenuOpen=!ismenuOpen; 
                console.log(ismenuOpen);
                     //  bar.toggle('hidden');
                      if(ismenuOpen){
                          document.getElementById('bar').classList.add('hidden');
                          document.getElementById('cross').classList.remove('hidden');
-                        
+                        //  alert("menu is clicked");
+                         menuDropdown.classList.remove('hidden');
                          
                      }
                      else{
                          document.getElementById('cross').classList.add('hidden');
                          document.getElementById('bar').classList.remove('hidden');
+                         menuDropdown.classList.add('hidden');
                      }
                    });
             </script>
