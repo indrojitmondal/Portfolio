@@ -6,8 +6,8 @@ let todayYear = new Date().getFullYear();
 let dobDate = 5;
 let dobMonth = 10;
 let dobYear = 1996;
-console.log(todayDate, todayMonth, todayYear);
-console.log(dobDate, dobMonth, dobYear);
+// console.log(todayDate, todayMonth, todayYear);
+// console.log(dobDate, dobMonth, dobYear);
 
 function calculateDob(dobDate, dobMonth, dobYear){
 
@@ -31,4 +31,4 @@ let output = calculateDob(5,10,1996);
 
 //  document.getElementById('age-calculation').textContent = output.toString();
  document.getElementById('age-calculation').innerText = output.toString();
-console.log(output.toString());
+// console.log(output.toString());

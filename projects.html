@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrojit Mondal</title>
+    <!-- Google font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/home3.png" type="image/x-icon">
+    <!-- fontawesome configuration -->
+    <script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
+    <!-- TailWindCss configuration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            ck: '#da373d',
+            primary: '#B509AC',
+            light: '#82828A'
+            
+
+          },
+          fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif'],
+                    'roboto' : ['Roboto', 'sans-serif'],
+                   
+                },
+
+        }
+      }
+    }
+    </script>
+
+
+    
+
+
+
+</head>
+<body class="font-roboto">
+    <header class="sticky top-0 z-50 bg-white">
+        <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+         <!-- left -->
+          
+
+       <a href="./index.html">
+          
+       <span class="text-xl text-black font-bold">Indrojit</span>   <span class="text-xl ">Mondal</span>
+     
+    </a>
+          <!-- Right -->
+        <div id="pc-nav-right-container" class="nav-right hidden lg:flex justify-around gap-7 text-xl ">
+  
+         <!-- <a class="block" class="block" href="">Home</a> -->
+         <a class="block hover:text-primary text-black" href="index.html">About</a>
+ 
+         <a  class="block text-primary " href="projects.html">Projects</a>
+         <a class="block hover:text-primary text-black" href="services.html">Services</a>
+
+         <a class="block hover:text-primary text-black" href="contact.html">Contact</a>
+
+          </div>
+   
+          
+      
+            
+            
+
+          <div class="dropdown ml-2 lg:hidden  relative">
+              <div tabindex="0" id="menuIcon" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+                  
+                  <i class="fa-solid fa-bars" id="bar"></i>
+                  <!-- <i class="fa-solid fa-x hidden" id="cross" > </i> -->
+              </div>
+              <ul tabindex="0" id="menuDropdown"
+                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <li class="text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">About</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Projects</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Services</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Contact</a>
+                  </li>
+               
+              </ul>
+          </div> 
+
+
+            <!-- Script to toggle dropdown -->
+            <script>
+               let ismenuOpen = false;
+               const menuIcon = document.getElementById('menuIcon');
+               const menuDropdown = document.getElementById('menuDropdown');
+               const bar = document.getElementById('bar');
+               menuIcon.addEventListener('click', () => {
+              
+               ismenuOpen=!ismenuOpen; 
+               console.log(ismenuOpen);
+                    //  bar.toggle('hidden');
+                     if(ismenuOpen){
+                        //  document.getElementById('bar').classList.add('hidden');
+                        //  document.getElementById('cross').classList.remove('hidden');
+                        //  alert("menu is clicked");
+                         menuDropdown.classList.remove('hidden');
+                         
+                     }
+                     else{
+                        //  document.getElementById('cross').classList.add('hidden');
+                        //  document.getElementById('bar').classList.remove('hidden');
+                         menuDropdown.classList.add('hidden');
+                     }
+                   });
+            </script>
+
+
+           
+        </div>
+   
+        <hr class="border-gray-400  ">
+    </header>
+   
+    <main class="w-8/12 mx-auto pt-8">
+
+      <ul class="flex justify-between">
+        <li class="border-2 border-primary p-2 text-primary">Web Application</li>
+        <li class="border-2 border-primary p-2 text-primary">Mobile Application</li>
+        <li class="border-2 border-primary p-2 text-primary">Game Development</li>
+        <li class="border-2 border-primary p-2 text-primary">Data Structure</li>
+        <li class="border-2 border-primary p-2 text-primary">Algorithms</li>
+        <li class="border-2 border-primary p-2 text-primary">All</li>
+      </ul>
+
+   
+     
+    </main>
+    
+<!--      
+     <hr class="border-gray-400  "> -->
+
+    <footer class="footer footer-center  p-10">
+    
+      <aside>
+          <p class="text-justify font-light text-black text-base">© Copyright <span id="current-year"></span> Indrojit Mondal</p>
+      </aside>
+   </footer>
+  
+  <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+  <script src="./js/index.js"></script>
+  
+</body>
+</html>
