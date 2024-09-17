@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrojit Mondal</title>
+    <!-- Google font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/home3.png" type="image/x-icon">
+    <!-- fontawesome configuration -->
+    <script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
+    <!-- TailWindCss configuration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            ck: '#da373d',
+            primary: '#B509AC',
+            light: '#82828A',
+            nav: '#FFFFFF',
+            
+            
+
+          },
+          fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif'],
+                    'roboto' : ['Roboto', 'sans-serif'],
+                   
+                },
+
+        }
+      }
+    }
+    </script>
+
+
+    
+
+
+
+</head>
+<body class="font-roboto">
+    <header class="sticky top-0 z-50 bg-nav">
+        <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+         <!-- left -->
+          
+
+       <a href="./index.html">
+          
+       <span class="text-xl text-black font-bold">Indrojit</span>   <span class="text-xl ">Mondal</span>
+     
+    </a>
+          <!-- Right -->
+        <div id="pc-nav-right-container" class="bg-white nav-right hidden lg:flex justify-around gap-7 text-xl ">
+  
+         <!-- <a class="block" class="block" href="">Home</a> -->
+         <a class="block hover:text-primary text-black" href="index.html">About</a>
+ 
+         <a  class="block text-black hover:text-primary " href="projects.html">Projects</a>
+         <a class="block hover:text-primary text-black" href="services.html">Services</a>
+
+         <a class="block text-primary" href="contact.html">Contact</a>
+
+          </div>
+   
+          
+      
+            
+            
+
+          <div class="dropdown ml-2 lg:hidden  relative">
+              <div tabindex="0" id="menuIcon" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+                  
+                  <i class="fa-solid fa-bars" id="bar"></i>
+                  <!-- <i class="fa-solid fa-x hidden" id="cross" > </i> -->
+              </div>
+              <ul tabindex="0" id="menuDropdown"
+                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <li class="text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">About</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Projects</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Services</a>
+                  </li>
+                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                      <a href="#">Contact</a>
+                  </li>
+               
+              </ul>
+          </div> 
+
+
+            <!-- Script to toggle dropdown -->
+            <script>
+               let ismenuOpen = false;
+               const menuIcon = document.getElementById('menuIcon');
+               const menuDropdown = document.getElementById('menuDropdown');
+               const bar = document.getElementById('bar');
+               menuIcon.addEventListener('click', () => {
+              
+               ismenuOpen=!ismenuOpen; 
+               console.log(ismenuOpen);
+                    //  bar.toggle('hidden');
+                     if(ismenuOpen){
+                        //  document.getElementById('bar').classList.add('hidden');
+                        //  document.getElementById('cross').classList.remove('hidden');
+                        //  alert("menu is clicked");
+                         menuDropdown.classList.remove('hidden');
+                         
+                     }
+                     else{
+                        //  document.getElementById('cross').classList.add('hidden');
+                        //  document.getElementById('bar').classList.remove('hidden');
+                         menuDropdown.classList.add('hidden');
+                     }
+                   });
+            </script>
+
+
+           
+        </div>
+   
+        <hr class="border-gray-400  ">
+    </header>
+   
+    <main class="w-10/12 mx-auto pt-8 pb-8">
+
+        <div class="up-conatainer grid grid-cols-2 gap-5">
+            <div class="contact-description flex flex-col  gap-10">
+
+                <div class="flex gap-4">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl hover:text-primary "></i>
+                    -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block hover:text-primar">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg> -->
+
+                      <img src="./images/mobile.png" class="w-12 h-14 hover:text-primary" alt="">
+                      
+                    <div>
+                        <h3 class="text-xl">Give me a call</h3>
+                        <p>+880-1966796110 <br>
+                           +880-1577147931
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 ">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+                   
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg> -->
+                      <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                 -->
+                 <img src="./images/mail.png" class="w-12 h-14 hover:text-primary" alt="">
+                      
+                    <div>
+                        <h3 class="text-xl">Send me an email</h3>
+                        <p>indro.cse.bu@gmail.com<br>
+                           
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 ">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+                   
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg> -->
+                      <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                 -->
+                 <img src="./images/location.png" class="w-12 h-14 hover:text-primary" alt="">
+                      
+                    <div>
+                        <h3 class="text-xl">Location</h3>
+                        <p>Paikgacha Municipality 9280<br>
+                            Khulna, Bangladesh
+                        </p>
+                    </div>
+                </div>
+               
+
+            </div>
+ 
+           <form id="input-container" class="input-container flex flex-col gap-5">
+ 
+             <input required  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black" type="text" name="" id="name" placeholder="Name">
+             <input  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black" type="text" name="" id="company" placeholder="Company">
+             <input required class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black" type="email" name="email" id="email" placeholder="Email">
+             <input class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black" type="phone" name="" id="phone" placeholder="Phone">
+             <input class="block w-full h-24 border border-gray-300 outline-none p-4 text-sm text-black" type="text" name="" id="message" placeholder="Message">
+             
+             <button class="block w-1/2 h-16 border border-primary bg-primary text-white outline-none p-4 text-xl " type="submit" name="submit" id="submit"  > SEND
+             </button>
+         
+             
+           </form>
+ 
+
+        </div>
+           
+
+        <div class="link-conatiner w-5/12 mx-auto">
+            <div class="pt-10 flex gap-3 lg:gap-5 ">
+        
+           
+            
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                 <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                
+                </a>
+   
+         
+   
+          
+         
+           <a href="https://github.com/indrojitmondal" title="Github" target="_blank"  class="block">
+             <i class="fa-brands fa-github text-5xl lg:text-6xl hover:text-primary"></i>
+           </a>
+   
+           <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/" title="Linkedin" class="block" target="_blank">
+             <i class="fa-brands fa-linkedin text-5xl lg:text-6xl hover:text-primary"></i>
+           </a>
+   
+           <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block" target="_blank">
+             <i class="fa-brands fa-twitter text-5xl lg:text-6xl hover:text-primary"></i>
+           </a>
+     
+           <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube" class="block" target="_blank">
+             <i class="fa-brands fa-youtube text-5xl lg:text-6xl hover:text-primary"></i>
+           </a>
+           <div class="">
+             <a href="https://wa.me/8801966796110" title="WhatsApp" target="_blank" class="block">
+               <i class="fa-brands fa-whatsapp text-5xl lg:text-6xl hover:text-primary "></i>
+             </a>
+             
+          
+           
+           </div>
+           <br>
+   
+           
+     
+    
+            </div> 
+      
+            <p class="p-2 text-justify font-light text-black text-sm">Best way to contact me is to <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="text-sm text-primary hover:underline">email</a>. I try to reply each and every email.</p>
+             
+   
+            
+
+        </div>
+
+       
+
+      
+     
+    </main>
+    
+    
+     <hr class="border-gray-400  "> 
+
+    <footer class="footer footer-center  p-10">
+    
+      <aside>
+          <p class="text-justify font-light text-black text-base">© Copyright <span id="current-year"></span> Indrojit Mondal. All Rights Reserved.</p>
+      
+        </aside>
+   </footer>
+  
+  
+  <script src="./js/contact.js"></script>
+  
+</body>
+</html>
