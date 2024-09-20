@@ -1,7 +1,7 @@
 console.log('Connected to contact.js');
 const input_container = document.getElementById('input-container');
 
-// console.log(input_container);
+ console.log(input_container);
 
 const fname = document.getElementById('name');
 const company = document.getElementById('company');
@@ -34,31 +34,11 @@ const message = document.getElementById('message');
     
 })
 
-/** 
-fname.addEventListener('click', function(){
-    
-    fname.classList.remove('border-gray-300');
-   fname.classList.add('border-primary'); 
-})
-company.addEventListener('click', function(){
-    
-    company.classList.remove('border-gray-300');
-   company.classList.add('border-primary'); 
-})
-email.addEventListener('click', function(){
-    
-    email.classList.remove('border-gray-300');
-   email.classList.add('border-primary'); 
-})
-phone.addEventListener('click', function(){
-    
-    phone.classList.remove('border-gray-300');
-   phone.classList.add('border-primary'); 
-})
-message.addEventListener('click', function(){
-    
-    message.classList.remove('border-gray-300');
-   message.classList.add('border-primary'); 
-})
-*/
 
+
+
+ 
+// showFeaturesInLargeScreenById(idArray[3]);
+console.log('Hi');
+showFeaturesInLargeScreenById(idArray[3]);
+console.log(idArray[3]);
