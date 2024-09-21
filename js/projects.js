@@ -6,10 +6,6 @@ console.log(idArray[1]);
 document.getElementById('web-application').addEventListener('click', function (){
     
     styleProjectSectionByID('web-application');
-    
-   
-    
-
 })
 document.getElementById('mobile-application').addEventListener('click', function (){
   

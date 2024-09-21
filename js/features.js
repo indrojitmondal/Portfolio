@@ -36,7 +36,16 @@ for (const project of projectsArray) {
 
 }
 
+const projectsContainerArray = document.querySelectorAll('#allProjectsContainer > div');
+console.log('projects length: ',projectsContainerArray.length);
+
 function styleProjectSectionByID(id){
+
+    console.log('typeof id :', typeof id);
+    console.log(id);
+    
+   
+  
 
     for (const project of projectsArray) {
     
@@ -45,10 +54,36 @@ function styleProjectSectionByID(id){
         project.classList.remove('text-white');
     
     }
+     
+    for (const item of projectsContainerArray) {
+        
+        
+        if(item.id.includes(id)){
+            item.classList.remove('hidden');
+        }
+        else{
+            item.classList.add('hidden');
+        }
+    }
 
 
     document.getElementById(id).classList.add('bg-primary');
     document.getElementById(id).classList.add('text-white');
 
+    document.getElementById(id).classList.remove('hidden');
+    if(id ==='all')
+    {
+        console.log('hi');
+
+         for (const item of projectsContainerArray) {
+        
+
+              item.classList.remove('hidden');
+           
+        }
+     
+        
+
+    }
 
 }
