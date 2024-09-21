@@ -1,3 +1,4 @@
+
 console.log('projects.js Connected');
  
 showFeaturesInLargeScreenById(idArray[1]);

@@ -9,17 +9,19 @@ console.log('features.js')
         a.setAttribute('id', idArray[i++]);
         console.log(a);
     }
-    for (const item of allAngkorTag) {
-        item.classList.add('text-black');
-        console.log(item);
-    }
+    // for (const item of allAngkorTag) {
+    //     item.classList.add('text-black');
+    //     console.log(item);
+    // }
 function showFeaturesInLargeScreenById(id){
     
    
     console.log('ok');
 
     document.getElementById(id).classList.add('text-primary');
+   
 }
+
 
 // document.getElementById('mobile').classList.add('bg-primary');
 // document.getElementById('mobile').classList.add('text-white');
@@ -32,7 +34,7 @@ let projectsArray= document.querySelectorAll('#projects-container button');
 for (const project of projectsArray) {
     
     project.classList.add('text-primary');
-    project.classList.remove('bg-primary');
+    // project.classList.remove('bg-primary');
 
 }
 
