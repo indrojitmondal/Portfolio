@@ -28,3 +28,4 @@ document.getElementById('all').addEventListener('click', function (){
   
     styleProjectSectionByID('all');  
 })
+// Please update ....
