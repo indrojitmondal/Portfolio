@@ -25,7 +25,9 @@
             primary: '#B509AC',
             light: '#82828A',
             nav: '#FFFFFF',
-            
+
+            contact: '#F8F8F8',
+            footer: '#292929',
             
 
           },
@@ -51,7 +53,7 @@
 
 
 </head>
-<body class="font-roboto">
+<body class="font-roboto bg-contact">
     <header class="sticky top-0 z-50 bg-nav">
         <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
          <!-- left -->
@@ -275,16 +277,28 @@
     </main>
     
     
-     <hr class="border-gray-400  "> 
+     <!-- <hr class="border-gray-400  ">  -->
 
-    <footer class="footer footer-center  p-10">
+    <!-- <footer class="footer footer-center  p-10">
     
       <aside>
           <p class="text-justify font-light text-black text-base">© Copyright <span id="current-year"></span> Indrojit Mondal. All Rights Reserved.</p>
       
         </aside>
-   </footer>
+    </footer> -->
+    
+    <footer class="footer footer-center p-8 bg-footer">
+      <aside>
+        <p class="text-justify font-light text-white text-base">© <span id="current-year"></span> Indrojit Mondal. All Rights Reserved.</p>
+      
+        </aside>
+    </footer>
   
+    <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+
    <script src="js/features.js"></script>
    <script src="./js/contact.js"></script>
   
