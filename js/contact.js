@@ -13,7 +13,7 @@ const message = document.getElementById('message');
  input_container.addEventListener('click', function(event){
    let running=event.target;
    running.classList.remove('border-gray-300');
-   running.classList.add('border-primary');
+   running.classList.add('border-black');
    
    const childrenArray=input_container.children;
 //    console.log(running.getAttribute('id'));
@@ -25,7 +25,7 @@ const message = document.getElementById('message');
         let newId= child.getAttribute('id');
         if(temp !== newId){
             console.log(child);
-            child.classList.remove('border-primary');
+            child.classList.remove('border-black');
             child.classList.add('border-gray-300');
         }
     
@@ -42,3 +42,14 @@ const message = document.getElementById('message');
 console.log('Hi');
 showFeaturesInLargeScreenById(idArray[3]);
 console.log(idArray[3]);
+
+const sendButton = document.getElementById('sendButton');
+
+sendButton.addEventListener('click', function (event){
+
+   event.preventDefault();
+   // alert(fname.value);
+   if(fname.value !== '')
+   document.getElementById('formConfirmation').classList.remove('hidden');
+
+})
