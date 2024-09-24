@@ -49,6 +49,27 @@
     }
     </script>
 
+<style>
+  /* Style for the progress container */
+.progress-container {
+width: 100%;
+height: 2px;
+
+}
+
+/* Style for the progress bar */
+.progress-bar{
+
+height: 100%;
+background: #B509AC;
+width: 0;
+}
+
+/* Just for demonstration */
+
+
+</style>
+
   </head>
   <body class="font-roboto bg-about">
     <header class="sticky top-0 z-50 bg-white">
@@ -167,7 +188,10 @@
 
       </div>
 
-      <hr class="border-gray-400  ">
+      <hr class="border-gray-400">
+      <div class="progress-container h-[1px]">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
     </header>
 
     <main class="w-11/12 mx-auto pt-8">
@@ -558,5 +582,6 @@
   </script>
     <script src="./js/index.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/scrollProgress.js"></script>
   </body>
 </html>

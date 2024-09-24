@@ -51,6 +51,30 @@
     }
     </script>
 
+<style>
+  /* Global styles to prevent overflow */
+  
+
+  body {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .progress-container {
+      width: 100vw; /* Ensure it sticks to the viewport width */
+      height: 2px;
+      z-index: 9999;
+  }
+
+  .progress-bar {
+      height: 100%;
+      background: #B509AC;
+      width: 0; /* Initial width */
+  }
+
+  /* Ensure cards don't exceed the viewport width */
+
+</style>
+
   </head>
   <body class="font-roboto bg-contact">
     <header class="sticky top-0 z-50 bg-contact">
@@ -131,7 +155,11 @@
   
       </div>
   
-      <hr class="border-gray-400  ">
+      <hr class="border-gray-400">
+      <div class="progress-container h-[1px]">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
     </header>
 
     <main class="w-10/12 mx-auto pt-8 pb-8">
@@ -301,6 +329,7 @@
 
     <script src="js/features.js"></script>
     <script src="./js/contact.js"></script>
+    <script src="js/scrollProgress.js"></script>
 
   </body>
 </html>
