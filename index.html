@@ -102,7 +102,7 @@
    
           </div>
           <!-- Right -->
-        <div id="pc-nav-right-container" class="nav-right hidden lg:flex justify-around gap-7 text-xl ">
+        <div id="pc-nav-right-container" class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
   
          <!-- <a class="block" class="block" href="">Home</a> -->
          <a id="lg-about" class="block text-primary text-black" href="index.html">About</a>
@@ -116,51 +116,29 @@
    
           
       
-            <!-- <div class="dropdown lg:hidden ml-2 relative"> 
-              
-              <div tabindex="0" id="menuIcon" class="   lg:hidden text-lg ">
-                  <i class="fa-solid fa-bars" id="bar"></i>
-                  <i class="fa-solid fa-x hidden" id="cross" > </i>
-              </div>
-             
-              <ul tabindex="0" id="menuDropdown" 
-                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
-                  <li class="text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">About</a>
-                  </li>
-                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Projects</a>
-                  </li>
-                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Services</a>
-                  </li>
-                  <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Contact</a>
-                  </li>
-                
-              </ul>
-            </div>  -->
+         
             
 
-          <div class="dropdown ml-2 lg:hidden  relative">
-              <div tabindex="0" id="menuIcon" role="button" class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+          <div class="ml-2  md:hidden  relative">
+              <div  class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
                   
-                  <i class="fa-solid fa-bars" id="bar"></i>
-                  <!-- <i class="fa-solid fa-x hidden" id="cross" > </i> -->
-              </div>
-              <ul tabindex="0" id="menuDropdown"
-                  class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
+                  <i class="fa-solid fa-bars " id="bar"></i>
+                  <i class="fa-solid fa-x hidden" id="cross" > </i>
+              
+               </div>
+              <ul  id="menuDropdown"
+                  class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
                   <li class="text-primary transition-colors ease-in-out duration-300">
                       <a href="#">About</a>
                   </li>
                   <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Projects</a>
+                      <a href="projects.html">Projects</a>
                   </li>
                   <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Services</a>
+                      <a href="services.html">Services</a>
                   </li>
                   <li class="hover:text-primary transition-colors ease-in-out duration-300">
-                      <a href="#">Contact</a>
+                      <a href="contact.html">Contact</a>
                   </li>
                
               </ul>
@@ -169,28 +147,22 @@
 
             <!-- Script to toggle dropdown -->
             <script>
-               let ismenuOpen = false;
-               const menuIcon = document.getElementById('menuIcon');
-               const menuDropdown = document.getElementById('menuDropdown');
+               
                const bar = document.getElementById('bar');
-               menuIcon.addEventListener('click', () => {
-              
-               ismenuOpen=!ismenuOpen; 
-               console.log(ismenuOpen);
-                    //  bar.toggle('hidden');
-                     if(ismenuOpen){
-                        //  document.getElementById('bar').classList.add('hidden');
-                        //  document.getElementById('cross').classList.remove('hidden');
-                        //  alert("menu is clicked");
-                         menuDropdown.classList.remove('hidden');
-                         
-                     }
-                     else{
-                        //  document.getElementById('cross').classList.add('hidden');
-                        //  document.getElementById('bar').classList.remove('hidden');
-                         menuDropdown.classList.add('hidden');
-                     }
-                   });
+               const cross = document.getElementById('cross');
+               const menuDropdown = document.getElementById('menuDropdown');
+               bar.addEventListener('click', function (){
+                 bar.classList.add('hidden');
+                 menuDropdown.classList.remove('hidden');
+                 cross.classList.remove('hidden');
+               })
+
+               cross.addEventListener('click', function (){
+                 cross.classList.add('hidden');
+                 menuDropdown.classList.add('hidden');
+                 bar.classList.remove('hidden');
+               })
+
             </script>
 
 

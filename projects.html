@@ -52,55 +52,94 @@
   </head>
   <body class="font-roboto bg-projects">
     <header class="sticky top-0 z-50 bg-white">
-      <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+      <div class=" flex justify-between items-center w-11/12 mx-auto pt-4 pb-4">
         <!-- left -->
+        <div class="nav-left flex gap-3 ">
 
-        <a href="./index.html">
+          <!-- <button class="btn">Hover me</button> -->
+          <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+              <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+             </a> -->
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+            title="Email" target="_blank" class="block">
+            <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+          </a>
 
-          <span class="text-xl text-black font-bold">Indrojit</span> <span
-            class="text-xl ">Mondal</span>
+          <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="block">
+          <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+         </a> -->
 
-        </a>
+          <a href="https://github.com/indrojitmondal" title="Github"
+            target="_blank" class="block">
+            <i class="fa-brands fa-github text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+            title="Linkedin" class="block" target="_blank">
+            <i class="fa-brands fa-linkedin text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block"
+            target="_blank">
+            <i class="fa-brands fa-twitter text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube"
+            class="block" target="_blank">
+            <i class="fa-brands fa-youtube text-3xl hover:text-primary"></i>
+          </a>
+          <div class>
+            <a href="https://wa.me/8801966796110" title="WhatsApp"
+              target="_blank" class="block">
+              <i class="fa-brands fa-whatsapp text-3xl hover:text-primary "></i>
+            </a>
+
+          </div>
+
+        </div>
         <!-- Right -->
         <div id="pc-nav-right-container"
-          class="nav-right hidden lg:flex justify-around gap-7 text-xl ">
+          class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
 
           <!-- <a class="block" class="block" href="">Home</a> -->
-          <a class="block hover:text-primary text-black"
+          <a id="lg-about" class="block hover:text-primary text-black"
             href="index.html">About</a>
 
-          <a class="block text-primary " href="projects.html">Projects</a>
-          <a class="block hover:text-primary text-black"
+          <a id="lg-projects" class="block  text-primary"
+            href="projects.html">Projects</a>
+          <a id="lg-services" class="block hover:text-primary text-black"
             href="services.html">Services</a>
 
-          <a class="block hover:text-primary text-black"
+          <a id="lg-contact" class="block hover:text-primary text-black"
             href="contact.html">Contact</a>
 
         </div>
 
-        <div class="dropdown ml-2 lg:hidden  relative">
-          <div tabindex="0" id="menuIcon" role="button"
+        <div class="ml-2  md:hidden  relative">
+          <div
             class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
 
-            <i class="fa-solid fa-bars" id="bar"></i>
-            <!-- <i class="fa-solid fa-x hidden" id="cross" > </i> -->
+            <i class="fa-solid fa-bars " id="bar"></i>
+            <i class="fa-solid fa-x hidden" id="cross"> </i>
+
           </div>
-          <ul tabindex="0" id="menuDropdown"
-            class="dropdown-content lg:hidden absolute right-0 bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-base flex flex-col gap-5">
-            <li class="text-primary transition-colors ease-in-out duration-300">
-              <a href="#">About</a>
+          <ul id="menuDropdown"
+            class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">About</a>
             </li>
             <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
+              class="text-primary transition-colors ease-in-out duration-300">
               <a href="#">Projects</a>
             </li>
             <li
               class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="#">Services</a>
+              <a href="services.html">Services</a>
             </li>
             <li
               class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="#">Contact</a>
+              <a href="contact.html">Contact</a>
             </li>
 
           </ul>
@@ -108,29 +147,23 @@
 
         <!-- Script to toggle dropdown -->
         <script>
-               let ismenuOpen = false;
-               const menuIcon = document.getElementById('menuIcon');
-               const menuDropdown = document.getElementById('menuDropdown');
-               const bar = document.getElementById('bar');
-               menuIcon.addEventListener('click', () => {
-              
-               ismenuOpen=!ismenuOpen; 
-               console.log(ismenuOpen);
-                    //  bar.toggle('hidden');
-                     if(ismenuOpen){
-                        //  document.getElementById('bar').classList.add('hidden');
-                        //  document.getElementById('cross').classList.remove('hidden');
-                        //  alert("menu is clicked");
-                         menuDropdown.classList.remove('hidden');
-                         
-                     }
-                     else{
-                        //  document.getElementById('cross').classList.add('hidden');
-                        //  document.getElementById('bar').classList.remove('hidden');
-                         menuDropdown.classList.add('hidden');
-                     }
-                   });
-            </script>
+             
+             const bar = document.getElementById('bar');
+             const cross = document.getElementById('cross');
+             const menuDropdown = document.getElementById('menuDropdown');
+             bar.addEventListener('click', function (){
+               bar.classList.add('hidden');
+               menuDropdown.classList.remove('hidden');
+               cross.classList.remove('hidden');
+             })
+
+             cross.addEventListener('click', function (){
+               cross.classList.add('hidden');
+               menuDropdown.classList.add('hidden');
+               bar.classList.remove('hidden');
+             })
+
+          </script>
 
       </div>
 
@@ -371,7 +404,6 @@
             </div>
           </div>
 
-
           <div class="card card-compact bg-base-100 w-96 shadow-xl">
             <figure>
               <img
@@ -411,11 +443,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
 
         </div>
         <!-- Mobile -->
