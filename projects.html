@@ -871,40 +871,61 @@
             </div>
 
           </div>
-
-          <form id="input-container" onsubmit="sendEmail(); return false;"
-            class="input-container flex flex-col gap-5">
-
+         
+          <form id="input-container" 
+          class="input-container flex flex-col gap-5">
+           <div class="form-control">
             <input required
-              class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-              type="text" name id="name" placeholder="Name">
+            class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+            type="text" name id="name" placeholder="Name">
+           </div>
 
+    
+         
+          <div class="form-control">
             <input required
-              class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-              type="email" name="email" id="email" placeholder="Email">
-            <input
-              class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-              type="phone" name id="phone" placeholder="Phone">
-            <!-- <input class="block w-full h-24 border border-gray-300 outline-none p-4 text-sm text-black" type="text" name="" id="message" placeholder="Message">
-                  -->
-            <input
-              class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-              type="text" name id="company" placeholder="Project Name">
-            <textarea name id="message" cols="30" required
-              class="border border-gray-300 outline-none p-4 text-sm text-black"
-              rows="5" placeholder="Message"></textarea>
+            class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+            type="email" name="email" id="email" placeholder="Email">
 
+          </div>
+           
+          <div class="form-control">
+            
+            <input
+            class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+            type="phone" name id="phone" placeholder="Phone">
+
+          </div>
+
+          <div class="form-control">
+
+            <input
+            class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+            type="text" name id="projectName" placeholder="Project Name"> 
+
+           </div>
+       
+           <div class="form-control">
+            <textarea required name id="message" cols="30"
+            class="border border-gray-300 outline-none p-4 text-sm text-black"
+            rows="5" placeholder="Message"></textarea>
+           </div>
+         
+           <div class="form-control">
             <button
-              class="block w-1/4 h-14 md:h-16 border  hover:border-   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2  md:p-4 text-xl "
-              type="submit" name="submit" id="sendButton"> SEND
-            </button>
+            class="block w-1/4 h-14 md:h-16 border  hover:border-primary   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2  md:p-4 text-xl "
+            type="submit" name="submit" id="sendButton"> SEND
+          </button>
 
-            <p id="formConfirmation"
-              class="hidden px-4 py-2 border border-green-500">Thank you for
-              your
-              message. It has been sent.</p>
+           </div>
+          
 
-          </form>
+          <p id="formConfirmation"
+            class="hidden px-4 py-2 border border-green-500">Thank you for your
+            message. It has been sent.</p>
+
+        </form>
+      
 
         </div>
 
@@ -959,43 +980,51 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
    </script>
 
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-            publicKey: "oGCU2mz3HIGdXP8Wo",
-         });
-         })();
+   
+<script type="text/javascript">
+  (function(){
+     emailjs.init({
+       publicKey: "oGCU2mz3HIGdXP8Wo",
+     });
+  })();
 
-      function sendEmail() {
+  document.getElementById('input-container').addEventListener('submit', function(event) {
+   event.preventDefault(); // Prevent the form from submitting
+
+   sendEmail();
+});
+
+function sendEmail() {
+
+   emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+       from_name: document.getElementById('name').value,
+       from_company: document.getElementById('projectName').value,
+       from_email: document.getElementById('email').value,
+       from_phone: document.getElementById('phone').value,
+       message: document.getElementById('message').value
+   }).then(function(response) {
+
+     // alert("Email sent successfully!");
+       // Show modal on successful email send
+       document.getElementById('my_modal').showModal();
        
-       emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
-          
+
+       // Clear the form fields
+       document.getElementById('name').value = '';
+       document.getElementById('email').value = '';
+       document.getElementById('message').value = '';
+       document.getElementById('phone').value = '';
+       document.getElementById('projectName').value = '';
+
+       // Optionally alert the user
+    
+   }, function(error) {
+       alert("Failed to send email.");
+   });
+}
 
 
-           from_name: document.getElementById('name').value,
-     
-            from_email: document.getElementById('email').value,
-            from_phone: document.getElementById('phone').value,
-            message: document.getElementById('message').value
-       }).then(function(response) {
-         response.preventDefault();
-          // alert("Email sent successfully!");
-          document.getElementById('my_modal').showModal();
-
-          document.getElementById('name').value='';
-            
-            document.getElementById('email').value='';
-            document.getElementById('message').value='';
-            document.getElementById('phone').value='';
-          
-          // document.getElementById('formConfirmation').classList.remove('hidden');
-       
-       }, function(error) {
-          alert("Failed to send email.");
-       });
-      }
-
-    </script>
+   </script>
 
     <!-- Emailjs setup ends -->
 
