@@ -362,7 +362,7 @@
 });
 
 function sendEmail() {
-  document.getElementById('loading').style.display = 'block';
+ 
     emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
         from_name: document.getElementById('name').value,
         from_company: document.getElementById('company').value,
@@ -371,7 +371,7 @@ function sendEmail() {
         message: document.getElementById('message').value
     }).then(function(response) {
 
-      
+      alert("Email sent successfully!");
         // Show modal on successful email send
         document.getElementById('my_modal').showModal();
         
@@ -384,7 +384,7 @@ function sendEmail() {
         document.getElementById('company').value = '';
 
         // Optionally alert the user
-        alert("Email sent successfully!");
+     
     }, function(error) {
         alert("Failed to send email.");
     });
