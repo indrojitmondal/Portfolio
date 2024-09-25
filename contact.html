@@ -50,13 +50,7 @@
       }
     }
     </script>
-    <style>
-      #loading {
-          display: none;
-          /* Add styling for loading spinner or message */
-      }
-  </style>
-
+    
   </head>
   <body class="font-roboto bg-contact">
     <header class="sticky top-0 z-50 bg-contact">
@@ -299,7 +293,7 @@
 
         </form>
 
-        <div id="loading">Sending...</div>
+       
 
    </div>
 
@@ -377,9 +371,10 @@ function sendEmail() {
         message: document.getElementById('message').value
     }).then(function(response) {
 
-      document.getElementById('loading').style.display = 'none';
+      
         // Show modal on successful email send
         document.getElementById('my_modal').showModal();
+        
 
         // Clear the form fields
         document.getElementById('name').value = '';
@@ -389,7 +384,7 @@ function sendEmail() {
         document.getElementById('company').value = '';
 
         // Optionally alert the user
-        // alert("Email sent successfully!");
+        alert("Email sent successfully!");
     }, function(error) {
         alert("Failed to send email.");
     });
