@@ -909,6 +909,28 @@
         </div>
 
       </section>
+      <dialog id="my_modal" class="modal modal-middle">
+        <div class="modal-box w-80">
+            <h2 class="text-2xl font-bold text-center">Conformation!</h3>
+
+            <div class="text-center ">
+                <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
+                    src="assets/coin.png" alt> -->
+                <p class>Thank you for your
+                  message. It has been sent.</p>
+                <h3
+                    class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
+
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+
+                    <button class="btn text-center">Close</button>
+
+                </form>
+            </div>
+
+        </div>
+    </dialog>
 
     </main>
 
@@ -947,13 +969,26 @@
       function sendEmail() {
        
        emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+          
+
+
            from_name: document.getElementById('name').value,
-           message: document.getElementById('message').value,
-           email: document.getElementById('email').value
+     
+            from_email: document.getElementById('email').value,
+            from_phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
        }).then(function(response) {
-         // response.preventDefault();
+         response.preventDefault();
           // alert("Email sent successfully!");
-          document.getElementById('formConfirmation').classList.remove('hidden');
+          document.getElementById('my_modal').showModal();
+
+          document.getElementById('name').value='';
+            
+            document.getElementById('email').value='';
+            document.getElementById('message').value='';
+            document.getElementById('phone').value='';
+          
+          // document.getElementById('formConfirmation').classList.remove('hidden');
        
        }, function(error) {
           alert("Failed to send email.");
