@@ -274,6 +274,29 @@
 
       </div>
 
+      <dialog id="my_modal" class="modal modal-middle">
+        <div class="modal-box w-80">
+            <h2 class="text-2xl font-bold text-center">Conformation!</h3>
+
+            <div class="text-center ">
+                <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
+                    src="assets/coin.png" alt> -->
+                <p class>Thank you for your
+                  message. It has been sent.</p>
+                <h3
+                    class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
+
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+
+                    <button class="btn text-center">Close</button>
+
+                </form>
+            </div>
+
+        </div>
+    </dialog>
+
     </main>
 
     <!-- <hr class="border-gray-400  ">  -->
@@ -318,6 +341,7 @@
         }).then(function(response) {
           // response.preventDefault();
           //  alert("Email sent successfully!");
+          document.getElementById('my_modal').showModal();
            document.getElementById('formConfirmation').classList.remove('hidden');
         
         }, function(error) {
