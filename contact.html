@@ -336,13 +336,25 @@
         
         emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
             from_name: document.getElementById('name').value,
-            message: document.getElementById('message').value,
-            email: document.getElementById('email').value
+            from_company: document.getElementById('company').value,
+            from_email: document.getElementById('email').value,
+            from_phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+            
         }).then(function(response) {
           // response.preventDefault();
           //  alert("Email sent successfully!");
           document.getElementById('my_modal').showModal();
-           document.getElementById('formConfirmation').classList.remove('hidden');
+
+          document.getElementById('name').value='';
+            
+             document.getElementById('email').value='';
+             document.getElementById('message').value='';
+             document.getElementById('phone').value='';
+             document.getElementById('company').value='';
+
+
+          //  document.getElementById('formConfirmation').classList.remove('hidden');
         
         }, function(error) {
            alert("Failed to send email.");
@@ -352,6 +364,7 @@
     </script>
 
     <!-- Emailjs setup ends -->
+
 
   </body>
 </html>
