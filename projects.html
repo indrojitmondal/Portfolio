@@ -56,40 +56,42 @@
       <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
         <!-- left -->
         <a href="./index.html">
-  
-          <span class="text-xl text-black font-bold">Indrojit</span>   <span class="text-xl ">Mondal</span>
-   
-       </a>
-        
+
+          <span class="text-xl text-black font-bold">Indrojit</span> <span
+            class="text-xl ">Mondal</span>
+
+        </a>
+
         <!-- Right -->
         <div id="pc-nav-right-container"
           class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
-  
+
           <!-- <a class="block" class="block" href="">Home</a> -->
           <a id="lg-about" class="block hover:text-primary text-black"
             href="index.html">About</a>
-  
+
           <a id="lg-projects" class="block text-primary  "
             href="projects.html">Projects</a>
           <a id="lg-services" class="block hover:text-primary text-black"
             href="services.html">Services</a>
-  
+
           <a id="lg-contact" class="block  hover:text-primary text-black"
             href="contact.html">Contact</a>
-  
+
         </div>
-  
+
         <div class="ml-2  md:hidden  relative">
           <div
             class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-  
+
             <i class="fa-solid fa-bars " id="bar"></i>
             <i class="fa-solid fa-x hidden" id="cross"> </i>
-  
+
           </div>
           <ul id="menuDropdown"
             class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-            <li class="hover:text-primary transition-colors ease-in-out duration-300">
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
               <a href="index.html">About</a>
             </li>
             <li
@@ -104,10 +106,10 @@
               class="hover:text-primary transition-colors ease-in-out duration-300">
               <a href="contact.html">Contact</a>
             </li>
-  
+
           </ul>
         </div>
-  
+
         <!-- Script to toggle dropdown -->
         <script>
              
@@ -127,13 +129,12 @@
              })
   
           </script>
-  
-      </div>
-  
-      <hr class="border-gray-400">
-    
 
-    </header> 
+      </div>
+
+      <hr class="border-gray-400">
+
+    </header>
 
     <main class="w-11/12  md:w-10/12 mx-auto pt-8  bg-white">
 
@@ -871,14 +872,14 @@
 
           </div>
 
-          <form id="input-container"
+          <form id="input-container" onsubmit="sendEmail(); return false;"
             class="input-container flex flex-col gap-5">
 
-            <input
+            <input required
               class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
               type="text" name id="name" placeholder="Name">
 
-            <input
+            <input required
               class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
               type="email" name="email" id="email" placeholder="Email">
             <input
@@ -889,7 +890,7 @@
             <input
               class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
               type="text" name id="company" placeholder="Project Name">
-            <textarea name id="message" cols="30"
+            <textarea name id="message" cols="30" required
               class="border border-gray-300 outline-none p-4 text-sm text-black"
               rows="5" placeholder="Message"></textarea>
 
@@ -931,6 +932,37 @@
   </script>
     <script src="js/features.js"></script>
     <script src="js/projects.js"></script>
+    <!-- Emailjs setup starts -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "oGCU2mz3HIGdXP8Wo",
+         });
+         })();
+
+      function sendEmail() {
+       
+       emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+           from_name: document.getElementById('name').value,
+           message: document.getElementById('message').value,
+           email: document.getElementById('email').value
+       }).then(function(response) {
+         // response.preventDefault();
+          // alert("Email sent successfully!");
+          document.getElementById('formConfirmation').classList.remove('hidden');
+       
+       }, function(error) {
+          alert("Failed to send email.");
+       });
+      }
+
+    </script>
+
+    <!-- Emailjs setup ends -->
 
   </body>
 </html>
