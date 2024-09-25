@@ -245,15 +245,15 @@
 
         </div>
 
-        <form id="input-container" class="input-container flex flex-col gap-5">
+        <form id="input-container" onsubmit="sendEmail(); return false;" class="input-container flex flex-col gap-5">
 
-          <input 
+          <input required
             class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-            type="text" name id="name" placeholder="Name">
+            type="text" name id="name" placeholder="Name"> 
           <input
             class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-            type="text" name id="company" placeholder="Company">
-          <input 
+            type="text" name id="company" placeholder="Company(Optional)">
+          <input required
             class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
             type="email" name="email" id="email" placeholder="Email">
           <input
@@ -261,7 +261,7 @@
             type="phone" name id="phone" placeholder="Phone">
           <!-- <input class="block w-full h-24 border border-gray-300 outline-none p-4 text-sm text-black" type="text" name="" id="message" placeholder="Message">
               -->
-          <textarea name id="message" cols="30"
+          <textarea required name id="message" cols="30"
             class="border border-gray-300 outline-none p-4 text-sm text-black"
             rows="5" placeholder="Message"></textarea>
 
@@ -305,6 +305,38 @@
 
     <script src="js/features.js"></script>
     <script src="./js/contact.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "oGCU2mz3HIGdXP8Wo",
+      });
+   })();
+
+   function sendEmail() {
+        
+        emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+            from_name: document.getElementById('name').value,
+            message: document.getElementById('message').value,
+            email: document.getElementById('email').value
+        }).then(function(response) {
+          // response.preventDefault();
+          //  alert("Email sent successfully!");
+           document.getElementById('formConfirmation').classList.remove('hidden');
+        
+        }, function(error) {
+           alert("Failed to send email.");
+        });
+    }
+
+</script>
+
+   
+
     
 
   </body>

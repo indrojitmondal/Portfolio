@@ -45,11 +45,14 @@ console.log(idArray[3]);
 
 const sendButton = document.getElementById('sendButton');
 
-sendButton.addEventListener('click', function (event){
+// sendButton.addEventListener('click', function (event){
 
-   event.preventDefault();
-   // alert(fname.value);
-   if(fname.value !== '')
-   document.getElementById('formConfirmation').classList.remove('hidden');
+//    event.preventDefault();
+//    // alert(fname.value);
+//    if(fname.value !== '')
+//    document.getElementById('formConfirmation').classList.remove('hidden');
 
-})
+// })
+
+
+
