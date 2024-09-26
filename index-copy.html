@@ -12,10 +12,6 @@
       rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-
-
-    
     <!-- fontAwesome configuration -->
     <script src="https://kit.fontawesome.com/b5a83736f2.js"
       crossorigin="anonymous"></script>
@@ -31,8 +27,7 @@
             clifford: '#da373d',
             ck: '#da373d',
             primary: '#B509AC',
-            nav:'#7A7A7A',
-            header:'#FFFFFF',
+            
             light: '#82828A',
             about: '#F8F8F8',
             footer: '#292929',
@@ -60,51 +55,51 @@
   </head>
   <body class="font-roboto bg-about">
    
-    <header class="sticky top-0 z-50 bg-about shadow-md">
-        <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-            <!-- Left Section: Logo -->
-            <div>
-                <a href="index.html">
-
+   <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+          <!-- Left Section: Logo -->
+          <div>
+              <a href="./index.html">
                   <h3 class="text-primary text-center text-[36px] font-extrabold tracking-wide flex items-center">
-                    <!-- <i class="fa-solid fa-less-than"></i>  -->
-                    <span class="text-black"> 
-                      INDR<span class="text-primary">O</span>JIT
-                    </span> 
-                    <!-- <i class="fa-solid fa-greater-than"></i> -->
-                </h3>
-               
-
-             
-                
+                      <i class="fa-solid fa-less-than"></i> 
+                      <span class="text-black"> 
+                          INDROJIT
+                      </span> 
+                      <i class="fa-solid fa-greater-than"></i>
                   
-               
-                </a>
+                    </h3>
+              </a>
+          </div>
+  
+          <!-- Right Section: Navigation for Desktop -->
+          <div id="pc-nav-right-container" class="hidden md:flex md:justify-around gap-7 text-xl">
+              <a id="lg-about" class="block text-black " href="index.html">ABOUT</a>
+              <a id="lg-projects" class="block text-black hover:text-primary hover:underline transition-colors" href="projects.html">PROJECTS</a>
+              <a id="lg-services" class="block text-black hover:text-primary transition-colors" href="services.html">SERVICES</a>
+              <a id="lg-contact" class="block text-black hover:text-primary transition-colors" href="contact.html">CONTACT</a>
+          </div>
+  
+          <!-- Hamburger Menu for Mobile -->
+          <div class="ml-2  md:hidden ">
+            <div
+              class="btn btn-ghost  border-1    lg:hidden lg:bg-primary text-lg">
+  
+              <i class="fa-solid fa-bars text-primary " id="bar"></i>
+              <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+  
             </div>
-    
-            <!-- Right Section: Navigation for Desktop -->
-            <div id="pc-nav-right-container" class="hidden  md:flex md:justify-around gap-7 text-lg ">
-                <a id="lg-about" class=" block relative " href="index.html">ABOUT
-                  <span class="absolute left-0 bottom-0 w-full h-[3px] bg-primary"></span>
-                </a>
-                
-                <a id="lg-projects" class="block nav-link  " href="projects.html">PROJECTS</a>
-                <a id="lg-services" class="nav-link block " href="services.html">SERVICES</a>
-                <a id="lg-contact" class="nav-link block " href="contact.html">CONTACT</a>
-            </div>
-    
-            <!-- Hamburger Menu for Mobile -->
-            <div class="ml-2 md:hidden">
-                <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
-                    <i class="fa-solid fa-bars text-primary" id="bar"></i>
-                    <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
-                </div>
-            </div>
-        </div>
-    
-        <hr class="border-gray-400">
-    </header>
-    
+           
+
+
+          </div>
+  
+
+
+          
+      </div>
+  
+      <hr class="border-gray-400">
+  </header>
      
   <section class="w-10/12 mx-auto md:hidden">
     <ul id="menuDropdown"
