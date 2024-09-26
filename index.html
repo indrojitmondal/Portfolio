@@ -78,72 +78,66 @@
           </div>
   
           <!-- Hamburger Menu for Mobile -->
-          <div class="ml-2  md:hidden  relative">
+          <div class="ml-2  md:hidden ">
             <div
-              class="btn btn-ghost  border-1   rounded-[50%] lg:hidden lg:bg-primary text-lg">
+              class="btn btn-ghost  border-1    lg:hidden lg:bg-primary text-lg">
   
               <i class="fa-solid fa-bars text-primary " id="bar"></i>
               <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
   
             </div>
-            <ul id="menuDropdown"
-              class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-              <li
-                class="text-primary transition-colors ease-in-out duration-300">
-                <a href="index.html">About</a>
-              </li>
-              <li
-                class="hover:text-primary  transition-colors ease-in-out duration-300">
-                <a href="projects.html">Projects</a>
-              </li>
-              <li
-                class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="services.html">Services</a>
-              </li>
-              <li
-                class="hover:text-primary transition-colors ease-in-out duration-300">
-                <a href="contact.html">Contact</a>
-              </li>
-  
-            </ul>
+           
+
+
           </div>
   
 
 
-          <!-- Script to Toggle Dropdown -->
-          <script>
-              const bar = document.getElementById('bar');
-              const cross = document.getElementById('cross');
-              const menuDropdown = document.getElementById('menuDropdown');
-              
-              bar.addEventListener('click', function () {
-                  // bar.classList.toggle('hidden');
-                  menuDropdown.classList.toggle('hidden');
-                  // cross.classList.remove('hidden');
-              });
-  
-              // cross.addEventListener('click', function () {
-              //     cross.classList.add('hidden');
-              //     menuDropdown.classList.add('hidden');
-              //     bar.classList.remove('hidden');
-              // });
-          </script>
+          
       </div>
   
       <hr class="border-gray-400">
   </header>
-  
+     
+  <section class="w-10/12 mx-auto md:hidden">
+    <ul id="menuDropdown"
+            class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">About</a>
+            </li>
+            <li
+              class="text-primary  transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+  </section>
 
     <main class="w-10/12 mx-auto pt-8">
 
-     
       
       
       
      
-      <div
-        class="about-conatiner pb-12 w-full h-auto grid gap-6 grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 ">
+      <div class="about-conatiner pb-12 w-full h-auto grid gap-6 grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 ">
+        
+     
+        
+        
+        
+        
         <!-- left -->
+
         <div
           class="about-left border  rounded-md shadow-md   lg:col-span-4 lg:row-span-12">
           <img src="images/indrojit3.jpg" class="w-full " alt="indrojit">
@@ -569,6 +563,24 @@
   </script>
     <script src="./js/index.js"></script>
     <script src="js/features.js"></script>
+    <!-- Script to Toggle Dropdown -->
+    <script>
+      const bar = document.getElementById('bar');
+      const cross = document.getElementById('cross');
+      const menuDropdown = document.getElementById('menuDropdown');
+      
+      bar.addEventListener('click', function () {
+          // bar.classList.toggle('hidden');
+          menuDropdown.classList.toggle('hidden');
+          // cross.classList.remove('hidden');
+      });
+
+      // cross.addEventListener('click', function () {
+      //     cross.classList.add('hidden');
+      //     menuDropdown.classList.add('hidden');
+      //     bar.classList.remove('hidden');
+      // });
+  </script>
    
   </body>
 </html>
