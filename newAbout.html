@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrojit Mondal | Programmer | Full Stack Developer</title>
+    <!-- Google font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon">
+    <!-- fontawesome configuration -->
+    <script src="https://kit.fontawesome.com/b5a83736f2.js"
+      crossorigin="anonymous"></script>
+    <!-- TailWindCss configuration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            ck: '#da373d',
+            primary: '#B509AC',
+            light: '#82828A',
+            about: '#F8F8F8',
+            footer: '#292929',
+            
+
+          },
+          fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif'],
+                    'roboto' : ['Roboto', 'sans-serif'],
+                   
+                },
+
+        }
+      }
+    }
+    </script>
+
+   <style>
+    /* Basic styles for the hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  background-color: #ffffff;
+  color: #2575fc;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+   </style>
+
+  </head>
+  <body class="font-roboto bg-about">
+    <header class="sticky top-0 z-50 bg-white">
+      <div class=" flex justify-between items-center w-11/12 mx-auto pt-4 pb-4">
+        <!-- left -->
+        <div class="nav-left flex gap-3 ">
+
+          <!-- <button class="btn">Hover me</button> -->
+          <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" title="Email" target="_blank" class="block">
+                <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+               </a> -->
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+            title="Email" target="_blank" class="block">
+            <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+          </a>
+
+          <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=indro.cse.bu@gmail.com" target="_blank" class="block">
+            <i class="fa-solid fa-envelope text-3xl hover:text-primary"></i>
+           </a> -->
+
+          <a href="https://github.com/indrojitmondal" title="Github"
+            target="_blank" class="block">
+            <i class="fa-brands fa-github text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+            title="Linkedin" class="block" target="_blank">
+            <i class="fa-brands fa-linkedin text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block"
+            target="_blank">
+            <i class="fa-brands fa-twitter text-3xl hover:text-primary"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube"
+            class="block" target="_blank">
+            <i class="fa-brands fa-youtube text-3xl hover:text-primary"></i>
+          </a>
+          <div class>
+            <a href="https://wa.me/8801966796110" title="WhatsApp"
+              target="_blank" class="block">
+              <i class="fa-brands fa-whatsapp text-3xl hover:text-primary "></i>
+            </a>
+
+          </div>
+
+        </div>
+        <!-- Right -->
+        <div id="pc-nav-right-container"
+          class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
+
+          <!-- <a class="block" class="block" href="">Home</a> -->
+          <a id="lg-about" class="block text-primary text-black"
+            href="index.html">About</a>
+
+          <a id="lg-projects" class="block hover:text-primary text-black"
+            href="projects.html" >Projects</a>
+          <a id="lg-services" class="block hover:text-primary text-black"
+            href="services.html"  >Services</a>
+
+          <a id="lg-contact" class="block hover:text-primary text-black"
+            href="contact.html" >Contact</a>
+
+        </div>
+
+        <div class="ml-2  md:hidden  relative">
+          <div
+            class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
+
+            <i class="fa-solid fa-bars " id="bar"></i>
+            <i class="fa-solid fa-x hidden" id="cross"> </i>
+
+          </div>
+          <ul id="menuDropdown"
+            class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li class="text-primary transition-colors ease-in-out duration-300">
+              <a href="#">About</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Script to toggle dropdown -->
+        <script>
+               
+               const bar = document.getElementById('bar');
+               const cross = document.getElementById('cross');
+               const menuDropdown = document.getElementById('menuDropdown');
+               bar.addEventListener('click', function (){
+                 bar.classList.add('hidden');
+                 menuDropdown.classList.remove('hidden');
+                 cross.classList.remove('hidden');
+               })
+
+               cross.addEventListener('click', function (){
+                 cross.classList.add('hidden');
+                 menuDropdown.classList.add('hidden');
+                 bar.classList.remove('hidden');
+               })
+
+            </script>
+
+      </div>
+
+      <hr class="border-gray-400">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Innovative Web Developer & Problem Solver</h1>
+          <p>Building engaging and interactive websites that deliver exceptional user experiences.</p>
+          <a href="index.html" class="cta-btn">View My Work</a>
+        </div>
+      </section>
+     
+    </header>
+
+    <div id="projects">
+       
+        <main class="w-11/12  md:w-10/12 mx-auto pt-8  bg-white">
+
+            <div class="w-8/12 mx-auto md:pt-4">
+              <div class="flex flex-wrap justify-center gap-5 "
+                id="projects-container">
+      
+                <button
+                  class="border-2  border-primary p-2  text-primary hover:shadow-lg"
+                  id="web-application">Web Application</button>
+                <button
+                  class="border-2  border-primary p-2   text-primary hover:shadow-lg"
+                  id="mobile-application">Mobile Application</button>
+                <button
+                  class="border-2  border-primary p-2  text-primary hover:shadow-lg"
+                  id="game-development">Game Development</button>
+                <button
+                  class="border-2  border-primary p-2   text-primary hover:shadow-lg"
+                  id="data-structures">Data Structures</button>
+                <button
+                  class="border-2  border-primary p-2  text-primary hover:shadow-lg"
+                  id="algorithms">Algorithms</button>
+                <button
+                  class="border-2  border-primary  p-2  text-white bg-primary hover:shadow-md"
+                  id="all">ALL</button>
+      
+              </div>
+            </div>
+      
+            <div id="allProjectsContainer" class="mt-11 mb-4 space-y-6 ">
+      
+              <!-- Web -->
+              <div id="web-application-container"
+                class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+                <!-- Template card -->
+                <div class="card card-compact  border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/1.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Fitness(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [51.5%]</li>
+                        <li>CSS [48.5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Fitness"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="https://indrojitmondal.github.io/Fitness/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary" title></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/2.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Hero Travel(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [60.4%]</li>
+                        <li>CSS [39.6%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center  ">
+      
+                      <a href="https://github.com/indrojitmondal/Hero-Travel"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="https://indrojitmondal.github.io/Hero-Travel/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary" title></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/3.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Elevate English Academy(Responsive
+                      Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [76]</li>
+                        <li>CSS [19%]</li>
+                        <li>JavaScript [5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a
+                        href="https://github.com/indrojitmondal/Elevate-English-Academy"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a
+                        href="https://indrojitmondal.github.io/Elevate-English-Academy/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/4.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Rinterio(Responsive
+                      Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [44.4]</li>
+                        <li>TailwindCSS [55%]</li>
+                        <li>JavaScript [.6%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Rinterio"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="https://indrojitmondal.github.io/Rinterio/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/5.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Payoo-MFS(Responsive
+                      Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML+TailwindCSS [60.8%]</li>
+                        <li>JavaScript [39.2%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Payoo-MFS"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="https://indrojitmondal.github.io/Payoo-MFS/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact border border-b1  hover:shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/6.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Donate Bangladesh(Responsive
+                      Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML+TailwindCSS [75.7%]</li>
+                        <li>JavaScript [24.3%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Donate-Bangladesh"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="https://indrojitmondal.github.io/Donate-Bangladesh/"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Live Site" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-globe text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!-- Mobile -->
+              <div id="mobile-application-container"
+                class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/3.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Barishal University Calendar</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [76]</li>
+                        <li>CSS [19%]</li>
+                        <li>JavaScript [5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/bu-calendar.apk"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Apk File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i
+                          class="fa-solid fa-mobile-screen-button text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/3.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Barishal University Calendar</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [76]</li>
+                        <li>CSS [19%]</li>
+                        <li>JavaScript [5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/bu-calendar.apk"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Apk File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i
+                          class="fa-solid fa-mobile-screen-button text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/3.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Barishal University Calendar</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [76]</li>
+                        <li>CSS [19%]</li>
+                        <li>JavaScript [5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary" title></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/bu-calendar.apk"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Apk File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i
+                          class="fa-solid fa-mobile-screen-button text-2xl text-primary"></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+      
+              <!-- Game -->
+      
+              <div id="game-development-container"
+                class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/game-development/1.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Fitness(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>Java </li>
+                        <!-- <li>CSS [48.5%]</li> -->
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Fitness"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/Snake Ludo.exe"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip=".exe File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-file text-2xl text-primary" title></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/1.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Fitness(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [51.5%]</li>
+                        <li>CSS [48.5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Fitness"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/Snake Ludo.exe"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip=".exe File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-file text-2xl text-primary" title></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/1.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Fitness(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [51.5%]</li>
+                        <li>CSS [48.5%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center ">
+      
+                      <a href="https://github.com/indrojitmondal/Fitness"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <a href="assests/Snake Ludo.exe"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip=".exe File" target="_blank">
+                        <!-- <button class=" ">LiveSite</button> -->
+                        <i class="fa-solid fa-file text-2xl text-primary" title></i>
+                      </a>
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+      
+              <!-- Data-Structures -->
+              <div id="data-structures-container"
+                class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/2.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Hero Travel(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [60.4%]</li>
+                        <li>CSS [39.6%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center  ">
+      
+                      <a href="https://github.com/indrojitmondal/Hero-Travel"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <!-- <a href="https://indrojitmondal.github.io/Hero-Travel/" class=" tooltip hover:tooltip-open tooltip-bottom" data-tip="Live Site" target="_blank">
+                          
+                          <i class="fa-solid fa-globe text-2xl text-primary" title="" ></i>
+                        </a> -->
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+      
+              <!-- Algorithms -->
+              <div id="algorithms-container"
+                class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+                <div class="card card-compact bg-base-100  shadow-xl">
+                  <figure>
+                    <img
+                      src="images/web-development/2.png"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Hero Travel(Responsive Website)</h2>
+      
+                    <div>
+                      <ul class="flex gap-4">
+                        <li>HTML [60.4%]</li>
+                        <li>CSS [39.6%]</li>
+                      </ul>
+                    </div>
+      
+                    <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                    <div class="card-actions flex gap-4 items-center  ">
+      
+                      <a href="https://github.com/indrojitmondal/Hero-Travel"
+                        class=" tooltip hover:tooltip-open tooltip-bottom"
+                        data-tip="Code Repository" target="_blank">
+                        <!-- <button class="btn ">Code</button> -->
+                        <i class="fa-solid fa-code text-2xl text-primary"></i>
+      
+                        <!-- <button class=" ">Github</button> -->
+                      </a>
+      
+                      <!-- <a href="https://indrojitmondal.github.io/Hero-Travel/" class=" tooltip hover:tooltip-open tooltip-bottom" data-tip="Live Site" target="_blank">
+                          
+                          <i class="fa-solid fa-globe text-2xl text-primary" title="" ></i>
+                        </a> -->
+      
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <!-- All -->
+              <div id="all-container" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      
+              </div>
+      
+            </div>
+            <div class="link-conatiner w-8/12 mx-auto mt-10 ">
+              <div class=" text-center ">
+      
+                <h3 class=" text-2xl text-primary  font-semibold">Feedback</h3>
+      
+                <!-- <a href="contact.html" target="_blank">
+                    <button class="mt-4 bg-primary px-4 py-2 text-white">Contact Me</button>
+                
+                  </a> -->
+      
+              </div>
+      
+            </div>
+      
+            <section class="w-10/12 mx-auto mt-5 pt-8 pb-8">
+      
+              <div class="up-conatainer grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="contact-description flex flex-col gap-10 space-y-4">
+      
+                  <div class="flex gap-4">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl hover:text-primary "></i>
+                              -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block hover:text-primar">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg> -->
+      
+                    <img src="./images/mobile.png"
+                      class="w-12 h-14 hover:text-primary"
+                      alt>
+      
+                    <div>
+                      <h3 class="text-xl">Give me a call</h3>
+                      <p>+880-1966796110 <br>
+                        +880-1577147931
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="flex gap-4 ">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+      
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg> -->
+                    <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                           -->
+                    <img src="./images/mail.png" class="w-12 h-14 hover:text-primary"
+                      alt>
+      
+                    <div>
+                      <h3 class="text-xl">Send me an email</h3>
+                      <p>indro.cse.bu@gmail.com<br>
+      
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="flex gap-4 ">
+                    <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+      
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg> -->
+                    <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                           -->
+                    <img src="./images/location.png"
+                      class="w-12 h-14 hover:text-primary" alt>
+      
+                    <div>
+                      <h3 class="text-xl">Location</h3>
+                      <p>Paikgacha Municipality 9280<br>
+                        Khulna, Bangladesh
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="contact ">
+                    <div class="pb-6 flex gap-3 lg:gap-5">
+                      <a
+                        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+                        title="Email" target="_blank" class="block">
+                        <i
+                          class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+                      </a>
+      
+                      <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+                        title="Linkedin" class="block" target="_blank">
+                        <i
+                          class="fa-brands fa-linkedin text-5xl lg:text-6xl hover:text-primary"></i>
+                      </a>
+      
+                      <a href="https://x.com/IndrojitMo95431" title="Twitter"
+                        class="block" target="_blank">
+                        <i
+                          class="fa-brands fa-twitter text-5xl lg:text-6xl hover:text-primary"></i>
+                      </a>
+      
+                      <div class>
+                        <a href="https://wa.me/8801966796110" title="WhatsApp"
+                          target="_blank" class="block">
+                          <i
+                            class="fa-brands fa-whatsapp text-5xl lg:text-6xl hover:text-primary "></i>
+                        </a>
+      
+                      </div>
+                    </div>
+      
+                    <p class=" text-justify font-light text-black text-sm">Best way to
+                      contact me is to <a
+                        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+                        target="_blank"
+                        class="text-sm text-primary hover:underline">email</a>. I try
+                      to
+                      reply each and every email.</p>
+      
+                  </div>
+      
+                </div>
+               
+                <form id="input-container" 
+                class="input-container flex flex-col gap-5">
+                 <div class="form-control">
+                  <input required
+                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+                  type="text" name id="name" placeholder="Name">
+                 </div>
+      
+          
+               
+                <div class="form-control">
+                  <input required
+                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+                  type="email" name="email" id="email" placeholder="Email">
+      
+                </div>
+                 
+                <div class="form-control">
+                  
+                  <input
+                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+                  type="phone" name id="phone" placeholder="Phone">
+      
+                </div>
+      
+                <div class="form-control">
+      
+                  <input
+                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
+                  type="text" name id="projectName" placeholder="Project Name"> 
+      
+                 </div>
+             
+                 <div class="form-control">
+                  <textarea required name id="message" cols="30"
+                  class="border border-gray-300 outline-none p-4 text-sm text-black"
+                  rows="5" placeholder="Message"></textarea>
+                 </div>
+               
+                 <div class="form-control">
+                  <button
+                  class="block w-1/4 h-14 md:h-16 border  hover:border-primary   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2  md:p-4 text-xl "
+                  type="submit" name="submit" id="sendButton"> SEND
+                </button>
+      
+                 </div>
+                
+      
+                <p id="formConfirmation"
+                  class="hidden px-4 py-2 border border-green-500">Thank you for your
+                  message. It has been sent.</p>
+      
+              </form>
+            
+      
+              </div>
+      
+            </section>
+            <dialog id="my_modal" class="modal modal-middle">
+              <div class="modal-box w-80">
+                  <h2 class="text-2xl font-bold text-center">Conformation!</h3>
+      
+                  <div class="text-center ">
+                      <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
+                          src="assets/coin.png" alt> -->
+                      <p class>Thank you for your
+                        message. It has been sent.</p>
+                      <h3
+                          class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
+      
+                      <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+      
+                          <button class="btn text-center">Close</button>
+      
+                      </form>
+                  </div>
+      
+              </div>
+          </dialog>
+      
+          </main>
+      
+
+    </div>
+
+    <main class="w-11/12 mx-auto pt-8">
+
+      <h1 class="text-3xl"> <span class="font-bold">Indrojit</span> <span
+          class>Mondal </span></h1>
+      <h3 class="pb-3">Programmer | Bsc in CSE | Front-end Developer</h3>
+
+      <div
+        class="about-conatiner pb-12 w-full h-auto grid gap-6 grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 ">
+        <!-- left -->
+        <div
+          class="about-left border  rounded-md shadow-md   lg:col-span-4 lg:row-span-12">
+          <img src="images/indrojit3.jpg" class="w-full " alt="indrojit">
+
+          <div class="caption text-center space-y-2">
+            <!-- <h1>Indrojit Mondal</h1> -->
+            <h1 class="text-2xl pt-4"> <span class>Indrojit</span> <span
+                class>Mondal </span></h1>
+            <span class="text-primary">indro.cse.bu</span>@<span
+              class="text-primary">gmail.com </span>
+            <div class="flex gap-3 justify-center pb-4  ">
+              <button class="block bg-primary text-white px-2"> <a
+                  href="assests/Indrojit Mondal_Resume.pdf"
+                  target="_blank">Resume </a> </button>
+              <button class="block bg-primary text-white px-2"><a
+                  href="assests/Indrojit_MondalCV.pdf" target="_blank">CV </a>
+              </button>
+
+            </div>
+
+            <hr>
+
+          </div>
+
+          <div class="progrss  p-2">
+
+            <p class="text-justify font-light text-black text-base">As a
+              programmer, web developer, and problem solver, I specialize in
+              HTML, CSS, JavaScript, and the MERN stack. I build responsive,
+              user-friendly websites and solve complex technical challenges
+              through efficient programming.</p>
+
+            <!-- Working Interest -->
+            <div class="Working-Interest">
+              <div class="pt-2 pb-1">
+                <i class="fa-solid fa-computer"></i>
+                <h1 class="inline-block font-medium">Working Interest:</h1>
+              </div>
+
+              <div class="pl-20">
+
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block "></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <a
+                    href="https://www.leewayhertz.com/what-is-custom-software-development/"
+                    target="_blank">
+                    <h2 class> ✓ Custom Software Development</h2>
+                  </a>
+                </div>
+
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Web Application Development</h2>
+                </div>
+
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Mobile Application Development</h2>
+                </div>
+
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Quality Assurance & Testing</h2>
+                </div>
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ DevOps Engineering</h2>
+                </div>
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Cybersecurity</h2>
+                </div>
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Computer Networking</h2>
+                </div>
+                <div class="flex items-center ">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Machine Learning</h2>
+                </div>
+
+                <div class="flex items-center">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Robotics</h2>
+                </div>
+
+                <div class="flex items-center">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Internet of Things(IoT)</h2>
+                </div>
+                <div class="flex items-center">
+                  <!-- <i class="fa-solid fa-check block"></i>  -->
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg> -->
+
+                  <h2>✓ Embedded Systems</h2>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Age -->
+
+            <div class="Age">
+              <div class="pt-3 pb-1">
+
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <i class="fas fa-user"></i>
+                <h1 class="inline-block font-medium">Age: </h1>
+                <h2 class="inline-block" id="age-calculation"></h2>
+                <script src="js/dob.js"></script>
+              </div>
+
+            </div>
+            <!-- <script src="js/dob.js"></script> -->
+
+            <!-- Home -->
+
+            <div class="LivesIn">
+              <div class="pt-3 pb-1">
+
+                <i class="fa-solid fa-house"></i>
+                <h1 class="inline-block font-medium">Home: </h1> <a
+                  href="https://maps.app.goo.gl/SoqjTH11UWKLgeRc6"
+                  target="_blank" class="  hover:underline">Paikgacha, Khulna,
+                  Bangladesh</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="about-right  lg:col-span-8 lg:row-span-12 ">
+
+          <p class="text-justify font-light text-black text-base">I am a
+            passionate and dedicated <span class="font-medium">Web
+              Developer</span> and <span class="font-medium">Problem
+              Solver</span>, with a background in Computer Science and
+            Engineering from the <a href="https://bu.ac.bd/?ref=about"
+              target="_blank" class="text-primary hover:underline ">University
+              of Barishal</a> (BU). <br> <br> I have honed my skills in
+            front-end and back-end development, focusing on creating efficient,
+            user-friendly applications. Currently, I'm advancing my expertise in
+            web development with the MERN stack and constantly improving my
+            problem-solving skills through JavaScript practice. My goal is to
+            bring innovative solutions to life, whether for organization or
+            through personal projects, and I want to start my career with
+            software development organization.</p>
+
+          <img src="images/aboutright.jpg" title="Cognitive Solutions"
+            class="h-44 mx-auto block" alt>
+
+          <h2 class="pb-2 text-justify font-light text-black text-base">I try to
+            solve problems when I get free times and love to solve problem
+            here.</h2>
+
+          <div class="flex gap-5">
+
+            <a href="https://leetcode.com/u/user6457sK/" target="_blank"
+              class="block text-primary hover:underline  ">
+              <img src="images/leetcode.png" class="w-11 h-11 "
+                alt="leetcode">LeetCode
+
+            </a>
+
+            <a href="https://codeforces.com/profile/Zerotoinfinity"
+              target="_blank" class="block text-primary hover:underline">
+              <img src="images/codeforces.png" class="w-11 h-11"
+                alt="cf">Codeforces
+
+            </a>
+
+            <a href="https://uhunt.onlinejudge.org/id/774977" target="_blank"
+              class="block text-primary hover:underline">
+              <img src="images/uvaonline.jpeg" class="w-11 h-11" alt="cf">Online
+              Judge
+
+            </a>
+
+            <a href="https://www.hackerrank.com/dashboard" target="_blank"
+              class="block text-primary hover:underline">
+              <img src="images/hackerank.png" class="w-11 h-11" alt="cf">
+              HackerRank
+
+            </a>
+
+          </div>
+
+          <div class="skills">
+            <h1 class="text-black text-lg mt-3 mb-3 font-bold">Skills</h1>
+
+            <p class="text-justify font-light text-black text-base">With a focus
+              on continuous learning and innovation, I stay up-to-date with the
+              latest technologies to deliver top-quality solutions across my
+              projects. I continuously strive to improve my expertise across
+              various domains of web development and programming. Below is a
+              visual representation of my current proficiency in key skills:</p>
+
+            <div class="w-full lg:w-1/2 pl-11 pt-6">
+              <div class="w-full flex justify-between ">
+
+                <h2>HTML/CSS</h2>
+                <h2>90%</h2>
+
+              </div>
+              <progress class="progress progress-info w-ful" value="90"
+                max="100"></progress> <br>
+              <div class="w-full flex justify-between ">
+
+                <h2>JavaScript</h2>
+                <h2>80%</h2>
+
+              </div>
+              <progress class="progress progress-primary w-full" value="80"
+                max="100"></progress> <br>
+              <div class="w-full flex justify-between ">
+
+                <h2>MERN Stack</h2>
+                <h2>75%</h2>
+
+              </div>
+              <progress class="progress progress-secondary  w-full" value="75"
+                max="100"></progress> <br>
+              <div class="w-full flex justify-between ">
+
+                <h2>Problem Solving</h2>
+                <h2>85%</h2>
+
+              </div>
+              <progress class="progress progress-success  w-full" value="85"
+                max="100"></progress>
+              <div class="w-full flex justify-between ">
+
+                <h2>Responsive Design</h2>
+                <h2>85%</h2>
+
+              </div>
+              <progress class="progress  progress-accent  w-full" value="85"
+                max="100"></progress>
+
+              <div class="w-full flex justify-between ">
+
+                <h2>Version Control (GiT)</h2>
+                <h2>75%</h2>
+
+              </div>
+              <progress class="progress progress-warning w-full" value="75"
+                max="100"></progress>
+
+              <div class="w-full flex justify-between ">
+
+                <h2>C++/Java/Python</h2>
+                <h2>70%</h2>
+
+              </div>
+              <progress class="progress progress-error w-full" value="70"
+                max="100"></progress>
+
+            </div>
+
+          </div>
+
+          <div class="contact  pt-10 pb-6 flex gap-3 lg:gap-5 ">
+
+            <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+              title="Email" target="_blank" class="block">
+              <i
+                class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+            </a>
+
+            <a href="https://github.com/indrojitmondal" title="Github"
+              target="_blank" class="block">
+              <i
+                class="fa-brands fa-github text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+              title="Linkedin" class="block" target="_blank">
+              <i
+                class="fa-brands fa-linkedin text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+
+            <a href="https://x.com/IndrojitMo95431" title="Twitter"
+              class="block" target="_blank">
+              <i
+                class="fa-brands fa-twitter text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@indrojitmondal8996"
+              title="YouTube" class="block" target="_blank">
+              <i
+                class="fa-brands fa-youtube text-5xl lg:text-6xl hover:text-primary"></i>
+            </a>
+            <div class>
+              <a href="https://wa.me/8801966796110" title="WhatsApp"
+                target="_blank" class="block">
+                <i
+                  class="fa-brands fa-whatsapp text-5xl lg:text-6xl hover:text-primary "></i>
+              </a>
+
+            </div>
+
+          </div>
+          <p class=" text-justify font-light text-black text-sm">Best way to
+            contact me is to <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+              target="_blank"
+              class="text-sm text-primary hover:underline">email</a>. I try to
+            reply each and every email.</p>
+
+        </div>
+      </div>
+
+    </main>
+    <!-- <hr class="border-gray-400  "> -->
+
+    <footer class="footer footer-center bg-footer  p-8">
+
+      <aside>
+        <p class="text-justify font-light text-white text-base">© <span
+            id="current-year"></span> <a
+            href="https://indrojitmondal.github.io/Portfolio/"
+            target="_blank">Indrojit Mondal</a>.All Rights Reserved.</p>
+
+      </aside>
+    </footer>
+
+    <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+    <script src="./js/index.js"></script>
+    <script src="js/features.js"></script>
+   
+  </body>
+</html>
