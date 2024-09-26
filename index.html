@@ -53,93 +53,86 @@
 
   </head>
   <body class="font-roboto bg-about">
-    <header class="sticky top-0 z-50 bg-white">
-      <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-        <!-- left -->
-        <div>
-           <a href="./index.html">
-
-             <h3 class="text-primary text-center text-[30px] font-bold"> <i class="fa-solid fa-less-than"></i> <span class="text-black " > Indroji<i>t</i></span> <i class="fa-solid fa-greater-than"></i></h3>
-      
-  
-            <!-- <span class="text-xl text-black font-bold">Indrojit</span> <span
-              class="text-xl ">Mondal</span> -->
-  
-            </a>
-        </div>
-        
-        <!-- Right -->
-        <div id="pc-nav-right-container"
-          class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
-
-          <!-- <a class="block" class="block" href="">Home</a> -->
-          <a id="lg-about" class="block text-primary text-black"
-            href="index.html">About</a>
-
-          <a id="lg-projects" class="block hover:text-primary text-black"
-            href="projects.html" >Projects</a>
-          <a id="lg-services" class="block hover:text-primary text-black"
-            href="services.html"  >Services</a>
-
-          <a id="lg-contact" class="block hover:text-primary text-black"
-            href="contact.html" >Contact</a>
-
-        </div>
-
-        <div class="ml-2  md:hidden  relative">
-          <div
-            class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-
-            <i class="fa-solid fa-bars " id="bar"></i>
-            <i class="fa-solid fa-x hidden" id="cross"> </i>
-
+   
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+          <!-- Left Section: Logo -->
+          <div>
+              <a href="./index.html">
+                  <h3 class="text-primary text-center text-[36px] font-extrabold tracking-wide flex items-center">
+                      <i class="fa-solid fa-less-than"></i> 
+                      <span class="text-black"> 
+                          Indroji<i>t</i>
+                      </span> 
+                      <i class="fa-solid fa-greater-than"></i>
+                  </h3>
+              </a>
           </div>
-          <ul id="menuDropdown"
-            class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-            <li class="text-primary transition-colors ease-in-out duration-300">
-              <a href="#">About</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="projects.html">Projects</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="services.html">Services</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="contact.html">Contact</a>
-            </li>
+  
+          <!-- Right Section: Navigation for Desktop -->
+          <div id="pc-nav-right-container" class="hidden md:flex md:justify-around gap-7 text-xl">
+              <a id="lg-about" class="block text-black hover:text-primary transition-colors" href="index.html">About</a>
+              <a id="lg-projects" class="block text-black hover:text-primary transition-colors" href="projects.html">Projects</a>
+              <a id="lg-services" class="block text-black hover:text-primary transition-colors" href="services.html">Services</a>
+              <a id="lg-contact" class="block text-black hover:text-primary transition-colors" href="contact.html">Contact</a>
+          </div>
+  
+          <!-- Hamburger Menu for Mobile -->
+          <div class="ml-2  md:hidden  relative">
+            <div
+              class="btn btn-ghost  border-1   rounded-[50%] lg:hidden lg:bg-primary text-lg">
+  
+              <i class="fa-solid fa-bars text-primary " id="bar"></i>
+              <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+  
+            </div>
+            <ul id="menuDropdown"
+              class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
+              <li
+                class="text-primary transition-colors ease-in-out duration-300">
+                <a href="index.html">About</a>
+              </li>
+              <li
+                class="hover:text-primary  transition-colors ease-in-out duration-300">
+                <a href="projects.html">Projects</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="services.html">Services</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300">
+                <a href="contact.html">Contact</a>
+              </li>
+  
+            </ul>
+          </div>
+  
 
-          </ul>
-        </div>
 
-        <!-- Script to toggle dropdown -->
-        <script>
-               
-               const bar = document.getElementById('bar');
-               const cross = document.getElementById('cross');
-               const menuDropdown = document.getElementById('menuDropdown');
-               bar.addEventListener('click', function (){
-                 bar.classList.add('hidden');
-                 menuDropdown.classList.remove('hidden');
-                 cross.classList.remove('hidden');
-               })
-
-               cross.addEventListener('click', function (){
-                 cross.classList.add('hidden');
-                 menuDropdown.classList.add('hidden');
-                 bar.classList.remove('hidden');
-               })
-
-            </script>
-
+          <!-- Script to Toggle Dropdown -->
+          <script>
+              const bar = document.getElementById('bar');
+              const cross = document.getElementById('cross');
+              const menuDropdown = document.getElementById('menuDropdown');
+              
+              bar.addEventListener('click', function () {
+                  // bar.classList.toggle('hidden');
+                  menuDropdown.classList.toggle('hidden');
+                  // cross.classList.remove('hidden');
+              });
+  
+              // cross.addEventListener('click', function () {
+              //     cross.classList.add('hidden');
+              //     menuDropdown.classList.add('hidden');
+              //     bar.classList.remove('hidden');
+              // });
+          </script>
       </div>
-
+  
       <hr class="border-gray-400">
-     
-    </header>
+  </header>
+  
 
     <main class="w-10/12 mx-auto pt-8">
 
