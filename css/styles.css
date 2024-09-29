@@ -8,7 +8,7 @@
 .nav-link::after {
     content: ""; /* Create a pseudo-element for the underline */
     display: block; /* Make it a block element */
-    height: 3px; /* Thickness of the underline */
+    height: 2px; /* Thickness of the underline */
     width: 0; /* Start with no width */
     background-color: #B509AC; /* Use your primary color */
     transition: width 0.3s ease; /* Smooth transition effect */
@@ -16,18 +16,7 @@
     left: 0; /* Align to the left */
     bottom: 0; /* Position at the bottom */
 }
-.test{
-    content: ""; /* Create a pseudo-element for the underline */
-    display: block; /* Make it a block element */
-    height: 3px; /* Thickness of the underline */
-     /* Start with no width */
-   
-    background-color: #B509AC; /* Use your primary color */
-    transition: width 0.3s ease; /* Smooth transition effect */
-    left: 0; /* Align to the left */
-    bottom: 0; /* Position at the bottom */
-    
-}
+
 
 .nav-link:hover::after {
     width: 100%; /* Expand width on hover */

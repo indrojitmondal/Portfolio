@@ -12,6 +12,7 @@
       rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- fontawesome configuration -->
     <script src="https://kit.fontawesome.com/b5a83736f2.js"
       crossorigin="anonymous"></script>
@@ -50,107 +51,84 @@
     }
     </script>
 
+   
+
   </head>
   <body class="font-roboto bg-projects">
-    <header class="sticky top-0 z-50 bg-projects">
-      <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-        <!-- left -->
+    <header class="sticky top-0 z-50 bg-projects shadow-md">
+      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+          <!-- Left Section: Logo -->
+          <div>
+              <a href="index.html">
 
-        <div>
-          <a href="./index.html">
-
-            <h3 class="text-primary text-center text-[30px] font-bold"> <i class="fa-solid fa-less-than"></i> <span class="text-black " > Indroji<i>t</i></span> <i class="fa-solid fa-greater-than"></i></h3>
-     
- 
-           <!-- <span class="text-xl text-black font-bold">Indrojit</span> <span
-             class="text-xl ">Mondal</span> -->
- 
-           </a>
-       </div>
-        <!-- <a href="./index.html">
-
-          <span class="text-xl text-black font-bold">Indrojit</span> <span
-            class="text-xl ">Mondal</span>
-
-        </a> -->
-
-        <!-- Right -->
-        <div id="pc-nav-right-container"
-          class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
-
-          <!-- <a class="block" class="block" href="">Home</a> -->
-          <a id="lg-about" class="block hover:text-primary text-black"
-            href="index.html">About</a>
-
-          <a id="lg-projects" class="block text-primary  "
-            href="projects.html">Projects</a>
-          <a id="lg-services" class="block hover:text-primary text-black"
-            href="services.html">Services</a>
-
-          <a id="lg-contact" class="block  hover:text-primary text-black"
-            href="contact.html">Contact</a>
-
-        </div>
-
-        <div class="ml-2  md:hidden  relative">
-          <div
-            class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-
-            <i class="fa-solid fa-bars " id="bar"></i>
-            <i class="fa-solid fa-x hidden" id="cross"> </i>
-
-          </div>
-          <ul id="menuDropdown"
-            class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="index.html">About</a>
-            </li>
-            <li
-              class="text-primary  transition-colors ease-in-out duration-300">
-              <a href="projects.html">Projects</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="services.html">Services</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="contact.html">Contact</a>
-            </li>
-
-          </ul>
-        </div>
-
-        <!-- Script to toggle dropdown -->
-        <script>
+                <h3 class="text-primary text-center text-[22px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+                  <!-- <i class="fa-solid fa-less-than"></i>  -->
+                  <span class="text-black"> 
+                    INDR<span class="text-primary">O</span>JIT
+                  </span> 
+                  <!-- <i class="fa-solid fa-greater-than"></i> -->
+              </h3>
              
-             const bar = document.getElementById('bar');
-             const cross = document.getElementById('cross');
-             const menuDropdown = document.getElementById('menuDropdown');
-             bar.addEventListener('click', function (){
-               bar.classList.add('hidden');
-               menuDropdown.classList.remove('hidden');
-               cross.classList.remove('hidden');
-             })
-  
-             cross.addEventListener('click', function (){
-               cross.classList.add('hidden');
-               menuDropdown.classList.add('hidden');
-               bar.classList.remove('hidden');
-             })
-  
-          </script>
 
+           
+              
+                
+             
+              </a>
+          </div>
+  
+          <!-- Right Section: Navigation for Desktop -->
+          <div id="" class="hidden  md:flex md:justify-around gap-7 text-[15px]">
+              
+            <a id="lg-home" class="block nav-link  " href="index.html">HOME
+             
+            </a>
+              <a id="" class=" block nav-link " href="about.html">ABOUT
+                
+              </a>
+              
+              <a id="lg-projects" class="block relative   " href="projects.html">PROJECTS
+
+                <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
+              </a>
+              <a id="lg-services" class="nav-link block " href="services.html">SERVICES</a>
+              <a id="lg-contact" class="nav-link block " href="contact.html">CONTACT</a>
+          </div>
+  
+          <!-- Hamburger Menu for Mobile -->
+          <div class="ml-2 md:hidden">
+              <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+                  <i class="fa-solid fa-bars text-primary" id="bar"></i>
+                  <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+              </div>
+          </div>
       </div>
-
+  
       <hr class="border-gray-400">
-
-    </header>
+  </header>
 
     <main class="w-11/12  md:w-10/12 mx-auto pt-8  bg-white">
 
-      <div class="w-8/12 mx-auto md:pt-4">
+      <!-- heading -->
+
+      <div class="max-w-5xl mx-auto text-center  space-y-5">
+   
+        <h1 class="font-bold relative text-lg text-primary lg:text-xl">My Projects
+          
+          <!-- <span class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-[100px] h-[2px] bg-primary"></span>
+           -->
+        </h1>
+        <!-- <p class="text-sm lg:text-base  ">
+          
+           I developed this projects during my Academic study besides problem-solving and running to job preparation. <br>I developed this projects to grow my learning skills. This projects show custom software, with a focus on seamless user experiences. Solutions are tailored <br> to meet business goals and enhance digital presence.
+
+          
+        </p> -->
+    
+        <!-- text-justify font-light text-black text-base -->
+      </div>
+
+      <div class="w-8/12 mx-auto md:sticky top-20 z-30 bg-white pt-5">
         <div class="flex flex-wrap justify-center gap-5 "
           id="projects-container">
 
@@ -182,8 +160,8 @@
         <div id="web-application-container"
           class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-          <!-- Template card -->
-          <div class="card card-compact  border border-b1  hover:shadow-xl">
+          
+          <div class="card card-compact p-4 border border-black  hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/1.png"
@@ -199,7 +177,6 @@
                 </ul>
               </div>
 
-              <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
               <div class="card-actions flex gap-4 items-center ">
 
                 <a href="https://github.com/indrojitmondal/Fitness"
@@ -208,13 +185,12 @@
                   <!-- <button class="btn ">Code</button> -->
                   <i class="fa-solid fa-code text-2xl text-primary"></i>
 
-                  <!-- <button class=" ">Github</button> -->
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Fitness/"
                   class=" tooltip hover:tooltip-open tooltip-bottom"
                   data-tip="Live Site" target="_blank">
-                  <!-- <button class=" ">LiveSite</button> -->
+           
                   <i class="fa-solid fa-globe text-2xl text-primary" title></i>
                 </a>
 
@@ -222,46 +198,51 @@
             </div>
           </div>
 
-          <div class="card card-compact border border-b1  hover:shadow-xl">
+          <div class="card card-compact p-4  border border-black hover:border-primary hover:text-primary hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/2.png"
                 alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Hero Travel(Responsive Website)</h2>
+              <h2 class="card-title text-lg ">Hero Travel(Responsive Website)</h2>
 
               <div>
-                <ul class="flex gap-4">
+                <ul class="flex gap-4 text-black">
                   <li>HTML [60.4%]</li>
                   <li>CSS [39.6%]</li>
                 </ul>
               </div>
 
-              <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
-              <div class="card-actions flex gap-4 items-center  ">
+  
+              <div class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
 
                 <a href="https://github.com/indrojitmondal/Hero-Travel"
-                  class=" tooltip hover:tooltip-open tooltip-bottom"
-                  data-tip="Code Repository" target="_blank">
-                  <!-- <button class="btn ">Code</button> -->
-                  <i class="fa-solid fa-code text-2xl text-primary"></i>
-
-                  <!-- <button class=" ">Github</button> -->
+                  class=" "
+                   target="_blank">
+                 
+                  <button
+                  class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                  id="web-application">
+                  <i class="fa-solid fa-code  "></i>Github</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Hero-Travel/"
-                  class=" tooltip hover:tooltip-open tooltip-bottom"
-                  data-tip="Live Site" target="_blank">
-                  <!-- <button class=" ">LiveSite</button> -->
-                  <i class="fa-solid fa-globe text-2xl text-primary" title></i>
+                  class=" "
+                   target="_blank">
+                  
+                  <button
+                  class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                  id="web-application">
+                  <i class="fa-solid fa-globe " title></i>  LiveSite</button>
+       
                 </a>
 
               </div>
             </div>
           </div>
 
-          <div class="card card-compact border border-b1  hover:shadow-xl">
+          <div class="card card-compact p-4 border border-black  hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/3.png"
@@ -304,7 +285,7 @@
             </div>
           </div>
 
-          <div class="card card-compact border border-b1  hover:shadow-xl">
+          <div class="card card-compact p-4 border border-black  hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/4.png"
@@ -345,7 +326,7 @@
             </div>
           </div>
 
-          <div class="card card-compact border border-b1  hover:shadow-xl">
+          <div class="card card-compact p-4 border border-black hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/5.png"
@@ -385,7 +366,7 @@
             </div>
           </div>
 
-          <div class="card card-compact border border-b1  hover:shadow-xl">
+          <div class="card card-compact p-4 border border-black  hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/6.png"
