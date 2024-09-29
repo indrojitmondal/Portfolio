@@ -36,6 +36,7 @@
             light: '#82828A',
             about: '#F8F8F8',
             footer: '#292929',
+            hero: '#6C6857',
             
 
           },
@@ -60,7 +61,7 @@
   </head>
   <body class="font-roboto bg-about">
    
-    <header class="sticky top-0 z-50 bg-about shadow-md">
+    <header class="sticky top-0 z-50 bg-about ">
         <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
             <!-- Left Section: Logo -->
             <div>
@@ -109,7 +110,7 @@
         <hr class="border-gray-400">
     </header>
     
-     
+     <!-- for small devices -->
   <section class="w-10/12 mx-auto md:hidden">
     <ul id="menuDropdown"
             class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
@@ -134,7 +135,20 @@
 
   </section>
 
-  <main class="w-10/12 mx-auto pt-8">
+  <!-- hero Section -->
+  <section class=" bg-hero bg-opacity-5 ">
+     
+    <div class="w-10/12 mx-auto text-center  pt-14 px-14 pb-14">
+      <h1 class="text-lg font-medium ">I am Indrojit Mondal</h1>
+      <h3 class="text-primary">A Software Solution Engineer</h3>
+  
+    </div>
+    <hr class=" md:hidden border-gray-400"> 
+    
+  </section>
+
+  <div class="bg-white ">
+    <main class="w-10/12 mx-auto ">
 
       
       
@@ -150,10 +164,10 @@
       <!-- left -->
 
    <div
-        class="about-left border  rounded-md shadow-md   lg:col-span-4 lg:row-span-12">
-        <img src="images/indrojit3.jpg" class="w-full " alt="indrojit">
+        class="about-left border  rounded-b-md shadow-md   lg:col-span-4 lg:row-span-12">
+        <img src="images/indrojit@ku.jpg" class="w-full " alt="indrojit">
 
-        <div class="caption w-full text-center space-y-2">
+        <div class="caption w-full text-center space-y-1">
           <!-- <h1>Indrojit Mondal</h1> -->
           <h1 class="text-2xl pt-4"> <span class>Indrojit</span> <span
               class>Mondal </span></h1>
@@ -558,7 +572,8 @@
       </div>
     </div>
 
-  </main>
+    </main>
+  </div>
     <!-- <hr class="border-gray-400  "> -->
 
     <footer class="footer footer-center bg-footer  p-8">
