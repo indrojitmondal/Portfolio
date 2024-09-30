@@ -40,7 +40,8 @@ for (const project of projectsArray) {
 
 const projectsContainerArray = document.querySelectorAll('#allProjectsContainer > div');
 console.log('projects length: ',projectsContainerArray.length);
-
+// console.log(typeof projectsContainerArray[0].id);
+const check=1;
 function styleProjectSectionByID(id){
 
     console.log('typeof id :', typeof id);
@@ -56,12 +57,16 @@ function styleProjectSectionByID(id){
         project.classList.remove('text-white');
     
     }
+
+    const cards = [];
      
     for (const item of projectsContainerArray) {
         
         
         if(item.id.includes(id)){
             item.classList.remove('hidden');
+            cards.push(item.id);
+
         }
         else{
             item.classList.add('hidden');
@@ -87,6 +92,9 @@ function styleProjectSectionByID(id){
         
 
     }
+    // if(cards.length>0){
+    //     console.log(cards);
+    // }
 
 }
 // Please Update
