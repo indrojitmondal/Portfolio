@@ -7,7 +7,7 @@ console.log('features.js')
     for (const a of allAngkorTag) {
       
         a.setAttribute('id', idArray[i++]);
-        console.log(a);
+        //console.log(a);
     }
     // for (const item of allAngkorTag) {
     //     item.classList.add('text-black');
@@ -16,7 +16,7 @@ console.log('features.js')
 function showFeaturesInLargeScreenById(id){
     
    
-    console.log('ok');
+    //console.log('ok');
 
     document.getElementById(id).classList.add('text-primary');
    
