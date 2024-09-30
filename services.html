@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services – Indrojit Mondal</title>
     <!-- Google font configuration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+
+      <!-- External CSS Link -->
+      <link rel="stylesheet" href="css/styles.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon">
     <!-- fontawesome configuration -->
-    <script src="https://kit.fontawesome.com/b5a83736f2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5a83736f2.js"
+      crossorigin="anonymous"></script>
     <!-- TailWindCss configuration -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
     tailwind.config = {
@@ -28,6 +35,10 @@
             services: '#F8F8F8',
             footer: '#292929',
             b1:'rgba(17, 17, 17, 0.1)',
+            about: '#F8F8F8',
+            footer: '#292929',
+            hero: '#6C6857',
+            
             
             
 
@@ -48,186 +59,127 @@
     }
     </script>
 
-
-
-
-    
-
-
-
-</head>
-<body class="font-roboto bg-services">
-    
-  <header class="sticky top-0 z-50 bg-services">
-    <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-      <!-- left -->
-       
-      <div>
-        <a href="./index.html">
-
-          <h3 class="text-primary text-center text-[30px] font-bold"> <i class="fa-solid fa-less-than"></i> <span class="text-black " > Indroji<i>t</i></span> <i class="fa-solid fa-greater-than"></i></h3>
    
 
-         <!-- <span class="text-xl text-black font-bold">Indrojit</span> <span
-           class="text-xl ">Mondal</span> -->
+  </head>
+  <body class="font-roboto bg-services">
 
-         </a>
-     </div>
+    <header class="sticky top-0 z-50 bg-about ">
+      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+        <!-- Left Section: Logo -->
+        <div>
+          <a href="index.html">
 
-      <!-- <a href="./index.html">
+            <h3
+              class="text-primary text-center text-[24px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+              <!-- <i class="fa-solid fa-less-than"></i>  -->
+              <span class="text-black">
+                INDR<span class="text-primary">O</span>JIT
+              </span>
+              <!-- <i class="fa-solid fa-greater-than"></i> -->
+            </h3>
 
-        <span class="text-xl text-black font-bold">Indrojit</span>   <span class="text-xl ">Mondal</span>
- 
-      </a> -->
-      
-      <!-- Right -->
-      <div id="pc-nav-right-container"
-        class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
-
-        <!-- <a class="block" class="block" href="">Home</a> -->
-        <a id="lg-about" class="block hover:text-primary text-black"
-          href="index.html">About</a>
-
-        <a id="lg-projects" class="block hover:text-primary text-black  "
-          href="projects.html">Projects</a>
-        <a id="lg-services" class="block text-primary"
-          href="services.html">Services</a>
-
-        <a id="lg-contact" class="block hover:text-primary text-black"
-          href="contact.html">Contact</a>
-
-      </div>
-
-      <div class="ml-2  md:hidden  relative">
-        <div
-          class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-
-          <i class="fa-solid fa-bars " id="bar"></i>
-          <i class="fa-solid fa-x hidden" id="cross"> </i>
-
+          </a>
         </div>
-        <ul id="menuDropdown"
-          class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-          <li class="hover:text-primary transition-colors ease-in-out duration-300">
-            <a href="index.html">About</a>
-          </li>
-          <li
-            class="hover:text-primary  transition-colors ease-in-out duration-300">
-            <a href="projects.html">Projects</a>
-          </li>
-          <li
-            class="text-primary transition-colors ease-in-out duration-300">
-            <a href="#">Services</a>
-          </li>
-          <li
-            class="hover:text-primary transition-colors ease-in-out duration-300">
-            <a href="contact.html">Contact</a>
-          </li>
 
-        </ul>
+        <!-- Right Section: Navigation for Desktop -->
+        <div id="pc-nav-right-container"
+          class="hidden  md:flex md:justify-around gap-7 text-md">
+
+          <a id="lg-home" class="block  nav-link  " href="index.html">HOME
+          </a>
+          <a id="lg-about" class=" block nav-link " href="about.html">ABOUT
+            
+          </a>
+
+          <a id="lg-projects" class="block nav-link  "
+            href="projects.html">PROJECTS</a>
+          <a id="lg-services" class="relative block "
+            href="services.html">SERVICES
+
+            <span
+              class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
+
+
+          </a>
+          <a id="lg-contact" class="nav-link block "
+            href="contact.html">CONTACT</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="ml-2 md:hidden">
+          <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+            <i class="fa-solid fa-bars text-primary" id="bar"></i>
+            <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+          </div>
+        </div>
       </div>
 
-      <!-- Script to toggle dropdown -->
-      <script>
-           
-           const bar = document.getElementById('bar');
-           const cross = document.getElementById('cross');
-           const menuDropdown = document.getElementById('menuDropdown');
-           bar.addEventListener('click', function (){
-             bar.classList.add('hidden');
-             menuDropdown.classList.remove('hidden');
-             cross.classList.remove('hidden');
-           })
+      <hr class="border-gray-400">
+    </header>
 
-           cross.addEventListener('click', function (){
-             cross.classList.add('hidden');
-             menuDropdown.classList.add('hidden');
-             bar.classList.remove('hidden');
-           })
-
-        </script>
-
-    </div>
-
-    <hr class="border-gray-400 ">
-   
-
-  </header>
-
-    <main class="w-11/12 md:w-10/12  mx-auto pt-8 pb-8 bg-white">
-
-        
-
-
-      
-    <section class="bg-gradient-to-b from-portfolio to-about">
-
-      <div class=" w-11/12 mx-auto mt-3  md:mt-5 ">
-
-          <!-- heading -->
-          <div class="max-w-5xl mx-auto text-center  space-y-6">
-              <!-- <h3 class="font-bold bg-connect inline-block rounded-3xl">
-                  <i class="fa-solid   w-6 h-6  text-lg  fa-arrow-right  text-text_color    "></i>
-                   Explore our services 
-              </h3> -->
-
-                  <!-- <h3 class="font-bold text-primary inline-block  px-4 py-2">
-                
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-auto inline-block">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                        </svg>
+     <!-- hero Section -->
+  <section class=" bg-hero bg-opacity-5 ">
+     
+    <div class="w-10/12 mx-auto text-center  pt-9 px-14 pb-9">
+      <h1 class="text-lg font-medium ">My Services</h1>
+      <p class="md:w-9/12 md:mx-auto pt-2">As a dedicated web developer and problem solver, I offer a range of services tailored to meet your digital needs. From creating responsive and visually appealing websites using modern front-end technologies to solving complex <span class="text-primary">programming challenges, I am committed to delivering high-quality solutions. </span></p>
   
-                        Explore my Services
-                  </h3> -->
-              <h1 class="text-primary font-bold text-lg  lg:text-2xl">My Services</h1>
-              <p class="text-sm lg:text-base  ">
-                <!-- Ready to provide end-to-end development services, from concept to deployment, <br> with a focus on seamless user experiences and robust functionality. <br> Whether it's creating responsive websites, mobile apps, or custom software, solutions are tailored to meet your business goals and enhance your digital presence. Let's collaborate to bring ideas to life.
-                 -->
-                 Ready to deliver end-to-end development services, from websites to mobile apps <br> and custom software, with a focus on seamless user experiences. Solutions are tailored <br> to meet business goals and enhance digital presence.
+    </div>
+    <hr class=" md:hidden border-gray-400"> 
+    
+  </section>
 
-                <!-- Choosing Rinterio means opting for a partner dedicated to excellence in design and execution <br> for both commercial and residential spaces. Here’s why Rinterio stands out:
-               -->
-              </p>
-          
-              <!-- text-justify font-light text-black text-base -->
-            </div>
+    <div class="bg-white">
+
+ 
+    <main class="w-11/12 md:w-10/12  mx-auto pt-6 pb-8 bg-white">
+
+      <section class="bg-gradient-to-b from-portfolio to-about">
+
+        <div class=" w-11/12 mx-auto mt-3  md:mt-5 ">
+
+         
 
           <!-- card container-->
-       
-          
 
-           <div class="grid grid-cols-1 mt-5 gap-5 lg:grid-cols-3 ">
+          <div class="grid grid-cols-1 mt-4 gap-5 lg:grid-cols-3 ">
 
-              <!-- card1 -->
-                      
-              <div class="card bg-base-100  border border-b1  shadow-sm hover:shadow-xl">
-                  <figure class="px-10 pt-10">
-                    
-                      <div class="w-24 h-24 p-4 rounded-[50%] border-2 border-primary">
-                          <img
-                          src="images/app-development.png"
-                          alt="Shoes"
-                          class="" />
-                      </div>
-                     
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title text-primary ">Web App Development</h2>
-                    <p class="hover: text-black  w-full ">
-                      Web app development involves creating interactive apps for browsers using HTML, CSS, JS for the front end, and back-end tech like Node.js. It's key for modern businesses.
-                    
-                    </p>
-                    
-                  <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" class="btn block btn-ghost text-lg  p-3 rounded-3xl">
+            <!-- card1 -->
 
-                
+            <div
+              class="card bg-base-100  border border-black  shadow-sm hover:shadow-xl">
+              <figure class="px-10 pt-10">
 
-                   <!-- View Details -->
+                <div
+                  class="w-24 h-24 p-4 rounded-[50%] border-2 hover:border-primary">
+                  <img
+                    src="images/app-development.png"
+                    alt="Shoes"
+                    class />
+                </div>
+
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title hover:text-primary ">Web App Development</h2>
+                <p class="hover: text-black  w-full ">
+                  Web app development involves creating interactive apps for
+                  browsers using HTML, CSS, JS for the front end, and back-end
+                  tech like Node.js. It's key for modern businesses.
+
+                </p>
+
+                <a href="https://en.wikipedia.org/wiki/Web_development"
+                  target="_blank"
+                  class="btn block btn-ghost text-lg  p-3 rounded-3xl">
+
+                  <!-- View Details -->
                   <button class="flex items-center   rounded-3xl">
 
-                      <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
-                      <!-- arrow icon -->
-                      <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                    <h3 class="lg:text-lg text-h_color text-base font-bold">View
+                      Details</h3>
+                    <!-- arrow icon -->
+                    <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
                           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                           </svg>
@@ -235,43 +187,41 @@
                       </div> -->
                   </button>
 
-
-                  </a> 
-                   
-                   
-
-                      
-                      
-
-                    
-                    
-                  </div>
+                </a>
 
               </div>
 
-              <!-- card2 -->
-              <div class="card bg-base-100 border border-b1   shadow-sm hover:shadow-xl">
-                  <figure class="px-10 pt-10">
-                    <!-- <img
+            </div>
+
+            <!-- card2 -->
+            <div
+              class="card bg-base-100 border border-black   shadow-sm hover:shadow-xl">
+              <figure class="px-10 pt-10">
+                <!-- <img
                       src="assets/home-price.svg"
                       alt="Shoes"
                       class=" w-20 h-20 rounded-xl" /> -->
 
-                      <div class="w-24 h-24 p-4 rounded-[50%] border-2 border-primary">
-                          <img
-                          src="images/mobile-development.png"
-                          alt="Shoes"
-                          class="" />
-                      </div>
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title text-primary ">Mobile App Development</h2>
-                    <p class="hover: text-black  w-full">
-                      Mobile app development focuses on creating innovative Android apps using Java, featuring GPS for location services and push notifications for real-time updates.
-                    </p>
-                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development" target="_blank" class="btn btn-ghost text-lg  p-3 rounded-3xl">
+                <div
+                  class="w-24 h-24 p-4 rounded-[50%] border-2 hover:border-primary">
+                  <img
+                    src="images/mobile-development.png"
+                    alt="Shoes"
+                    class />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title hover:text-primary ">Mobile App Development</h2>
+                <p class=" w-full">
+                  Mobile app development focuses on creating innovative Android
+                  apps using Java, featuring GPS for location services and push
+                  notifications for real-time updates.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Mobile_app_development"
+                  target="_blank"
+                  class="btn btn-ghost text-lg  p-3 rounded-3xl">
 
-                      <!-- 
+                  <!-- 
                       <div class="flex gap-1 items-center">
                             <h3 class=" text-h_color text-lg font-bold">View Details </h3>
   
@@ -283,105 +233,101 @@
                       </div>
                       -->
 
-                       <!-- View Details -->
+                  <!-- View Details -->
                   <button class="flex items-center   rounded-3xl">
 
-                      <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
-                      <!-- arrow icon -->
-                      <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                    <h3 class="lg:text-lg text-h_color text-base font-bold">View
+                      Details</h3>
+                    <!-- arrow icon -->
+                    <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
                           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                           </svg>
          
                       </div> -->
                   </button>
-                     </a> 
-                    
-                  </div>
-              </div>
+                </a>
 
-              <!-- card3 -->
-              <div class="card bg-base-100 border border-b1  shadow-sm hover:shadow-xl ">
-                  <figure class="px-10 pt-10">
-                    <!-- <img
+              </div>
+            </div>
+
+            <!-- card3 -->
+            <div
+              class="card bg-base-100 border border-black  shadow-sm hover:shadow-xl ">
+              <figure class="px-10 pt-10">
+                <!-- <img
                       src="assets/home-house.svg"
                       alt="Shoes"
                       class=" w-20 h-20 rounded-xl" /> -->
 
-                      <div class="w-24 h-24 p-4 rounded-[50%] border-2 border-primary">
-                          <img
-                          src="images/custom-software-development.png"
-                          alt="Shoes"
-                          class="" />
-                      </div>
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title text-primary ">Custom Software Development</h2>
-                    <p class="hover: text-black  w-full">
-                     
-                    Custom software development involves creating tailored applications to meet specific business needs, enhancing efficiency, scalability, and user experience.
-                    </p>
-                    <a href="https://en.wikipedia.org/wiki/Custom_software" target="_blank" class="btn btn-ghost text-lg  p-3 rounded-3xl">
+                <div
+                  class="w-24 h-24 p-4 rounded-[50%] border-2 hover:border-primary">
+                  <img
+                    src="images/custom-software-development.png"
+                    alt="Shoes"
+                    class />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title hover:text-primary ">Custom Software
+                  Development</h2>
+                <p class="w-full">
 
-                     
-                      
-                    <button class="flex items-center   rounded-3xl">
+                  Custom software development involves creating tailored
+                  applications to meet specific business needs, enhancing
+                  efficiency, scalability, and user experience.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Custom_software"
+                  target="_blank"
+                  class="btn btn-ghost text-lg  p-3 rounded-3xl">
 
-                      <h3 class="lg:text-lg text-h_color text-base font-bold">View Details</h3>
-                    
-                      <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
+                  <button class="flex items-center   rounded-3xl">
+
+                    <h3 class="lg:text-lg text-h_color text-base font-bold">View
+                      Details</h3>
+
+                    <!-- <div class="ml-1 bg-primary rounded-[50%] w-8 h-8">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-h_color translate-x-2 translate-y-2 ">
                           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                           </svg>
          
                       </div> -->
                   </button>
-                     </a> 
-                    
-                  </div>
+                </a>
+
               </div>
-           </div>
-
-         
-
-
-
-      </div>
-
-
-
-
-    </section>
-         
-
-  
-
-        <div class="link-conatiner w-8/12 mx-auto mt-10">
-            <div class=" text-center ">
-              
-              <h3 class=" text-2xl font-semibold">Let me help you with your projects.</h3>
-            
-              <a href="contact.html" target="_blank">
-                <button class="mt-4 bg-primary px-4 py-2 text-white">Contact Me</button>
-            
-              </a>
              
-            
-            </div> 
-      
-            
-            
+
+
+
+            </div>
+          </div>
 
         </div>
 
-       
+      </section>
 
-      
-     
+      <div class="link-conatiner w-8/12 mx-auto mt-10">
+        <div class=" text-center ">
+
+          <h3 class=" text-2xl font-semibold">Let me help you with your
+            projects.</h3>
+
+          <a href="contact.html" target="_blank">
+            <button class="mt-4 bg-primary px-4 py-2 text-white">Contact
+              Me</button>
+
+          </a>
+
+        </div>
+
+      </div>
+
     </main>
-    
-    
-     <!-- <hr class="border-gray-400  ">  -->
+
+    </div>
+
+    <!-- <hr class="border-gray-400  ">  -->
 
     <!-- <footer class="footer footer-center  p-10">
     
@@ -391,33 +337,31 @@
         </aside>
    </footer> -->
 
-   <!-- <footer class="footer footer-center p-8 bg-footer">
+    <!-- <footer class="footer footer-center p-8 bg-footer">
     <aside>
       <p class="text-justify font-light text-white text-base">© <span id="current-year"></span> Indrojit Mondal. All Rights Reserved.</p>
     
       </aside>
   </footer> -->
-  <footer class="footer footer-center bg-footer  p-8">
+    <footer class="footer footer-center bg-footer  p-8">
 
-    <aside>
-      <p class="font-light text-white text-base">© <span
-          id="current-year"></span> <a
-          href="https://indrojitmondal.github.io/Portfolio/"
-          target="_blank">Indrojit Mondal</a>. All Rights Reserved.</p>
+      <aside>
+        <p class="font-light text-white text-base">© <span
+            id="current-year"></span> <a
+            href="https://indrojitmondal.github.io/Portfolio/"
+            target="_blank">Indrojit Mondal</a>. All Rights Reserved.</p>
 
-    </aside>
+      </aside>
 
-  </footer>
+    </footer>
 
     <script>
       // JavaScript to dynamically set the current year
       document.getElementById("current-year").textContent = new Date().getFullYear();
   </script>
-  
-  
-  <script src="js/features.js"></script>
-  <script src="js/services.js"></script>
 
-  
-</body>
+    <script src="js/features.js"></script>
+    <script src="js/services.js"></script>
+
+  </body>
 </html>
