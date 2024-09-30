@@ -3,6 +3,8 @@ console.log('features.js')
  const idArray= ['lg-about','lg-projects','lg-services','lg-contact'];
 
 
+
+
     let i=0;
     for (const a of allAngkorTag) {
       
@@ -28,7 +30,7 @@ function showFeaturesInLargeScreenById(id){
 
 let projectsArray= document.querySelectorAll('#projects-container button');
 
-    
+
 
  
 for (const project of projectsArray) {
@@ -42,6 +44,9 @@ const projectsContainerArray = document.querySelectorAll('#allProjectsContainer 
 console.log('projects length: ',projectsContainerArray.length);
 // console.log(typeof projectsContainerArray[0].id);
 const check=1;
+
+
+
 function styleProjectSectionByID(id){
 
     console.log('typeof id :', typeof id);

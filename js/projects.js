@@ -7,7 +7,70 @@ console.log('projects.js Connected');
 // By clicking Projects.html 
 const cards = document.getElementsByClassName('card');
 console.log(cards.length);
+for (let i=0; i<cards.length; i++) {
 
+    const card=cards[i];
+    //console.log(card);
+    card.setAttribute('id',`web-card-${i+1}`);
+    const buttons = document.querySelectorAll(`#web-card-${i+1} .card-actions button`);
+    // console.log(buttonContainer);
+     //console.log(buttons[1]);
+      
+     //
+    
+    
+     
+     card.addEventListener('mouseover', function (){
+
+        
+    
+
+        const resetButtons =document.querySelectorAll(`.card-actions button`);
+
+     resetButtons.forEach(element => {
+        element.classList.remove('bg-btn','text-white');
+     });
+       buttons[1].classList.add('bg-btn','text-white');
+       
+
+     })
+
+
+}
+
+
+ for(let i=0; i<cards.length; i++){
+   
+    console.log(cards[i]);
+    let index =i;
+    console.log(index);
+      const buttons = document.querySelectorAll(`#web-card-${index+1} .card-actions button`);
+      console.log(buttons.length);
+      buttons[0].addEventListener('mouseover', function(event){
+        //alert('ok?');
+
+        
+
+        event.stopImmediatePropagation();
+        buttons[1].classList.remove('bg-btn','text-white');
+        
+        buttons[0].classList.add('bg-btn','text-white');
+        // return;
+        // alert(buttons[0].classList);
+
+       });
+
+       buttons[1].addEventListener('mouseover', function(event){
+
+        event.stopImmediatePropagation();
+
+        buttons[0].classList.remove('bg-btn','text-white');
+        buttons[1].classList.add('bg-btn','text-white');
+
+       });
+ }
+
+  
 
 
 document.getElementById('web-application').addEventListener('click', function (event){
