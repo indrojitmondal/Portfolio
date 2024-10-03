@@ -32,6 +32,9 @@
 
             contact: '#F8F8F8',
             footer: '#292929',
+            about: '#F8F8F8',
+            hero: '#6C6857',
+            hero1: '#F1F0EF',
             
 
           },
@@ -50,105 +53,89 @@
       }
     }
     </script>
+
+       <!-- External CSS Link -->
+       <link rel="stylesheet" href="css/styles.css">
     
   </head>
   <body class="font-roboto bg-contact">
-    <header class="sticky top-0 z-50 bg-contact">
-      <div class=" flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-        <!-- left -->
-
+    <header class="sticky top-0 z-50 bg-about ">
+      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+        <!-- Left Section: Logo -->
         <div>
-          <a href="./index.html">
+          <a href="index.html">
 
-            <h3 class="text-primary text-center text-[30px] font-bold"> <i class="fa-solid fa-less-than"></i> <span class="text-black " > Indroji<i>t</i></span> <i class="fa-solid fa-greater-than"></i></h3>
-     
- 
-           <!-- <span class="text-xl text-black font-bold">Indrojit</span> <span
-             class="text-xl ">Mondal</span> -->
- 
-           </a>
-       </div>
+            <h3
+              class="text-primary text-center text-[24px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+              <!-- <i class="fa-solid fa-less-than"></i>  -->
+              <span class="text-black">
+                INDR<span class="text-primary">O</span>JIT
+              </span>
+              <!-- <i class="fa-solid fa-greater-than"></i> -->
+            </h3>
 
-        <!-- <a href="./index.html">
+          </a>
+        </div>
 
-          <span class="text-xl text-black font-bold">Indrojit</span> <span
-            class="text-xl ">Mondal</span>
-
-        </a> -->
-
-        <!-- Right -->
+        <!-- Right Section: Navigation for Desktop -->
         <div id="pc-nav-right-container"
-          class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
+          class="hidden  md:flex md:justify-around gap-7 text-md">
 
-          <!-- <a class="block" class="block" href="">Home</a> -->
-          <a id="lg-about" class="block hover:text-primary text-black"
-            href="index.html">About</a>
+          <a id="lg-home" class="block  nav-link  " href="index.html">HOME
+          </a>
+          <a id="lg-about" class=" block nav-link " href="about.html">ABOUT
+            
+          </a>
 
-          <a id="lg-projects" class="block hover:text-primary text-black  "
-            href="projects.html">Projects</a>
-          <a id="lg-services" class="block hover:text-primary text-black"
-            href="services.html">Services</a>
+          <a id="lg-projects" class="block nav-link  "
+            href="projects.html">PROJECTS</a>
+          <a id="lg-services" class="nav-link block "
+            href="services.html">SERVICES
 
-          <a id="lg-contact" class="block text-primary"
-            href="contact.html">Contact</a>
+          
 
+
+          </a>
+          <a id="lg-contact" class="relative block "
+            href="contact.html">CONTACT
+
+            <span
+            class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
+
+          </a>
         </div>
 
-        <div class="ml-2  md:hidden  relative">
-          <div
-            class="btn btn-ghost  border-1  border-gray-300 rounded-[50%] lg:hidden lg:bg-primary text-lg">
-
-            <i class="fa-solid fa-bars " id="bar"></i>
-            <i class="fa-solid fa-x hidden" id="cross"> </i>
-
+        <!-- Hamburger Menu for Mobile -->
+        <div class="ml-2 md:hidden">
+          <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+            <i class="fa-solid fa-bars text-primary" id="bar"></i>
+            <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
           </div>
-          <ul id="menuDropdown"
-            class=" hidden absolute right-0 bg-white rounded-box z-[1] mt-5 text-center space-y-4 w-40 p-2 shadow text-base lg:flex lg:flex-col gap-5">
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="index.html">About</a>
-            </li>
-            <li
-              class="hover:text-primary  transition-colors ease-in-out duration-300">
-              <a href="projects.html">Projects</a>
-            </li>
-            <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="services.html">Services</a>
-            </li>
-            <li
-              class="text-primary transition-colors ease-in-out duration-300">
-              <a href="#">Contact</a>
-            </li>
-
-          </ul>
         </div>
-
-        <!-- Script to toggle dropdown -->
-        <script>
-             
-             const bar = document.getElementById('bar');
-             const cross = document.getElementById('cross');
-             const menuDropdown = document.getElementById('menuDropdown');
-             bar.addEventListener('click', function (){
-               bar.classList.add('hidden');
-               menuDropdown.classList.remove('hidden');
-               cross.classList.remove('hidden');
-             })
-  
-             cross.addEventListener('click', function (){
-               cross.classList.add('hidden');
-               menuDropdown.classList.add('hidden');
-               bar.classList.remove('hidden');
-             })
-  
-          </script>
-
       </div>
 
       <hr class="border-gray-400">
-
     </header>
+
+     <!-- hero Section -->
+     <section class=" bg-hero bg-opacity-5 ">
+     
+    <div class="w-10/12 mx-auto text-center flex gap-8  pt-9 px-14 pb-11">
+      <img src="icon/contactme.svg" class="block w-40" alt="">
+      <div class="text-center">
+        <h1 class="text-lg font-medium pt-5"><span class="text-primary">CONTACT ME</span> </h1>
+        <p class="pt-2">
+          For any inquiries, collaborations, or just to say hello, feel free to contact me! I am always open to discussing new projects, creative ideas, or opportunities to be a part of your visions. Whether you have a question, need assistance with something, or are interested in working together, I would love to hear from you. Simply fill out the form below, and I will get back to you as soon as possible. <span class="text-primary"> <br> Let’s connect and explore the possibilities!</span>
+        </p>
+    
+      </div>
+ 
+    </div>
+    <hr class=" md:hidden border-gray-400"> 
+    
+     </section>
+
+
 
     <main class="w-10/12 mx-auto pt-8 pb-8">
 
@@ -242,8 +229,8 @@
               </div>
             </div>
 
-            <p class=" text-justify font-light text-black text-sm">Best way to
-              contact me is to <a
+            <p class=" text-justify font-light text-black text-sm">
+              The most effective way to get in touch with me is through <a
                 href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
                 target="_blank"
                 class="text-sm text-primary hover:underline">email</a>. I try to
@@ -265,7 +252,7 @@
 
             <input
             class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-            type="text" name id="company" placeholder="Company (Optional)"> 
+            type="text" name id="company" placeholder="Company"> 
 
 
            </div>

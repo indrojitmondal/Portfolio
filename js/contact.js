@@ -40,8 +40,8 @@ const message = document.getElementById('message');
  
 // showFeaturesInLargeScreenById(idArray[3]);
 console.log('Hi');
-showFeaturesInLargeScreenById(idArray[3]);
-console.log(idArray[3]);
+// showFeaturesInLargeScreenById(idArray[3]);
+// console.log(idArray[3]);
 
 const sendButton = document.getElementById('sendButton');
 
