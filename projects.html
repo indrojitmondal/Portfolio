@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
@@ -32,17 +33,17 @@
             light: '#82828A',
             projects:'#F8F8F8',
             footer:'#292929',
-            b1:'rgba(17, 17, 17, 0.1)',
+            b1:'rgba(10, 159, 218, .3)',
             hero: '#6C6857',
             hero1: '#F1F0EF',
             // btn:'rgba(181, 9, 172, 0.57)',
             // btn: '#b30086',
             //  btn:'#b509accf',
-             btn: '#b30086',
+             btn: 'rgba(10, 159, 218, .7)',
             // btn:'#ff00bf',
             // btn:'rgb(105, 34, 107)',
 
-             p1: 'rgba(181, 9, 172, .7)',
+             p1: 'rgba(10, 159, 218, .8)',
             
 
           },
@@ -125,10 +126,11 @@
 
       
 
-      <div class="w-10/12    mx-auto text-center pt-12 px-14 ">
+      <div class="w-10/12 mx-auto grid grid-cols-2 pt-20  px-14 ">
+        <h1></h1>
 
         
-        <h1 class="text-lg font-medium"><span class="text-primary">My</span> PROJECTS</h1>
+        <h1 class="text-lg font-medium text-primary text-center "><span class="">MY</span> PROJECTS</h1>
        
       </div>
       
@@ -136,37 +138,56 @@
 
     </section>
     
-
-    
-      <div class="sticky top-[70px]  z-[60] bg-hero1  pt-5 pb-9">
+  
+      <div class=" bg-hero sticky top-[70px]   z-[60] bg-hero1  ">
         <!-- <hr class="border-gray-400"> -->
-        
-        <div class="mt-3 flex flex-wrap justify-center gap-5 "
+
+        <div class="w-10/12 mx-auto grid  grid-cols-12">
+            
+          <div class="col-span-3">
+            <img src="icon/Group 4.png" class="h-28" alt="">
+         </div>
+          <!-- flex-wrap justify-center gap-5 -->
+
+         <div class="col-span-9">
+          <div class="mt-6  flex justify-between  "
           id="projects-container">
 
         
           
           <button
-            class="border-2 hover:bg-p1 hover:text-white  border-primary p-2  text-primary hover:shadow-lg"
+            class="border-2 hover:bg-p1 hover:text-white  border-primary p-2  text-primary "
             id="web-application">Web Application</button>
           <button
-            class="border-2 hover:bg-p1 hover:text-white  border-primary p-2   text-primary hover:shadow-lg"
+            class="border-2 hover:bg-p1 hover:text-white  border-primary p-2   text-primary "
             id="mobile-application">Mobile Application</button>
           <button
-            class="border-2  hover:bg-p1 hover:text-white border-primary p-2  text-primary hover:shadow-lg"
+            class="border-2  hover:bg-p1 hover:text-white border-primary p-2  text-primary "
             id="game-development">Game Development</button>
           <button
-            class="border-2  hover:bg-p1 hover:text-white border-primary p-2   text-primary hover:shadow-lg"
+            class="border-2  hover:bg-p1 hover:text-white border-primary p-2   text-primary "
             id="data-structures">Data Structures</button>
           <button
-            class="border-2 hover:bg-p1 hover:text-white border-primary p-2  text-primary hover:shadow-lg"
+            class="border-2 hover:bg-p1 hover:text-white border-primary p-2  text-primary "
             id="algorithms">Algorithms</button>
           <button
-            class="border-2  hover:bg-p1 hover:text-white border-primary  p-2  text-white bg-primary hover:shadow-md"
+            class="border-2  hover:bg-p1 hover:text-white border-primary  p-2  text-white bg-primary "
             id="all">ALL</button>
   
+         </div> 
          </div>
+         
+
+        </div>
+
+       
+
       </div>  
+    
+       
+     
+    
+    
     
 
     
@@ -180,7 +201,7 @@
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
             <div
-              class="card card-compact p-4 hover:bg-hero1  border border-black  hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4 hover:bg-hero1  border border-b1  hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/1.png"
@@ -225,7 +246,7 @@
             </div>
 
             <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -271,7 +292,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary  hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/3.png"
@@ -320,7 +341,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary   hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/4.png"
@@ -371,7 +392,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary  hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/5.png"
@@ -417,7 +438,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary   hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/6.png"
@@ -470,7 +491,7 @@
             class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
             <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -523,8 +544,7 @@
           <div id="game-development-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-            class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/2.png"
@@ -567,7 +587,7 @@
 
               </div>
             </div>
-           </div>
+            </div>
 
 
           </div>
@@ -576,8 +596,7 @@
           <div id="data-structures-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -629,8 +648,7 @@
           <div id="algorithms-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-            class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/2.png"
@@ -673,7 +691,7 @@
 
               </div>
             </div>
-          </div>
+            </div>
 
 
           </div>
