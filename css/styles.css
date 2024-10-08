@@ -1,3 +1,4 @@
+
 /* Style for the navigation links */
 .nav-link {
     position: relative; /* Needed for positioning the underline */
@@ -10,7 +11,7 @@
     display: block; /* Make it a block element */
     height: 2px; /* Thickness of the underline */
     width: 0; /* Start with no width */
-    background-color: #B509AC; /* Use your primary color */
+    background-color: #0A9FDA; /* Use your primary color */
     transition: width 0.3s ease; /* Smooth transition effect */
     position: absolute; /* Position it relative to the link */
     left: 0; /* Align to the left */
@@ -23,4 +24,3 @@
 }
 
 /* Example for primary color variable */
-
