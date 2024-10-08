@@ -117,11 +117,15 @@
     <ul id="menuDropdown"
             class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
             <li
-              class="hover:text-primary transition-colors ease-in-out duration-300">
-              <a href="index.html">About</a>
-            </li>
+              class="text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">Home</a>
+            </li> 
             <li
-              class="text-primary  transition-colors ease-in-out duration-300">
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="index.html">About</a>
+          </li> 
+            <li
+              class="hover:text-primary  transition-colors ease-in-out duration-300">
               <a href="projects.html">Projects</a>
             </li>
             <li
@@ -144,12 +148,12 @@
      <!-- hero Section -->
   <section class=" ">
      
-    <div class="w-10/12 mx-auto   py-12 px-14">
+    <div class="w-10/12 mx-auto  py-12 md:px-14">
      
-      <div class="flex items-center justify-between w-full text-center space-y-2">
+      <div class="grid items-center grid-cols-1 md:grid-cols-2 w-full text-center space-y-2">
         <!-- <h1>Indrojit Mondal</h1> -->
         
-        <div>
+        <div class="order-2 md:order-1">
         <h1 class="font-medium text-2xl  pt-4"> Indrojit Mondal </h1>
         <span class="text-primary">indro.cse.bu</span>@<span
            class="text-primary">gmail.com </span>
@@ -158,9 +162,9 @@
        <div class="flex  gap-3 justify-center pb-4  ">
          <button class="block bg-primary text-white px-2"> <a
              href="assests/Indrojit Mondal_Resume.pdf"
-             target="_blank">Resume </a> </button>
+             >Resume </a> </button>
          <button class="block bg-primary text-white px-2"><a
-             href="assests/Indrojit_MondalCV.pdf" target="_blank">CV </a>
+             href="assests/Indrojit_MondalCV.pdf" >CV </a>
          </button>
 
        </div>
@@ -209,8 +213,10 @@
 
        </div> 
         </div>
-
-        <img src="gif/sultan-alrefaei-programmer.gif" class="" alt="">
+         <div class="order-1 md:order-2">
+          <img src="gif/sultan-alrefaei-programmer.gif" class="" alt="">
+         </div>
+      
      
       
         
