@@ -13,7 +13,7 @@ const message = document.getElementById('message');
  input_container.addEventListener('click', function(event){
    let running=event.target;
    running.classList.remove('border-gray-300');
-   running.classList.add('border-black');
+   running.classList.add('border-p3');
    
    const childrenArray=input_container.children;
 //    console.log(running.getAttribute('id'));
