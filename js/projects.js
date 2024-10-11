@@ -1,5 +1,26 @@
 
 console.log('projects.js Connected');
+const projectsContainer = document.querySelectorAll('#projects-container button');
+console.log(projectsContainer);
+for (const p of projectsContainer) {
+  
+  p.classList.add('rounded-md');
+}
+const showSpinner = (status)=>{
+  const spinner = document.getElementById('spinner');
+  if(status){
+      spinner.classList.remove('hidden');
+  }
+  else{
+      spinner.classList.add('hidden');
+  }
+
+}
+ showSpinner(true);
+
+setTimeout( ()=>{
+  showSpinner(false);
+},2000);
  
 // showFeaturesInLargeScreenById(idArray[1]);
 // console.log(idArray[1]);
