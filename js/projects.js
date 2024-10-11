@@ -98,8 +98,15 @@ document.getElementById('web-application').addEventListener('click', function (e
     
     event.stopImmediatePropagation();
     styleProjectSectionByID('web-application');
+    showSpinner(true);
+
+    setTimeout( ()=>{
+      showSpinner(false);
+    },2000);
     // cardListener();
     // console.log(projectsContainerArray[0].id);
+    const projectsContainerArray = document.querySelectorAll('#allProjectsContainer > div');
+
     const id=projectsContainerArray[0].id;
     const cards = document.querySelectorAll(`#${id} > div`);
     

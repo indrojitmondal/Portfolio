@@ -41,6 +41,7 @@ for (const project of projectsArray) {
 }
 
 const projectsContainerArray = document.querySelectorAll('#allProjectsContainer > div');
+
 console.log('projects length: ',projectsContainerArray.length);
 // console.log(typeof projectsContainerArray[0].id);
 const check=1;
@@ -51,6 +52,12 @@ function styleProjectSectionByID(id){
 
     console.log('typeof id :', typeof id);
     console.log(id);
+
+    showSpinner(true);
+
+    setTimeout( ()=>{
+      showSpinner(false);
+    },2000);
     
    
   
@@ -69,6 +76,13 @@ function styleProjectSectionByID(id){
         
         
         if(item.id.includes(id)){
+
+            // setTimeout( ()=>{
+           
+            //     item.classList.remove('hidden');
+            //     cards.push(item.id);
+            //   },2000);
+
             item.classList.remove('hidden');
             cards.push(item.id);
 
