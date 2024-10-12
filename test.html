@@ -1,211 +1,1009 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects – Indrojit Mondal</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrojit Mondal | Programmer | Full Stack Developer</title>
+    <!-- Google font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icon/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- TailWindCss configuration -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    /* Custom opacity change for scroll */
-    .scroll-opacity {
-      transition: opacity 0.5s ease-in-out;
-      opacity: 1;
-    }
-    .scroll-opacity.opacity-low {
-      opacity: 0.3;
-    }
-  </style>
-</head>
-<body class="font-roboto bg-projects">
+    
+    <!-- fontAwesome configuration -->
+    <script src="https://kit.fontawesome.com/b5a83736f2.js"
+      crossorigin="anonymous"></script>
+    <!-- TailWindCss configuration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            ck: '#da373d',
+            primary: '#0A9FDA',
+            nav:'#7A7A7A',
+            header:'#FFFFFF',
+            light: '#82828A',
+            about: '#F8F8F8',
+            footer: '#292929',
+            hero: '#6C6857',
+            hero1: '#F1F0EF',
+            newBg:'#242E2C',
+            hello:'rgba(10, 159, 218, .8)',
+            p1:'rgba(10, 159, 218, .7)',
+            p2:'rgba(10, 159, 218, .8)',
+            p3:'rgba(10, 159, 218, .3)',
+            card:'#D1D0CE',
+            b1:'rgba(10, 159, 218, .3)',
+            
 
-  <header class="sticky top-0 z-50 bg-projects">
-    <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
-      <!-- Header content -->
-      <a href="./index.html">
-        <span class="text-2xl text-black font-bold">Indrojit</span>   
-        <span class="text-2xl ">Mondal</span>
-      </a>
-      <!-- Navigation -->
-      <div id="pc-nav-right-container" class="nav-right hidden md:flex md:justify-around gap-7 text-xl ">
-        <a id="lg-about" class="block hover:text-primary text-black" href="index.html">About</a>
-        <a id="lg-projects" class="block text-primary" href="projects.html">Projects</a>
-        <a id="lg-services" class="block hover:text-primary text-black" href="services.html">Services</a>
-        <a id="lg-contact" class="block hover:text-primary text-black" href="contact.html">Contact</a>
-      </div>
-    </div>
-    <hr class="border-gray-400">
-  </header>
+          },
+          fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif'],
+                    'roboto' : ['Roboto', 'sans-serif'],
+                   
+                },
 
-  <main class="w-11/12 md:w-10/12 mx-auto bg-transparent pt-8 bg-white">
-    <div id="scrollElement" class="scroll-opacity mt-11 mb-4 space-y-6">
-      <!-- Web Application Cards -->
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      <div id="web-application-container" class="grid grid-cols-3 gap-5">
-        <div class="card card-compact border border-b1 hover:shadow-xl">
-          <figure>
-            <img src="images/web-development/1.png" alt="Fitness Website" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Fitness (Responsive Website)</h2>
-            <ul class="flex gap-4">
-              <li>HTML [51.5%]</li>
-              <li>CSS [48.5%]</li>
-            </ul>
-            <div class="card-actions flex gap-4 items-center">
-              <a href="https://github.com/indrojitmondal/Fitness" target="_blank">
-                <i class="fa-solid fa-code text-2xl text-primary"></i>
-              </a>
-              <a href="https://indrojitmondal.github.io/Fitness/" target="_blank">
-                <i class="fa-solid fa-globe text-2xl text-primary"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Additional cards here -->
-      </div>
-      
-    </div>
-  </main>
-
-  <footer class="footer footer-center bg-footer p-8">
-    <aside>
-      <p class="text-justify font-light text-white text-base">© <span id="current-year"></span> Indrojit Mondal. All Rights Reserved.</p>
-    </aside>
-  </footer>
-
-  <script>
-    // Set the current year in the footer
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-
-    // Scroll event listener to change opacity
-    window.addEventListener('scroll', function() {
-      const scrollElement = document.getElementById('scrollElement');
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 100) {
-        scrollElement.classList.add('opacity-low');
-      } else {
-        scrollElement.classList.remove('opacity-low');
+        }
       }
-    });
-  </script>
-</body>
+    }
+    </script>
+
+
+
+  </head>
+  <body class="font-roboto bg-about">
+   
+    <header class="sticky top-0 z-50 bg-about ">
+        <div class="flex justify-between items-center w-11/12 lg:w-10/12 mx-auto pt-4 pb-4">
+            <!-- Left Section: Logo -->
+            <div class="">
+                <a href="index.html">
+
+                  <h3 class="text-primary text-center text-[22px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+                    <!-- <i class="fa-solid fa-less-than"></i>  -->
+                    <span class="text-primary"> 
+                      INDR<span class="text-primary">O@</span>JIT
+                    </span> 
+                    <!-- <i class="fa-solid fa-greater-than"></i> -->
+                </h3>
+               
+
+             
+                
+                  
+               
+                </a>
+                <!-- <img src="icon/running.png" class="w-8 h-8" alt=""> -->
+            </div>
+    
+            <!-- Right Section: Navigation for Desktop -->
+            <div id="pc-nav-right-container" class="hidden  md:flex md:justify-around gap-7 text-[15px]">
+                
+              <a id="lg-home" class="block  relative  " href="index.html">HOME
+                <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
+              </a>
+                <a id="lg-about" class=" block nav-link " href="about.html">ABOUT ME
+                  
+                </a>
+                
+                <a id="lg-projects" class="block nav-link  " href="projects.html">PROJECTS</a>
+                <a id="lg-services" class="nav-link block " href="services.html">SERVICES</a>
+                <a id="lg-blogs" class="nav-link block " href="blog.html">BLOGS</a>
+                <a id="lg-contact" class="nav-link block " href="contact.html">CONTACT ME</a>
+            </div>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <div class="ml-2 md:hidden">
+                <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+                    <i class="fa-solid fa-bars text-primary" id="bar"></i>
+                    <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- <hr class="border-gray-400"> -->
+    </header>
+
+     <!-- For mobile devices -->
+  <section class="w-11/12 lg:w-10/12 mx-auto md:hidden">
+    <ul id="menuDropdown"
+            class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li
+              class="text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">Home</a>
+            </li> 
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="about.html">About</a>
+          </li> 
+            <li
+              class="hover:text-primary  transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="blogs.html">Blogs</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+  </section>
+
+     <!-- hero Section -->
+     <section class="w-11/12 lg:w-10/12 mx-auto  py-12 ">
+     
+      
+        
+        <div class="md:px-14">
+          <h1 class="font-bold pl-5 md:pl-0 text-2xl">Hello.... <span class="text-primary">I' M</span></h1>
+          <div class="grid items-center   grid-cls-1 md:grid-cols-2 w-full text-center space-y-2">
+            <!-- <h1>Indrojit Mondal</h1> -->
+            
+            <div class="order-2 md:order-1"o>
+              
+            <h1 class="font-medium text-3xl text-primary  pt-4"> Indrojit Mondal </h1>
+            
+            
+            <!-- <span class="">indro.cse.bu</span><span class="text-primary">@gmail.com </span>
+            -->
+           
+            <h3 class="py-3 font-medium text-xl">Programmer | Full Stack Developer  | MERN Developer</h3>
+             
+           <div class="flex  gap-3 justify-center pb-4  ">
+             <button class="block bg-primary text-lg text-white px-2"> <a
+                 href="assests/Indrojit Mondal_Resume.pdf" target="_blank"
+                 >Resume </a> </button>
+             <button class="block bg-primary text-lg text-white px-2"><a
+                 href="assests/Indrojit_MondalCV.pdf" target="_blank" >CV </a>
+             </button>
+    
+           </div>
+         
+           <div class="contactme">
+    
+    
+             <div class="flex justify-center  gap-3">
+               <a
+               href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+               title="Email"  class="block">
+               <i class="fa-solid fa-envelope text-5xl hover:text-primary"></i>
+             </a>
+    
+          
+    
+             <a href="https://github.com/indrojitmondal" title="Github"
+               class="block">
+               <i class="fa-brands fa-github text-5xl hover:text-primary"></i>
+             </a>
+    
+             <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+               title="Linkedin" class="block">
+               <i class="fa-brands fa-linkedin text-5xl hover:text-primary"></i>
+             </a>
+    
+             <a href="https://x.com/IndrojitMo95431" title="Twitter" class="block"
+               >
+               <i class="fa-brands fa-twitter text-5xl hover:text-primary"></i>
+             </a>
+    
+             <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube"
+               class="block" >
+               <i class="fa-brands fa-youtube text-5xl hover:text-primary"></i>
+             </a>
+             <div class>
+               <a href="https://wa.me/8801966796110" title="WhatsApp"
+                 class="block">
+                 <i class="fa-brands fa-whatsapp text-5xl hover:text-primary "></i>
+               </a>
+    
+             </div>
+             </div>
+       
+             
+    
+           </div> 
+           
+           <a href="#contact">
+            <button class="mt-4 font-bold text-lg border px-5 py-3 rounded-xl  border-primary hover:bg-primary bg-hello text-white">Say Hello</button>
+      
+  
+           </a>
+  
+        
+            </div>
+             <div class="order-1 md:order-2">
+              <img src="gif/sultan-alrefaei-programmer.gif" class=" object-cover w-full h-fit" alt="">
+             </div>
+             </div>
+    
+        </div>
+       
+      
+         
+         <a href="#work">
+         <button class="mt-5 hover:bg-primary hover:text-white text-lg border px-5 py-3 rounded-xl  text-primary font-bold border-primary">See My Work</button>
+        </a>
+        
+   
+      
+      <hr class=" md:hidden border-gray-400"> 
+      
+    </section>
+ 
+
+  <!-- Technologies I Work With -->
+   
+  <section class="w-11/12 lg:w-10/12 mx-auto ">
+
+    <h1 class="font-bold text-center text-2xl md:text-3xl py-5">Technologies I Work With</h1>
+
+    <div class="mt-6 grid hover:rotate-1 grid-cols-2 border p-4 border-gray-300 rounded-xl lg:grid-cols-4 items-center gap-5 ">
+
+      
+        <!-- <img src="icon/react-js.png" class="   " alt="reactJs"> -->
+        <img src="icon/react4.png" class="h-28   " alt="reactJs">
+      
+      
+        <img src="icon/nodejs.png" class="h-20   " alt="nodeJs">
+      
+      
+        <img src="icon/mongoDb2.png" class="h-16   " alt="MongoDB">
+      
+    
+        <img src="icon/nextJs.png" class="h-28  " alt="nextJs">
+      
+      
+      
+
+      
+        <img src="icon/expressJs.png" class="h-20 " alt="expressJs">
+      
+     
+        <img src="icon/git.png" class="h-32  " alt="git">
+     
+     
+        <img src="icon/rszC++.png" class="h-16   " alt="C++">
+      
+      
+     
+      
+        <img src="icon/java3.png" class="h-28 " alt="java">
+      
+
+    </div>
+
+  </section> 
+
+  <!-- What I Work On -->
+
+  <section id="work" class="mt-8 w-11/12 lg:w-10/12 mx-auto ">
+
+    <h1 class="font-bold text-center text-2xl md:text-3xl py-5">What I Work On</h1>
+
+    <div class="mt-6 grid grid-cols-1  md:grid-cols-2 p-4 border border-gray-300 rounded-xl  items-center gap-4 ">
+
+      
+       <!-- web -->
+       <a href="#webApp"> 
+        <div  class="hover:rotate-1  flex flex-col border border-gray-300 rounded-lg">
+          <h1 class="text-xl font-bold text-center text-primary p-3">Web Development</h1>
+          <img src="images/web-development/web.jpg" class="object-cover w-full" alt="">
+       
+        
+       
+        </div>
+       </a>
+      
+
+        <!-- ML -->
+        <div class="hover:rotate-1 flex  flex-col border border-gray-300 rounded-lg">
+          <h1 class="text-xl font-bold text-center text-primary p-3">Machine Learning </h1>
+          <img src="images/machine-learning/ml.png" class="object-cover w-full" alt="">
+       </div>
+
+        <!-- DevOps -->
+        <div class="hover:rotate-1 flex flex-col border border-gray-300 rounded-lg">
+          <h1 class="text-xl font-bold text-center text-primary p-3">DevOps Engineering</h1>
+          <img src="images/DevOps Engineering/devOps.png" class="object-cover w-full" alt="">
+       
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="hover:rotate-1 flex flex-col border border-gray-300 rounded-lg">
+          <h1 class="text-xl font-bold text-center text-primary p-3">Cyber Security</h1>
+          <img src="images/CyberSecurity/cs.png" class="object-cover w-full" alt="">
+       </div>
+      
+
+    </div>
+
+  </section> 
+
+
+  <!-- My Recent Projects -->
+
+  <section id="webApp" class="mt-8  w-11/12 lg:w-10/12 mx-auto ">
+
+    <h1 class="font-bold text-center text-2xl md:text-3xl py-5">My Recent Projects</h1>
+
+    
+    <div  class="mt-6 p-4 border border-b1 rounded-xl   ">
+
+      
+        <!-- web -->
+       <h1 class="text-xl font-bold text-center text-primary p-3">Web Development</h1>
+           
+           <div id="web-application-container"
+           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+ 
+           <div
+             class="card card-compact p-4 hover:bg-hero1  border border-b1  hover:text-primary hover:bg-hero1">
+             <figure>
+               <img
+                 src="images/web-development/1.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body ">
+               <h2 class="card-title mx-auto text-lg ">Fitness(Responsive Website)</h2>
+ 
+               <div class="mx-auto">
+                 <ul class="flex gap-4 text-black">
+ 
+                   <li>HTML [51.5%]</li>
+                   <li>CSS [48.5%]</li>
+                 </ul>
+               </div>
+ 
+               <div id="fitness" class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+              
+ 
+                   <button onclick='detailsModalShow("images/web-development/1.png")'
+                     class="border flex gap-2 items-center  border-primary px-4 py-2   text-primary hover:shadow-lg"
+                      >
+                     <i class="fa-solid fa-code  "></i>View Details</button>
+                 
+ 
+                 <a href="https://indrojitmondal.github.io/Fitness/"
+                   class="block "
+                   target="_blank">
+ 
+                   <button
+                     class="border hover:bg-p1 flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                       >
+                     <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+                 </a>
+ 
+               </div>
+             </div>
+           </div>
+ 
+           <div
+             class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary ">
+             <figure>
+               <img
+                 src="images/web-development/2.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body">
+               <h2 class="card-title card-title mx-auto  text-lg ">Hero Travel(Responsive
+                 Website)</h2>
+ 
+               <div class="mx-auto">
+                 <ul class="flex gap-4 text-black">
+                   <li>HTML [60.4%]</li>
+                   <li>CSS [39.6%]</li>
+                 </ul>
+               </div>
+ 
+               <div
+                 class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+                 <a href="https://github.com/indrojitmondal/Hero-Travel"
+                   class=" "
+                   target="_blank">
+ 
+                   <button 
+                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                     >
+                     <i class="fa-solid fa-code  "></i>Details</button>
+                 </a>
+ 
+                 <a href="https://indrojitmondal.github.io/Hero-Travel/"
+                   class=" "
+                   target="_blank">
+ 
+                   <button
+                     class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                     >
+                     <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+                 </a>
+ 
+               </div>
+             </div>
+           </div>
+ 
+           <div
+             class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  ">
+             <figure>
+               <img
+                 src="images/web-development/3.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body">
+               <h2 class="card-title mx-auto text-lg">Elevate English Academy(Responsive
+                 Website)</h2>
+ 
+               <div class="mx-auto">
+                 <ul class="flex gap-4 text-black">
+                   <li>HTML [76]</li>
+                   <li>CSS [19%]</li>
+                   <li>JavaScript [5%]</li>
+                 </ul>
+               </div>
+ 
+              
+ 
+               <div
+               class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+               <a href="https://github.com/indrojitmondal/Elevate-English-Academy"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-code  "></i>Github</button>
+               </a>
+ 
+               <a href="https://indrojitmondal.github.io/Elevate-English-Academy/"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+               </a>
+ 
+               </div>
+             </div>
+           </div>
+ 
+           <div
+             class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   ">
+             <figure>
+               <img
+                 src="images/web-development/4.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body">
+               <h2 class="card-title mx-auto">Rinterio(Responsive
+                 Website)</h2>
+ 
+               <div class="mx-auto">
+                 <ul class="flex gap-4 text-black">
+                   <li>HTML [44.4]</li>
+                   <li>TailwindCSS [55%]</li>
+                   <li>JavaScript [.6%]</li>
+                 </ul>
+               </div>
+ 
+             
+ 
+               <div
+               class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+               <a href="https://github.com/indrojitmondal/Rinterio"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-code  "></i>Details</button>
+               </a>
+ 
+               <a href="https://indrojitmondal.github.io/Rinterio/"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+               </a>
+ 
+               </div>
+ 
+ 
+             </div>
+           </div>
+ 
+           <div
+             class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  ">
+             <figure>
+               <img
+                 src="images/web-development/5.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body">
+               <h2 class="card-title mx-auto">Payoo-MFS(Responsive
+                 Website)</h2>
+ 
+               <div class="mx-auto">
+                 <ul class="flex gap-4 text-black">
+                   <li>HTML+TailwindCSS [60.8%]</li>
+                   <li>JavaScript [39.2%]</li>
+                 </ul>
+               </div>
+               
+               <div
+               class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+               <a href="https://github.com/indrojitmondal/Payoo-MFS"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-code  "></i>Details</button>
+               </a>
+ 
+               <a href="https://indrojitmondal.github.io/Payoo-MFS/"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+               </a>
+ 
+               </div>
+           </div>
+           </div>
+ 
+           <div
+             class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   ">
+             <figure>
+               <img
+                 src="images/web-development/6.png"
+                 alt="Shoes" />
+             </figure>
+             <div class="card-body">
+               <h2 class="card-title mx-auto">Donate Bangladesh(Responsive
+                 Website)</h2>
+ 
+               <div>
+                 <ul class="flex gap-4 text-black">
+                   <li>HTML+TailwindCSS [75.7%]</li>
+                   <li>JavaScript [24.3%]</li>
+                 </ul>
+               </div>
+ 
+ 
+               <div
+               class="card-actions mt-4 mx-auto flex gap-4 items-center  ">
+ 
+               <a href="https://github.com/indrojitmondal/Donate-Bangladesh"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
+                   >
+                   <i class="fa-solid fa-code  "></i>Details</button>
+               </a>
+ 
+               <a href="https://indrojitmondal.github.io/Donate-Bangladesh/"
+                 class=" "
+                 target="_blank">
+ 
+                 <button
+                   class="border flex gap-2 items-center  border-primary px-4  text-primary   py-2 hover:shadow-lg"
+                  >
+                   <i class="fa-solid fa-globe " title></i> LiveSite</button>
+ 
+               </a>
+ 
+               </div>
+ 
+             </div>
+           </div>
+ 
+         </div>
+        
+         
+ 
+         
+       
+ 
+     </div>
+    
+   
+
+
+  </section> 
+
+
+  <!-- Let's Start A New Project -->
+  <section id="contact" class="mt-10 w-11/12 lg:w-10/12 mx-auto ">
+    
+    <h1 class="font-bold text-center text-p2 mt-1  md:text-xl ">CONTACT ME</h1>
+
+    <h1 class="font-bold text-center  text-3xl md:text-3xl py-3">Let's Start A New Project</h1>
+     
+    <!-- formContainer -->
+    <div class="mt-2 up-conatainer grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="contact-description flex flex-col gap-8 ">
+
+        <div class="flex gap-4">
+          <!-- <i class="fa-solid fa-mobile block text-6xl hover:text-primary "></i>
+                  -->
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block hover:text-primar">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+
+          <img src="./images/mobile.png" class="w-12 h-14 hover:text-primary"
+            alt>
+
+          <div>
+            <h3 class="text-xl">Give me a call</h3>
+            <p>+880-1966796110 <br>
+              +880-1577147931
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 ">
+          <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+          <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+               -->
+          <img src="./images/mail.png" class="w-12 h-14 hover:text-primary"
+            alt>
+
+          <div>
+            <h3 class="text-xl">Send me an email</h3>
+            <p>indro.cse.bu@gmail.com<br>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 ">
+          <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+          <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+               -->
+          <img src="./images/location.png"
+            class="w-12 h-14 hover:text-primary" alt>
+
+          <div>
+            <h3 class="text-xl">Location</h3>
+            <p>Paikgacha Municipality 9280<br>
+              Khulna, Bangladesh
+            </p>
+          </div>
+        </div>
+
+        <div class="contact ">
+          <div class="pb-6 flex gap-3 lg:gap-5">
+            <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+              title="Email" target="_blank" class="block">
+              <i
+                class="fa-solid fa-envelope text-5xl lg:text-5xl hover:text-primary "></i>
+            </a>
+            <a href="https://github.com/indrojitmondal" title="Github" target="_blank"
+            class="block">
+            <i class="fa-brands fa-github text-5xl lg:text-5xl hover:text-primary"></i>
+           </a>
+
+            <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+              title="Linkedin" class="block" target="_blank">
+              <i
+                class="fa-brands fa-linkedin text-5xl lg:text-5xl hover:text-primary"></i>
+            </a>
+
+            <a href="https://x.com/IndrojitMo95431" title="Twitter"
+              class="block" target="_blank">
+              <i
+                class="fa-brands fa-twitter text-5xl lg:text-5xl hover:text-primary"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@indrojitmondal8996" title="YouTube" target="_blank"
+            class="block" >
+            <i class="fa-brands fa-youtube  text-5xl lg:text-5xl hover:text-primary"></i>
+          </a>
+
+            <div class>
+              <a href="https://wa.me/8801966796110" title="WhatsApp"
+                target="_blank" class="block">
+                <i
+                  class="fa-brands fa-whatsapp text-5xl lg:text-5xl hover:text-primary "></i>
+              </a>
+
+            </div>
+          </div>
+
+          <p class=" text-justify  ">
+            The best way to contact me is via <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+              target="_blank"
+              class="text-sm text-primary hover:underline">email</a>. I try to respond to every message.</p>
+
+        </div>
+
+      </div>
+
+      <form id="input-container" 
+        class="input-container flex flex-col gap-5">
+        
+         <div class="grid grid-cols-2 gap-4">
+          <div class="form-control ">
+            <input required
+            class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+            type="text" name id="name" placeholder="Your Name">
+           </div>
+  
+           <div class="form-control ">
+            <input required
+            class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+            type="email" name="email" id="email" placeholder="Your Email">
+  
+          </div>
+  
+          <div class="form-control ">
+            
+            <input
+            class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+            type="phone" name id="phone" placeholder="Your Phone">
+  
+          </div>
+           
+           <div class="form-control ">
+  
+            <input
+            class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+            type="text" name id="company" placeholder="Your Subject"> 
+  
+  
+           </div>
+         </div>
+
+       
+        <div class="form-control ">
+          <textarea required name id="message" cols="30"
+          class="border border-gray-300 outline-none p-4  text-black"
+          rows="5" placeholder="Start Writing Message here"></textarea>
+         </div>
+       
+         <div class="form-control">
+          <button
+          class="block w-2/4  h-14 md:h-16 border  hover:border-primary   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2    md:text-xl "
+          type="submit" name="submit" id="sendButton"> SUBMIT NOW
+        </button>
+
+         </div>
+        
+
+        <p id="formConfirmation"
+          class="hidden px-4 py-2 border border-green-500">Thank you for your
+          message. It has been sent.</p>
+
+      </form>
+    </div>    
+
+
+    <dialog id="my_modal" class="modal modal-middle">
+      <div class="modal-box w-80">
+           <img class="mx-auto" src="icon/icons8-handshake-48.png" alt="">
+          <h2 class="text-2xl font-bold text-center">Conformation!</h3>
+
+          <div class="text-center ">
+              <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
+                  src="assets/coin.png" alt> -->
+              <p class>Thank you for your
+                message. It has been sent.</p>
+              <h3
+                  class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
+
+              <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+
+                  <button class="btn text-center">Close</button>
+
+              </form>
+          </div>
+
+      </div>
+  </dialog>
+  
+  </section> 
+
+    
+    
+   
+ 
+    <!-- <hr class="border-gray-400  "> -->
+
+
+    <dialog id="myModal" class="top-16 modal modal-middle">
+      
+      <div class="modal-box ">
+
+        <div class="flex justify-between   items-center">
+          <h1 class="text-xl">Fitness(Responsive Website)</h1>
+          
+           
+            <form method="dialog">
+                  
+                    <button class="btn text-center outline-none">close</button>
+
+            </form>
+
+            
+
+        </div>
+
+        
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+        <img src="images/web-development/1.png" alt="">
+
+
+        <h2 class="text-3xl font-extrabold text-center">Congrates</h3>
+
+      
+
+      </div>
+    </dialog>
+
+
+    <footer class="mt-10 footer footer-center bg-footer  p-8">
+
+      <aside>
+        <p class="font-light text-white text-base">© <span
+            id="current-year"></span> <a
+            href="https://indrojitmondal.github.io/Portfolio/"
+            target="_blank">Indrojit Mondal</a>. All Rights Reserved.</p>
+
+      </aside>
+    </footer>
+
+    <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="js/features.js"></script>
+    <script src="./js/contact.js"></script>
+    <!-- Script to Toggle Dropdown -->
+    <script>
+      const bar = document.getElementById('bar');
+      const cross = document.getElementById('cross');
+      const menuDropdown = document.getElementById('menuDropdown');
+      
+      bar.addEventListener('click', function () {
+          // bar.classList.toggle('hidden');
+          menuDropdown.classList.toggle('hidden');
+          // cross.classList.remove('hidden');
+      });
+
+      // cross.addEventListener('click', function () {
+      //     cross.classList.add('hidden');
+      //     menuDropdown.classList.add('hidden');
+      //     bar.classList.remove('hidden');
+      // });
+    </script>
+
+     <!-- Emailjs setup starts -->
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+
+   <script type="text/javascript">
+   (function(){
+     emailjs.init({
+       publicKey: "oGCU2mz3HIGdXP8Wo",
+     });
+  })();
+
+  document.getElementById('input-container').addEventListener('submit', function(event) {
+   event.preventDefault(); // Prevent the form from submitting
+
+   sendEmail();
+});
+
+function sendEmail() {
+
+   emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+       from_name: document.getElementById('name').value,
+       from_company: document.getElementById('company').value,
+       from_email: document.getElementById('email').value,
+       from_phone: document.getElementById('phone').value,
+       message: document.getElementById('message').value
+   }).then(function(response) {
+
+     // alert("Email sent successfully!");
+       // Show modal on successful email send
+       document.getElementById('my_modal').showModal();
+       
+
+       // Clear the form fields
+       document.getElementById('name').value = '';
+       document.getElementById('email').value = '';
+       document.getElementById('message').value = '';
+       document.getElementById('phone').value = '';
+       document.getElementById('company').value = '';
+
+       // Optionally alert the user
+    
+   }, function(error) {
+       alert("Failed to send email.");
+   });
+}
+
+
+   </script>
+
+   <!-- Emailjs setup ends -->
+
+   <script>
+     const detailsModalShow=(src)=>{
+        // alert("clicked details");
+        myModal.show();
+        console.log(src);
+     }
+   </script>
+   
+  </body>
 </html>

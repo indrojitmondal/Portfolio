@@ -6,6 +6,12 @@ for (const p of projectsContainer) {
   
   p.classList.add('rounded-md');
 }
+const allButtons = document.querySelectorAll('#allProjectsContainer button');
+for (const btn of allButtons) {
+   
+  btn.classList.add('rounded-md','outline-none');
+  
+}
 const showSpinner = (status)=>{
   const spinner = document.getElementById('spinner');
   if(status){
@@ -98,11 +104,11 @@ document.getElementById('web-application').addEventListener('click', function (e
     
     event.stopImmediatePropagation();
     styleProjectSectionByID('web-application');
-    showSpinner(true);
+    // showSpinner(true);
 
-    setTimeout( ()=>{
-      showSpinner(false);
-    },2000);
+    // setTimeout( ()=>{
+    //   showSpinner(false);
+    // },2000);
     // cardListener();
     // console.log(projectsContainerArray[0].id);
     const projectsContainerArray = document.querySelectorAll('#allProjectsContainer > div');
