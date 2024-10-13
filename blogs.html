@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrojit Mondal | Programmer | Full Stack Developer</title>
+    <!-- Google font configuration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icon/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    
+    <!-- fontAwesome configuration -->
+    <script src="https://kit.fontawesome.com/b5a83736f2.js"
+      crossorigin="anonymous"></script>
+    <!-- TailWindCss configuration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            ck: '#da373d',
+            primary: '#0A9FDA',
+            nav:'#7A7A7A',
+            header:'#FFFFFF',
+            light: '#82828A',
+            about: '#F8F8F8',
+            footer: '#292929',
+            hero: '#6C6857',
+            hero1: '#F1F0EF',
+            newBg:'#242E2C',
+            hello:'rgba(10, 159, 218, .8)',
+            p1:'rgba(10, 159, 218, .7)',
+            p2:'rgba(10, 159, 218, .8)',
+            p3:'rgba(10, 159, 218, .3)',
+            card:'#D1D0CE',
+            b1:'rgba(10, 159, 218, .3)',
+            
+
+          },
+          fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"',],
+                    'manrope' : ['Manrope', 'sans-serif'],
+                    'roboto' : ['Roboto', 'sans-serif'],
+                   
+                },
+
+        }
+      }
+    }
+    </script>
+
+
+
+  </head>
+  <body class="font-roboto bg-about">
+   
+    <header class="sticky top-0 z-50 bg-about ">
+        <div class="flex justify-between items-center w-11/12 lg:w-10/12 mx-auto pt-4 pb-4">
+            <!-- Left Section: Logo -->
+            <div class="">
+                <a href="index.html">
+
+                  <h3 class="text-primary text-center text-[22px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+                    <!-- <i class="fa-solid fa-less-than"></i>  -->
+                    <span class="text-primary"> 
+                      INDR<span class="text-primary">O@</span>JIT
+                    </span> 
+                    <!-- <i class="fa-solid fa-greater-than"></i> -->
+                </h3>
+               
+
+             
+                
+                  
+               
+                </a>
+                <!-- <img src="icon/running.png" class="w-8 h-8" alt=""> -->
+            </div>
+    
+            <!-- Right Section: Navigation for Desktop -->
+            <div id="pc-nav-right-container" class="hidden  md:flex md:justify-around gap-7 text-[15px]">
+                
+              <a id="lg-home" class="block  nav-link  " href="index.html">HOME
+               
+              </a>
+                <a id="lg-about" class=" block nav-link " href="about.html">ABOUT ME
+                  
+                </a>
+                
+                <a id="lg-projects" class="block nav-link  " href="projects.html">PROJECTS</a>
+                <a id="lg-services" class="nav-link block " href="services.html">SERVICES</a>
+                <a id="lg-blogs" class="relative block " href="blog.html">BLOGS
+
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
+                </a>
+                <a id="lg-contact" class="nav-link block " href="contact.html">CONTACT ME</a>
+            </div>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <div class="ml-2 md:hidden">
+                <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+                    <i class="fa-solid fa-bars text-primary" id="bar"></i>
+                    <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- <hr class="border-gray-400"> -->
+    </header>
+
+     <!-- For mobile devices -->
+  <section class="w-11/12 lg:w-10/12 mx-auto md:hidden">
+    <ul id="menuDropdown"
+            class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li
+              class="text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">Home</a>
+            </li> 
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="about.html">About</a>
+          </li> 
+            <li
+              class="hover:text-primary  transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="blogs.html">Blogs</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+  </section>
+    
+      <!-- hero Section -->
+      <section class="  ">
+
+        <div class="w-10/12 mx-auto text-center flex gap-8   pt-9  pb-9">
+          <img src="images/myBlogs.jpg" class="block h-40 " alt>
+          <div class="text-center">
+            <h1 class="text-lg font-bold text-primary pt-5"><span
+                class="text-primary">MY</span> BLOGS</h1>
+            <p class=" text-lg pt-2">Welcome to my Blogs. Here I have shared some important development questions that might be helpful for developers. 
+              </span></p>
+  
+          </div>
+  
+        </div>
+        <hr class=" md:hidden border-gray-400">
+  
+      </section>
+
+      <menu
+      class="lg:pt-10 lg:pb-10 pt-8 pb-8  bg-white lg:text-xl font-medium">
+
+      <section class="w-10/12 mx-auto">
+        <div class="flex gap-1 items-center ">
+          <h3 class="text-xl font-bold">Important FAQ
+
+          </h3>
+          <!-- <i class="fa-regular fa-circle-question text-xl font-bold"></i> -->
+          <!-- <i class="fa-solid fa-question text-xl font-bold"></i>
+                      -->
+          <i class="fa-solid fa-comment-medical"></i>
+
+          <!-- <img class="w-8 text-xl font-bold" src="assets/question.png" alt="">
+                      <img class="w-8" src="assets/question.png" alt=""> -->
+
+        </div>
+
+      </section>
+      </menu>
+
+      <main class="w-10/12 mx-auto space-y-8 pt-5 ">
+
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document
+            Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p class="text-lg">DOM is one kind of component of HTML documents that can modify
+              dynamically using programming language like JavaScript.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">How do you select an
+            element from the DOM?</div>
+          <div class="collapse-content">
+            <p class="text-lg">I select an element in different ways. If I need only for a
+              specific document then I use getElementById.And If I need an array
+              of documents then I use querySelectorALL(). Sometime I use
+              getElementsByClassName to modify some similar documents.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">What is event delegation
+            in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p class="text-lg">Event delegation in the context of the DOM can be defined that it
+              is one kind of root event listener by whom its child node can be
+              event just by using event.target. Its an optimization solution of
+              large code or more event listener.</p>
+          </div>
+        </div>
+  
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate an
+            element's attributes and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p class="text-lg">I manipulate an element's attributes using
+              setAttribute('attributeName','value') and
+              removeAttribute('attributeName'). And I style the DOM using 'style'
+              keyword and properties like 'color', just for example
+              dom.style.color='green'.</p>
+          </div>
+        </div>
+  
+      </main>
+ 
+
+
+
+
+
+
+
+
+
+
+    
+    
+   
+ 
+    <!-- <hr class="border-gray-400  "> -->
+
+    <footer class="mt-10 footer footer-center bg-footer  p-8">
+
+      <aside>
+        <p class="font-light text-white text-base">© <span
+            id="current-year"></span> <a
+            href="https://indrojitmondal.github.io/Portfolio/"
+            target="_blank">Indrojit Mondal</a>. All Rights Reserved.</p>
+
+      </aside>
+    </footer>
+
+    <script>
+      // JavaScript to dynamically set the current year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="js/features.js"></script>
+    <script src="./js/contact.js"></script>
+    <!-- Script to Toggle Dropdown -->
+    <script>
+      const bar = document.getElementById('bar');
+      const cross = document.getElementById('cross');
+      const menuDropdown = document.getElementById('menuDropdown');
+      
+      bar.addEventListener('click', function () {
+          // bar.classList.toggle('hidden');
+          menuDropdown.classList.toggle('hidden');
+          // cross.classList.remove('hidden');
+      });
+
+      // cross.addEventListener('click', function () {
+      //     cross.classList.add('hidden');
+      //     menuDropdown.classList.add('hidden');
+      //     bar.classList.remove('hidden');
+      // });
+    </script>
+
+     <!-- Emailjs setup starts -->
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+
+   <script type="text/javascript">
+   (function(){
+     emailjs.init({
+       publicKey: "oGCU2mz3HIGdXP8Wo",
+     });
+  })();
+
+  document.getElementById('input-container').addEventListener('submit', function(event) {
+   event.preventDefault(); // Prevent the form from submitting
+
+   sendEmail();
+});
+
+function sendEmail() {
+
+   emailjs.send("service_wxrhj2d", "template_rtx9u1s", {
+       from_name: document.getElementById('name').value,
+       from_company: document.getElementById('company').value,
+       from_email: document.getElementById('email').value,
+       from_phone: document.getElementById('phone').value,
+       message: document.getElementById('message').value
+   }).then(function(response) {
+
+     // alert("Email sent successfully!");
+       // Show modal on successful email send
+       document.getElementById('my_modal').showModal();
+       
+
+       // Clear the form fields
+       document.getElementById('name').value = '';
+       document.getElementById('email').value = '';
+       document.getElementById('message').value = '';
+       document.getElementById('phone').value = '';
+       document.getElementById('company').value = '';
+
+       // Optionally alert the user
+    
+   }, function(error) {
+       alert("Failed to send email.");
+   });
+}
+
+
+   </script>
+
+   <!-- Emailjs setup ends -->
+   
+  </body>
+</html>
