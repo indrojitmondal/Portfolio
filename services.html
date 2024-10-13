@@ -11,10 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet">
 
-      <!-- External CSS Link -->
-      <link rel="stylesheet" href="css/styles.css">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="icon/favicon_resized.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon/favicon2.png"
+      type="image/x-icon">
     <!-- fontawesome configuration -->
     <script src="https://kit.fontawesome.com/b5a83736f2.js"
       crossorigin="anonymous"></script>
@@ -22,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <script>
     tailwind.config = {
       theme: {
@@ -29,7 +31,7 @@
           colors: {
             clifford: '#da373d',
             ck: '#da373d',
-            primary: '#B509AC',
+            primary: '#0A9FDA',
             light: '#82828A',
             nav: '#FFFFFF',
             services: '#F8F8F8',
@@ -39,6 +41,8 @@
             footer: '#292929',
             hero: '#6C6857',
             hero1: '#F1F0EF',
+            projects:'#F8F8F8',
+            p2:'rgba(10, 159, 218, .8)',
             
             
             
@@ -60,22 +64,21 @@
     }
     </script>
 
-   
-
   </head>
   <body class="font-roboto bg-services">
 
-    <header class="sticky top-0 z-50 bg-about ">
-      <div class="flex justify-between items-center w-10/12 mx-auto pt-4 pb-4">
+    <header class="sticky top-0 z-50 bg-projects ">
+      <div
+        class="flex justify-between items-center w-11/12 md:w-10/12 mx-auto pt-4 pb-4">
         <!-- Left Section: Logo -->
         <div>
           <a href="index.html">
 
             <h3
-              class="text-primary text-center text-[24px] md:text-[25px] font-extrabold tracking-wide flex items-center">
+              class="text-primary text-center text-[22px] md:text-[25px] font-extrabold tracking-wide flex items-center">
               <!-- <i class="fa-solid fa-less-than"></i>  -->
-              <span class="text-black">
-                INDR<span class="text-primary">O</span>JIT@
+              <span class="text-primary">
+                INDR<span class>O@</span>JIT
               </span>
               <!-- <i class="fa-solid fa-greater-than"></i> -->
             </h3>
@@ -84,27 +87,31 @@
         </div>
 
         <!-- Right Section: Navigation for Desktop -->
-        <div id="pc-nav-right-container"
-          class="hidden  md:flex md:justify-around gap-7 text-md">
+        <div id class="hidden  md:flex md:justify-around gap-7 text-[15px]">
 
-          <a id="lg-home" class="block  nav-link  " href="index.html">HOME
+          <a id="lg-home" class="block nav-link  " href="index.html">HOME
+
           </a>
-          <a id="lg-about" class=" block nav-link " href="about.html">ABOUT
-            
+          <a id class=" block nav-link " href="about.html">ABOUT ME
+
           </a>
 
           <a id="lg-projects" class="block nav-link  "
-            href="projects.html">PROJECTS</a>
-          <a id="lg-services" class="relative block "
+            href="projects.html">PROJECTS
+
+          </a>
+          <a id="lg-services" class=" block relative "
             href="services.html">SERVICES
 
             <span
               class="absolute left-0 bottom-0 w-full h-[2px] bg-primary"></span>
 
-
           </a>
+
+          <a id="lg-services" class="nav-link block "
+            href="blogs.html">BLOGS</a>
           <a id="lg-contact" class="nav-link block "
-            href="contact.html">CONTACT</a>
+            href="contact.html">CONTACT ME</a>
         </div>
 
         <!-- Hamburger Menu for Mobile -->
@@ -116,415 +123,348 @@
         </div>
       </div>
 
-      <hr class="border-gray-400">
+      <!-- <hr class="border-gray-400"> -->
     </header>
 
-     <!-- hero Section -->
-     <section class=" bg-hero bg-opacity-5 ">
-     
-    <div class="w-10/12 mx-auto text-center flex gap-8  pt-9 px-14 pb-9">
-      <img src="icon/Layer_1.png" class="block" alt="">
-      <div class="text-center">
-        <h1 class="text-lg font-medium pt-5"><span class="text-primary">My</span> SERVICES</h1>
-        <p class=" pt-2">As a dedicated web developer and problem solver, I offer a range of services tailored to meet your digital needs. From creating responsive and visually appealing websites using modern front-end technologies to solving complex <span class="text-primary">programming challenges, I am committed to delivering high-quality solutions. </span></p>
-    
+    <!-- hero Section -->
+    <section class="  ">
+
+      <div class="w-10/12 mx-auto text-center flex gap-8   pt-9 px-14 pb-9">
+        <img src="icon/Layer_1.png" class="block h-40 " alt>
+        <div class="text-center">
+          <h1 class="text-lg font-bold text-primary pt-5"><span
+              class="text-primary">MY</span> SERVICES</h1>
+          <p class=" text-lg pt-2">As a dedicated web developer and problem solver, I
+            offer a range of services tailored to meet your digital needs. From
+            creating responsive and visually appealing websites using modern
+            front-end technologies to solving complex <span class>programming
+              challenges, I am committed to delivering high-quality solutions.
+            </span></p>
+
+        </div>
+
       </div>
- 
-    </div>
-    <hr class=" md:hidden border-gray-400"> 
-    
-     </section>
+      <hr class=" md:hidden border-gray-400">
+
+    </section>
 
     <div class="bg-white">
 
- 
-    <main class="w-11/12 md:w-10/12  mx-auto pt-6 pb-8 bg-white">
+      <main class="w-11/12 md:w-10/12  mx-auto pt-6 pb-8 bg-white">
 
-      <section class="bg-gradient-to-b from-portfolio to-about">
-
-        <div class=" w-11/12 mx-auto mt-3  md:mt-5 ">
-
-         
+        <div class="w-11/12 mx-auto mt-3  md:mt-5 ">
 
           <!-- card1 container-->
 
-        
-
           <div class=" mt-4  ">
 
-            <!-- left -->
-            <div class="flex flex-col justify-between space-y-4 ">
-              <div class="w-1/2">
-                <h1 class="text-primary text-lg">Web Application Development</h1>
-                    <p class="">Web app development involves creating interactive apps for browsers using HTML, CSS, JS for the front end, and back-end tech like Node.js. It's key for modern businesses.</p>
-                    
+            <!-- heading -->
+            <div class>
+              <div class="w-10/12 mx-auto">
+                <h1 class="  text-center font-bold text-2xl">Web Application
+                  Development</h1>
+                <p class="text-center text-lg py-2">Web app development involves
+                  creating interactive apps for browsers using HTML, CSS, JS for
+                  the front end, and back-end tech like Node.js. It's key for
+                  modern businesses.</p>
+
               </div>
-                
-                 <div class="pl-20">
-
-                   <div class="frontEnd">
-                    <h3 class="text-primary">Frontend Development</h3>
-                    <div class="pl-10 flex justify-between"> 
-                       <div class=" ">
-                       
-                        <h2>✓ I develop the user interface.</h2>
-                        <h2>✓ Web page development.</h2>
-                        <h2>✓ Understanding of HTML, CSS, and JavaScript.</h2>
-                        <h2>✓ Experience with JavaScript frameworks React.</h2>
-                        <h2>✓ Familiarity with browser developer tools.</h2>
-                        <h2>✓ Understanding of responsive design principles.</h2>
-                        <h2>✓ Experience with version control systems such as Git</h2>
-                        </div>
-
-                        <div class="flex gap-4 h-24">
-                         
-                            <img class="w-[95px]" src="icon/html.png" alt="">
-                            <img class="w-[95px]" src="icon/css.png" alt="">
-                            <img class="w-[95px]" src="icon/react.png" alt="">
-                        </div>
-                        
-
-                    </div>
-                   </div>
-                 
-                    
- 
-                  <div class="backEnd pt-5">
-
-                    <h3 class="text-primary">Backend Development</h3>
-                    <div class="pl-10 flex justify-between">
-                      <div class=" ">
-                       
-                        <h2>✓ Create Server From scratch with NodeJS and ExpressJS.</h2>
-                        <h2>✓ With In Database Management system - MongoDB.</h2>
-                        <h2>✓ Understanding of RESTful API design principles.</h2>
-                        <h2>✓ Knowledge of server-side caching,and performance.</h2>
-                        <h2>✓ MongoDB CRUD Operations.</h2>
-                        <h2>✓ Enable Data security With JWT(JSON Web Token).</h2>
-                        <h2>✓ Work with Environment Variables.</h2>
-                        <h2>✓ NodeJS login authentication.</h2>
-                      </div>
-
-                      <div class="flex gap-4 h-24">
-                         
-                        <img class="w-[95px]" src="icon/js.png" alt="">
-                        <img class="w-[95px]" src="icon/nodejs.png" alt="">
-                        <img class="w-[95px]" src="icon/mongodb.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                
-                  
-                  <div class="UI/UX">
-                    <h3 class="text-primary">UI/UX Design</h3>
-                    <div class="pl-10 flex justify-between">
-                      <div class=" ">
-                       
-                        <h2>✓ Familiarity with design software such as Figma, Pixso, Abode XD</h2>
-                        <h2>✓ Understanding of user-centered design principles and user experience (UX) design</h2>
-                        <h2>✓ Understanding of responsive design principles</h2>
-                        <h2>✓ Knowledge of typography, color theory, and layout principles</h2>
-                        <h2>✓ Experience with user research and testing methodologies.</h2>
-                        <h2>✓ Strong attention to detail and ability to iterate on designs based on feedback.</h2>
-                       
-                      </div>
-                      <div class="flex gap-4 h-24">
-                         
-                        <img class="w-[95px]" src="icon/figma.png" alt="">
-                        <img class="w-[95px]" src="icon/Group 3.png" alt="">
-                        <img class="w-[95px]" src="icon/pixso.jpeg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                 
-
-
-
-                </div>
-              
-                 
-
             </div>
-                
-            
-
-        
-
-           
-          </div>
-
-          <!-- card2 -->
-          <div class="mt-10">
-            <h1 class="text-primary text-lg">Mobile Application Development</h1>
-              <p class="">Web app development involves creating interactive apps for browsers using HTML, CSS, JS for the front end, and back-end tech like Node.js. It's key for modern businesses.</p>
-              
-          </div>
-
-          <div class="grid grid-cols-1 mt-4 gap-5 md:grid-cols-2 items-center ">
-
-           
-                
-            <!-- Right -->
-
-            <div class="">
-                 <img class="object-cover  " src="images/mobileappdevelopment.jpg" alt="">
-            </div>
-
-             <!-- left -->
-             <div class="flex flex-col justify-between space-y-4 ">
-              
-               <div class="pl-20">
-
-              
-                <h3 class="text-primary">Frontend Development</h3>
-                <div class="pl-10"> 
-                   <div class=" ">
-                   
-                    <h2>✓ I develop the user interface.</h2>
-                    <h2>✓ Web page development.</h2>
-                    <h2>✓ Understanding of HTML, CSS, and JavaScript.</h2>
-                    <h2>✓ Experience with JavaScript frameworks React.</h2>
-                    <h2>✓ Familiarity with browser developer tools</h2>
-                    <h2>✓ Understanding of responsive design principles.</h2>
-                    <h2>✓ Experience with version control systems such as Git</h2>
-                  </div>
-                </div>
-                  
-
-                
-                <h3 class="text-primary">Backend Development</h3>
-                <div class="pl-10">
-                  <div class=" ">
-                   
-                    <h2>✓ Create Server From scratch with NodeJS and ExpressJS.</h2>
-                    <h2>✓ With In Database Management system - MongoDB.</h2>
-                    <h2>✓ Understanding of RESTful API design principles.</h2>
-                    <h2>✓ Knowledge of server-side caching,and performance.</h2>
-                    <h2>✓ MongoDB CRUD Operations.</h2>
-                    <h2>✓ Enable Data security With JWT(JSON Web Token).</h2>
-                    <h2>✓ Work with Environment Variables.</h2>
-                    <h2>✓ NodeJS login authentication.</h2>
-                  </div>
-                </div>
-
-                <h3 class="text-primary">UI/UX Design</h3>
-                <div class="pl-10">
-                  <div class=" ">
-                   
-                    <h2>✓ Familiarity with design software such as Adobe XD, Figma.</h2>
-                    <h2>✓ Understanding of user-centered design principles and user experience (UX) design</h2>
-                    <h2>✓ Understanding of responsive design principles</h2>
-                    <h2>✓ Knowledge of typography, color theory, and layout principles</h2>
-                    <h2>✓ Experience with user research and testing methodologies.</h2>
-                    <h2>✓ Strong attention to detail and ability to iterate on designs based on feedback.</h2>
-                   
-                  </div>
-                </div>
-              </div>
-            
-               
-
-          </div>
-
-           
           </div>
 
         </div>
 
-      </section>
+        <div class="web space-y-5">
 
-      <div class="link-conatiner  mt-12">
-        <div class="  ">
+          <div class="frontEnd">
+            <h3 class="text-primary text-xl text-bold">Frontend Development</h3>
+            <div class=" grid grid-cols-1 md:grid-cols-2 ">
+              <div class=" text-lg">
 
-          <h3 class="text-center text-2xl font-semibold text-primary">Let me help you with your
-            projects.</h3>
-
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div class="contact-description flex flex-col gap-10 space-y-4">
-      
-                <div class="flex gap-4">
-                  <!-- <i class="fa-solid fa-mobile block text-6xl hover:text-primary "></i>
-                          -->
-                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block hover:text-primar">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg> -->
-      
-                  <img src="./images/mobile.png" class="w-12 h-14 hover:text-primary"
-                    alt>
-      
-                  <div>
-                    <h3 class="text-xl">Give me a call</h3>
-                    <p>+880-1966796110 <br>
-                      +880-1577147931
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="flex gap-4 ">
-                  <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
-      
-                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg> -->
-                  <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
-                       -->
-                  <img src="./images/mail.png" class="w-12 h-14 hover:text-primary"
-                    alt>
-      
-                  <div>
-                    <h3 class="text-xl">Send me an email</h3>
-                    <p>indro.cse.bu@gmail.com<br>
-      
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="flex gap-4 ">
-                  <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
-      
-                  <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg> -->
-                  <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
-                       -->
-                  <img src="./images/location.png"
-                    class="w-12 h-14 hover:text-primary" alt>
-      
-                  <div>
-                    <h3 class="text-xl">Location</h3>
-                    <p>Paikgacha Municipality 9280<br>
-                      Khulna, Bangladesh
-                    </p>
-                  </div>
-                </div>
-      
-                <div class="contact ">
-                  <div class="pb-6 flex gap-3 lg:gap-5">
-                    <a
-                      href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
-                      title="Email" target="_blank" class="block">
-                      <i
-                        class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
-                    </a>
-      
-                    <a href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
-                      title="Linkedin" class="block" target="_blank">
-                      <i
-                        class="fa-brands fa-linkedin text-5xl lg:text-6xl hover:text-primary"></i>
-                    </a>
-      
-                    <a href="https://x.com/IndrojitMo95431" title="Twitter"
-                      class="block" target="_blank">
-                      <i
-                        class="fa-brands fa-twitter text-5xl lg:text-6xl hover:text-primary"></i>
-                    </a>
-      
-                    <div class>
-                      <a href="https://wa.me/8801966796110" title="WhatsApp"
-                        target="_blank" class="block">
-                        <i
-                          class="fa-brands fa-whatsapp text-5xl lg:text-6xl hover:text-primary "></i>
-                      </a>
-      
-                    </div>
-                  </div>
-      
-                  <!-- <p class=" text-justify font-light text-black text-sm">
-                    The most effective way to get in touch with me is through <a
-                      href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
-                      target="_blank"
-                      class="text-sm text-primary hover:underline">email</a>. I try to
-                    reply each and every email.</p> -->
-      
-                </div>
-      
+                <h2>✓ I develop the user interface.</h2>
+                <h2>✓ Web page development.</h2>
+                <h2>✓ Understanding of HTML, CSS, and JavaScript.</h2>
+                <h2>✓ Experience with JavaScript frameworks React.</h2>
+                <h2>✓ Familiarity with browser developer tools.</h2>
+                <h2>✓ Understanding of responsive design principles.</h2>
+                <h2>✓ Experience with version control systems such as Git</h2>
               </div>
-      
-              <form id="input-container" 
-                class="input-container flex flex-col gap-5">
-                 <div class="form-control">
-                  <input required
-                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-                  type="text" name id="name" placeholder="Name">
-                 </div>
-      
-                 <div class="form-control">
-      
-                  <input
-                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-                  type="text" name id="company" placeholder="Company"> 
-      
-      
-                 </div>
-               
-                <div class="form-control">
-                  <input required
-                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-                  type="email" name="email" id="email" placeholder="Email">
-      
-                </div>
-                 
-                <div class="form-control">
-                  
-                  <input
-                  class="block w-full h-16 border border-gray-300 outline-none p-4 text-sm text-black"
-                  type="phone" name id="phone" placeholder="Phone">
-      
-                </div>
-             
-                 <div class="form-control">
-                  <textarea required name id="message" cols="30"
-                  class="border border-gray-300 outline-none p-4 text-sm text-black"
-                  rows="5" placeholder="Message"></textarea>
-                 </div>
-               
-                 <div class="form-control">
-                  <button
-                  class="block w-1/4 h-14 md:h-16 border  hover:border-primary   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2  md:p-4 text-xl "
-                  type="submit" name="submit" id="sendButton"> SEND
-                </button>
-      
-                 </div>
-                
-      
-                <p id="formConfirmation"
-                  class="hidden px-4 py-2 border border-green-500">Thank you for your
-                  message. It has been sent.</p>
-      
-              </form>
-      
-             
-      
+
+              <div class="flex justify-end gap-4 h-24">
+
+                <img class="w-[95px]" src="icon/html.png" alt>
+                <img class="w-[95px]" src="icon/css.png" alt>
+                <img class="w-[95px]" src="icon/react.png" alt>
+              </div>
+
+            </div>
           </div>
-      
-          <dialog id="my_modal" class="modal modal-middle">
-              <div class="modal-box w-80">
-                  <h2 class="text-2xl font-bold text-center">Conformation!</h3>
-      
-                  <div class="text-center ">
-                      <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
-                          src="assets/coin.png" alt> -->
-                      <p class>Thank you for your
-                        message. It has been sent.</p>
-                      <h3
-                          class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
-      
-                      <form method="dialog">
-                          <!-- if there is a button in form, it will close the modal -->
-      
-                          <button class="btn text-center">Close</button>
-      
-                      </form>
-                  </div>
-      
+
+          <div class="backend">
+            <h3 class="text-primary text-xl text-bold">Backend Development</h3>
+            <div class=" grid grid-cols-1 md:grid-cols-2 justify-between">
+              <div class=" text-lg">
+
+                <h2>✓ Create Server From scratch with NodeJS and ExpressJS.</h2>
+                <h2>✓ With In Database Management system - MongoDB.</h2>
+                <h2>✓ Understanding of RESTful API design principles.</h2>
+                <h2>✓ Knowledge of server-side caching,and performance.</h2>
+                <h2>✓ MongoDB CRUD Operations.</h2>
+                <h2>✓ Enable Data security With JWT(JSON Web Token).</h2>
+                <h2>✓ Work with Environment Variables.</h2>
+                <h2>✓ NodeJS login authentication.</h2>
               </div>
+
+              <div class="flex justify-end gap-4 h-24">
+
+                <img class="w-[95px]" src="icon/js.png" alt>
+                <img class="w-[95px]" src="icon/nodejs.png" alt>
+                <img class="w-[95px]" src="icon/mongodb.png" alt>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="UI/UX ">
+            <h3 class="text-primary text-xl text-bold">UI/UX Design</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 ">
+              <div class=" text-lg ">
+
+                <h2>✓ Familiarity with design software such as Figma, Pixso,
+                  Abode XD</h2>
+                <h2>✓ Understanding of user-centered design principles and user
+                  experience (UX) design</h2>
+                <h2>✓ Understanding of responsive design principles</h2>
+                <h2>✓ Knowledge of typography, color theory, and layout
+                  principles</h2>
+                <h2>✓ Experience with user research and testing
+                  methodologies.</h2>
+                <h2>✓ Strong attention to detail and ability to iterate on
+                  designs based on feedback.</h2>
+
+              </div>
+              <div class="flex  justify-end  gap-4 h-24">
+
+                <img class="w-[95px]" src="icon/figma.png" alt>
+                <img class="w-[95px]" src="icon/Group 3.png" alt>
+                <img class="w-[95px]" src="icon/pixso.jpeg" alt>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Let's Start A New Project -->
+        <section id="contact" class="mt-10 w-11/12 lg:w-10/12 mx-auto ">
+
+          <h1 class="font-bold text-center text-p2 mt-1  md:text-xl ">CONTACT
+            ME</h1>
+
+          <h1 class="font-bold text-center  text-3xl md:text-3xl py-3">Let's
+            Start A New Project</h1>
+
+          <!-- formContainer -->
+          <div class="mt-2 up-conatainer grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="contact-description flex flex-col gap-8 ">
+
+              <div class="flex gap-4">
+                <!-- <i class="fa-solid fa-mobile block text-6xl hover:text-primary "></i>
+                  -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block hover:text-primar">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+
+                <img src="./images/mobile.png"
+                  class="w-12 h-14 hover:text-primary"
+                  alt>
+
+                <div>
+                  <h3 class="text-xl">Give me a call</h3>
+                  <p>+880-1966796110 <br>
+                    +880-1577147931
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 ">
+                <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+                <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+               -->
+                <img src="./images/mail.png"
+                  class="w-12 h-14 hover:text-primary"
+                  alt>
+
+                <div>
+                  <h3 class="text-xl">Send me an email</h3>
+                  <p>indro.cse.bu@gmail.com<br>
+
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 ">
+                <!-- <i class="fa-solid fa-mobile block text-6xl"></i> -->
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg> -->
+                <!-- <i class="fa-solid fa-envelope text-5xl lg:text-6xl hover:text-primary "></i>
+               -->
+                <img src="./images/location.png"
+                  class="w-12 h-14 hover:text-primary" alt>
+
+                <div>
+                  <h3 class="text-xl">Location</h3>
+                  <p>Paikgacha Municipality 9280<br>
+                    Khulna, Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact ">
+                <div class="pb-6 flex gap-3 lg:gap-5">
+                  <a
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+                    title="Email" target="_blank" class="block">
+                    <i
+                      class="fa-solid fa-envelope text-5xl lg:text-5xl hover:text-primary "></i>
+                  </a>
+                  <a href="https://github.com/indrojitmondal" title="Github"
+                    target="_blank"
+                    class="block">
+                    <i
+                      class="fa-brands fa-github text-5xl lg:text-5xl hover:text-primary"></i>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/indrojit-mondal-8a36b315a/"
+                    title="Linkedin" class="block" target="_blank">
+                    <i
+                      class="fa-brands fa-linkedin text-5xl lg:text-5xl hover:text-primary"></i>
+                  </a>
+
+                  <a href="https://x.com/IndrojitMo95431" title="Twitter"
+                    class="block" target="_blank">
+                    <i
+                      class="fa-brands fa-twitter text-5xl lg:text-5xl hover:text-primary"></i>
+                  </a>
+
+                  <a href="https://www.youtube.com/@indrojitmondal8996"
+                    title="YouTube" target="_blank"
+                    class="block">
+                    <i
+                      class="fa-brands fa-youtube  text-5xl lg:text-5xl hover:text-primary"></i>
+                  </a>
+
+                  <div class>
+                    <a href="https://wa.me/8801966796110" title="WhatsApp"
+                      target="_blank" class="block">
+                      <i
+                        class="fa-brands fa-whatsapp text-5xl lg:text-5xl hover:text-primary "></i>
+                    </a>
+
+                  </div>
+                </div>
+
+                <p class=" text-justify  ">
+                  The best way to contact me is via <a
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=indro.cse.bu@gmail.com"
+                    target="_blank"
+                    class="text-sm text-primary hover:underline">email</a>. I
+                  try to respond to every message.</p>
+
+              </div>
+
+            </div>
+
+            <form id="input-container"
+              class="input-container flex flex-col gap-5">
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="form-control ">
+                  <input required
+                    class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+                    type="text" name id="name" placeholder="Your Name">
+                </div>
+
+                <div class="form-control ">
+                  <input required
+                    class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+                    type="email" name="email" id="email"
+                    placeholder="Your Email">
+
+                </div>
+
+                <div class="form-control ">
+
+                  <input
+                    class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+                    type="phone" name id="phone" placeholder="Your Phone">
+
+                </div>
+
+                <div class="form-control ">
+
+                  <input
+                    class="block w-full h-16 border border-gray-300 outline-none p-4  text-black"
+                    type="text" name id="company" placeholder="Your Subject">
+
+                </div>
+              </div>
+
+              <div class="form-control ">
+                <textarea required name id="message" cols="30"
+                  class="border border-gray-300 outline-none p-4  text-black"
+                  rows="5" placeholder="Start Writing Message here"></textarea>
+              </div>
+
+              <div class="form-control">
+                <button
+                  class="block w-2/4  h-14 md:h-16 border  hover:border-primary   border-primary bg-primary hover:text-primary hover:bg-white text-white outline-none p-2    md:text-xl "
+                  type="submit" name="submit" id="sendButton"> SUBMIT NOW
+                </button>
+
+              </div>
+
+              <p id="formConfirmation"
+                class="hidden px-4 py-2 border border-green-500">Thank you for
+                your
+                message. It has been sent.</p>
+
+            </form>
+          </div>
+
+          <dialog id="my_modal" class="modal modal-middle">
+            <div class="modal-box w-80">
+              <img class="mx-auto" src="icon/icons8-handshake-48.png" alt>
+              <h2 class="text-2xl font-bold text-center">Conformation!</h3>
+
+              <div class="text-center ">
+                <!-- <img class="pt-4 pb-4 w-[28px] mx-auto"
+                  src="assets/coin.png" alt> -->
+                <p class>Thank you for your
+                  message. It has been sent.</p>
+                <h3
+                  class="text-lg font-semibold pt-3 pb-3">Successfully</h3>
+
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+
+                  <button class="btn text-center">Close</button>
+
+                </form>
+              </div>
+
+            </div>
           </dialog>
 
-        </div>
+        </section>
 
-      </div>
-
-    </main>
+      </main>
 
     </div>
 
@@ -563,8 +503,8 @@
 
     <script src="js/features.js"></script>
     <script src="js/services.js"></script>
-      <!-- Emailjs setup starts -->
-      <script type="text/javascript"
+    <!-- Emailjs setup starts -->
+    <script type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
