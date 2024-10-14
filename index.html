@@ -112,7 +112,7 @@
             <!-- Hamburger Menu for Mobile -->
             <div class="ml-2 md:hidden">
                 <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
-                    <i class="fa-solid fa-bars text-primary" id="bar"></i>
+                    <i class="fa-solid fa-bars text-primary " id="bar"></i>
                     <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
                 </div>
             </div>
@@ -122,9 +122,9 @@
     </header>
 
      <!-- For mobile devices -->
-  <section class="w-11/12 lg:w-10/12 mx-auto md:hidden">
+  <section class="w-11/12  lg:w-10/12 mx-auto md:hidden">
     <ul id="menuDropdown"
-            class=" hidden bg-white  z-[1]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            class=" hidden bg-white fixed z-[50]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
             <li
               class="text-primary transition-colors ease-in-out duration-300">
               <a href="index.html">Home</a>
@@ -143,7 +143,7 @@
             </li>
             <li
             class="hover:text-primary transition-colors ease-in-out duration-300">
-            <a href="blogs.html">BLOGS</a>
+            <a href="blogs.html">Blogs</a>
             </li>
             <li
               class="hover:text-primary transition-colors ease-in-out duration-300">
@@ -892,12 +892,57 @@
       const bar = document.getElementById('bar');
       const cross = document.getElementById('cross');
       const menuDropdown = document.getElementById('menuDropdown');
-      
-      bar.addEventListener('click', function () {
+      let bar_status=false;
+
+      const checking =()=>{
+        console.log(bar_status);
+        if(!bar_status){
+          bar.classList.remove('text-primary');
+          bar_status=true;
+          console.log(bar_status);
+          
+        }
+        else{
+          console.log('Check',bar_status);
+          bar.classList.add('text-primary');
+          bar_status=false;
+        }
+
+      }
+        
+       
+
+
+          bar.addEventListener('click', function () {
           // bar.classList.toggle('hidden');
           menuDropdown.classList.toggle('hidden');
+          // bar.classList.add('text-primary');
+          
+          // bar_status=true;
+           checking();
           // cross.classList.remove('hidden');
       });
+
+        
+       
+      
+      
+     
+        
+      
+    
+      
+
+       
+
+      
+      
+      
+      
+      
+      
+      
+    
 
       // cross.addEventListener('click', function () {
       //     cross.classList.add('hidden');

@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
@@ -32,17 +33,18 @@
             light: '#82828A',
             projects:'#F8F8F8',
             footer:'#292929',
-            b1:'rgba(17, 17, 17, 0.1)',
+            b1:'rgba(10, 159, 218, .3)',
+            b2:'rgba(10, 159, 218, .7)',
             hero: '#6C6857',
             hero1: '#F1F0EF',
             // btn:'rgba(181, 9, 172, 0.57)',
             // btn: '#b30086',
             //  btn:'#b509accf',
-             btn: '#b30086',
+             btn: 'rgba(10, 159, 218, .7)',
             // btn:'#ff00bf',
             // btn:'rgb(105, 34, 107)',
 
-             p1: 'rgba(181, 9, 172, .7)',
+             p1: 'rgba(10, 159, 218, .8)',
             
 
           },
@@ -74,7 +76,7 @@
               class="text-primary text-center text-[22px] md:text-[25px] font-extrabold tracking-wide flex items-center">
               <!-- <i class="fa-solid fa-less-than"></i>  -->
               <span class="text-primary">
-                INDR<span class="">O</span>JIT
+                INDR<span class="">O@</span>JIT
               </span>
               <!-- <i class="fa-solid fa-greater-than"></i> -->
             </h3>
@@ -115,65 +117,56 @@
         </div>
       </div>
 
-      <hr class="border-gray-400">
+      <!-- <hr class="border-gray-400"> -->
     </header>
      
     <h1 style="color: rgb(105, 34, 107);"></h1>
 
+
+          <!-- for small devices -->
+  <section class="w-11/12 md:w-10/12 mx-auto md:hidden">
+    <ul id="menuDropdown"
+            class=" hidden bg-white fixed z-[61]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="text-primary transition-colors ease-in-out duration-300">
+              <a href="about.html">About</a>
+            </li>
+            <li
+              class="hover:text-primary  transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="blogs.html">Blogs</a>
+          </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+  </section>
+
     <!-- hero Section -->
-    <section class=" bg-hero bg-opacity-5 ">
+    <section class="bg-projects ">
 
       
 
-      <div class="w-10/12   mx-auto text-center  pt-12  ">
+      <div class="w-10/12 mx-auto grid grid-cols-2 pt-5  px-14 ">
+        <h1></h1>
 
-        <div class="grid grid-cols-2  ">
-                 <!-- left -->
-        <div>
-          <img src="icon/Group 4.png" alt="">
-        </div>
-
-        <!-- right -->
-        <div>
-        <h1 class=" font-bold text-primary"><span class="text-primary">MY</span> PROJECTS</h1>
         
-        <div id="prectContainer" class="sticky top-[70px]  z-[60] bg-hero1  pt-5 pb-9">
-     
-        
-          <div class="mt-3 flex flex-wrap justify-center gap-5 "
-            id="projects-container">
-  
-          
-            
-            <button
-              class="border-2 hover:bg-p1 hover:text-white  border-primary p-2  text-primary hover:shadow-lg"
-              id="web-application">Web Application</button>
-            <button
-              class="border-2 hover:bg-p1 hover:text-white  border-primary p-2   text-primary hover:shadow-lg"
-              id="mobile-application">Mobile Application</button>
-            <button
-              class="border-2  hover:bg-p1 hover:text-white border-primary p-2  text-primary hover:shadow-lg"
-              id="game-development">Game Development</button>
-            <button
-              class="border-2  hover:bg-p1 hover:text-white border-primary p-2   text-primary hover:shadow-lg"
-              id="data-structures">Data Structures</button>
-            <button
-              class="border-2 hover:bg-p1 hover:text-white border-primary p-2  text-primary hover:shadow-lg"
-              id="algorithms">Algorithms</button>
-            <button
-              class="border-2  hover:bg-p1 hover:text-white border-primary  p-2  text-white bg-primary hover:shadow-md"
-              id="all">ALL</button>
-    
-           </div>
-        </div> 
-
-        </div>
-        </div>
-
-         
+        <h1 class="text-lg font-medium text-primary text-center "><span class="">MY</span> PROJECTS</h1>
        
-
-      
       </div>
       
       <!-- <hr class="border-gray-400"> -->
@@ -182,23 +175,109 @@
 
    
     
+  
+  
+   <!-- fixed md:sticky   md:top-[68px]   z-[60]  bg-projects -->
+
+  <div class=" sticky  top-[68px]   z-[60]  bg-projects  ">
+    <!-- <hr class="border-gray-400"> -->
+
+    <div class="w-9/12 mx-auto grid  grid-cols-12">
+        
+      <div class="col-span-3">
+        <img src="icon/Group 4.png" class="h-28 " alt="">
+     </div>
+      <!-- flex-wrap justify-center gap-5 -->
+
+     <div class="col-span-9">
+      <div class="mt-6  flex justify-between  "
+      id="projects-container">
+
+    
+      <a href="#web-application-container">
+        <button
+        class="border-2 hover:bg-p1 hover:text-white  border-primary p-2  text-primary "
+        id="web-application">Web Application</button>
+      </a>
+      
+      
+      <a href="#mobile-application-container">
+
+        <button
+        class="border-2 hover:bg-p1 hover:text-white  border-primary p-2   text-primary "
+        id="mobile-application">Mobile Application</button>
+      </a>
+      <a href="#game-development-container">
+
+        <button
+        class="border-2  hover:bg-p1 hover:text-white border-primary p-2  text-primary "
+        id="game-development">Game Development</button>
+
+      </a>
+
+      <a href="#data-structures-container">
+
+        <button
+        class="border-2  hover:bg-p1 hover:text-white border-primary p-2   text-primary "
+        id="data-structures">Data Structures</button>
+
+      </a>
+
+      <a href="#algorithms-container">
+
+        <button
+        class="border-2 hover:bg-p1 hover:text-white border-primary p-2  text-primary "
+        id="algorithms">Algorithms</button>
+
+      </a>
+     
+      <a href="#all-container">
+
+        <button
+        class="border-2  hover:bg-p1 hover:text-white border-primary  p-2  text-white bg-primary "
+        id="all">ALL</button>
+      </a>
+     
+    
+
+     </div> 
+
+   
+     </div>
+     
+
+    </div>
+
+   
+
+  </div>  
+
+      <section id="spinner" class="hidden py-5 w-11/12 mx-auto ">
+        <div class="flex justify-center">
+    
+          <span class="loading loading-bars loading-xs"></span>
+          <span class="loading loading-bars loading-sm"></span>
+          <span class="loading loading-bars loading-md"></span>
+          <span class="loading loading-bars loading-lg"></span>
+    
+        </div>
+    
+      </section>
 
     
        
-    
-
-    
-
+      
+     
     <div class="bg-white">
       <main class="w-11/12  md:w-10/12 mx-auto  ">
-        <div id="allProjectsContainer" class="mt-11 mb-4 space-y-6 ">
+        <div id="allProjectsContainer" class="mt-12 mb-4 border border-b2 rounded-md p-5 space-y-6 ">
 
           <!-- Web -->
           <div id="web-application-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
             <div
-              class="card card-compact p-4 hover:bg-hero1  border border-black  hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4 hover:bg-hero1  border border-b1  hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/1.png"
@@ -224,7 +303,7 @@
                     <button
                       class="border flex gap-2 items-center  border-primary px-4 py-2   text-primary hover:shadow-lg"
                        >
-                      <i class="fa-solid fa-code  "></i>Github</button>
+                      <i class="fa-solid fa-code  "></i>Details</button>
                   </a>
 
                   <a href="https://indrojitmondal.github.io/Fitness/"
@@ -243,7 +322,7 @@
             </div>
 
             <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -270,7 +349,7 @@
                     <button
                       class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                       >
-                      <i class="fa-solid fa-code  "></i>Github</button>
+                      <i class="fa-solid fa-code  "></i>Details</button>
                   </a>
 
                   <a href="https://indrojitmondal.github.io/Hero-Travel/"
@@ -289,7 +368,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary  hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/3.png"
@@ -338,7 +417,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary   hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/4.png"
@@ -368,7 +447,7 @@
                   <button
                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                     >
-                    <i class="fa-solid fa-code  "></i>Github</button>
+                    <i class="fa-solid fa-code  "></i>Details</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Rinterio/"
@@ -389,7 +468,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary  hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary  hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/5.png"
@@ -416,7 +495,7 @@
                   <button
                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                     >
-                    <i class="fa-solid fa-code  "></i>Github</button>
+                    <i class="fa-solid fa-code  "></i>Details</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Payoo-MFS/"
@@ -435,7 +514,7 @@
             </div>
 
             <div
-              class="card card-compact p-4 border border-black hover:bg-hero1 hover:text-primary   hover:shadow-xl">
+              class="card card-compact p-4 border border-b1 hover:bg-hero1 hover:text-primary   hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/6.png"
@@ -463,7 +542,7 @@
                   <button
                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                     >
-                    <i class="fa-solid fa-code  "></i>Github</button>
+                    <i class="fa-solid fa-code  "></i>Details</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Donate-Bangladesh/"
@@ -488,7 +567,7 @@
             class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
             <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+              class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -515,7 +594,7 @@
                     <button
                       class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                       >
-                      <i class="fa-solid fa-code  "></i>Github</button>
+                      <i class="fa-solid fa-code  "></i>Details</button>
                   </a>
 
                   <a href="https://indrojitmondal.github.io/Hero-Travel/"
@@ -541,8 +620,7 @@
           <div id="game-development-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-            class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/2.png"
@@ -569,7 +647,7 @@
                   <button
                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                     >
-                    <i class="fa-solid fa-code  "></i>Github</button>
+                    <i class="fa-solid fa-code  "></i>Details</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Hero-Travel/"
@@ -585,7 +663,7 @@
 
               </div>
             </div>
-           </div>
+            </div>
 
 
           </div>
@@ -594,8 +672,7 @@
           <div id="data-structures-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-              class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
               <figure>
                 <img
                   src="images/web-development/2.png"
@@ -622,7 +699,7 @@
                     <button
                       class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                       >
-                      <i class="fa-solid fa-code  "></i>Github</button>
+                      <i class="fa-solid fa-code  "></i>Details</button>
                   </a>
 
                   <a href="https://indrojitmondal.github.io/Hero-Travel/"
@@ -647,8 +724,7 @@
           <div id="algorithms-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div
-            class="card card-compact p-4  border border-black hover:bg-hero1 hover:text-primary hover:shadow-xl">
+            <div class="card card-compact p-4  border border-b1 hover:bg-hero1 hover:text-primary hover:shadow-xl">
             <figure>
               <img
                 src="images/web-development/2.png"
@@ -675,7 +751,7 @@
                   <button
                     class="border flex gap-2 items-center  border-primary px-4 py-2    text-primary hover:shadow-lg"
                     >
-                    <i class="fa-solid fa-code  "></i>Github</button>
+                    <i class="fa-solid fa-code  "></i>Details</button>
                 </a>
 
                 <a href="https://indrojitmondal.github.io/Hero-Travel/"
@@ -691,7 +767,7 @@
 
               </div>
             </div>
-          </div>
+            </div>
 
 
           </div>
@@ -975,6 +1051,70 @@ function sendEmail() {
    </script>
 
     <!-- Emailjs setup ends -->
+
+      <!-- Script to Toggle Dropdown -->
+      <script>
+        const bar = document.getElementById('bar');
+        const cross = document.getElementById('cross');
+        const menuDropdown = document.getElementById('menuDropdown');
+        let bar_status=false;
+  
+        const checking =()=>{
+          console.log(bar_status);
+          if(!bar_status){
+            bar.classList.remove('text-primary');
+            bar_status=true;
+            console.log(bar_status);
+            
+          }
+          else{
+            console.log('Check',bar_status);
+            bar.classList.add('text-primary');
+            bar_status=false;
+          }
+  
+        }
+          
+         
+  
+  
+            bar.addEventListener('click', function () {
+            // bar.classList.toggle('hidden');
+            menuDropdown.classList.toggle('hidden');
+            // bar.classList.add('text-primary');
+            
+            // bar_status=true;
+             checking();
+            // cross.classList.remove('hidden');
+        });
+  
+          
+         
+        
+        
+       
+          
+        
+      
+        
+  
+         
+  
+        
+        
+        
+        
+        
+        
+        
+      
+  
+        // cross.addEventListener('click', function () {
+        //     cross.classList.add('hidden');
+        //     menuDropdown.classList.add('hidden');
+        //     bar.classList.remove('hidden');
+        // });
+      </script>
 
   </body>
 </html>

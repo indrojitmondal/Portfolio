@@ -126,11 +126,44 @@
       <!-- <hr class="border-gray-400"> -->
     </header>
 
+      <!-- For mobile devices -->
+  <section class="w-11/12  lg:w-10/12 mx-auto md:hidden">
+    <ul id="menuDropdown"
+            class=" hidden bg-white fixed z-[50]  text-center space-y-4 w-full p-2 shadow text-base lg:flex lg:flex-col gap-5">
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="index.html">Home</a>
+            </li> 
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="about.html">About</a>
+          </li> 
+            <li
+              class="hover:text-primary  transition-colors ease-in-out duration-300">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="text-primary transition-colors ease-in-out duration-300">
+              <a href="services.html">Services</a>
+            </li>
+            <li
+            class="hover:text-primary transition-colors ease-in-out duration-300">
+            <a href="blogs.html">Blogs</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300">
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+  </section>
+
     <!-- hero Section -->
     <section class="  ">
 
-      <div class="w-10/12 mx-auto text-center flex gap-8   pt-9 px-14 pb-9">
-        <img src="icon/Layer_1.png" class="block h-40 " alt>
+      <div class="w-11/12 md:w-10/12 mx-auto text-center flex flex-col lg:flex-row gap-8   pt-9 md:px-14 pb-9">
+        <img src="icon/Layer_1.png" class="block mx-auto md:ml-0 md:mr-0 h-40 w-40" alt>
         <div class="text-center">
           <h1 class="text-lg font-bold text-primary pt-5"><span
               class="text-primary">MY</span> SERVICES</h1>
@@ -174,12 +207,12 @@
 
         </div>
 
-        <div class="web space-y-5">
+        <div class="web mt-4 space-y-5">
 
           <div class="frontEnd">
             <h3 class="text-primary text-xl text-bold">Frontend Development</h3>
             <div class=" grid grid-cols-1 md:grid-cols-2 ">
-              <div class=" text-lg">
+              <div class="pt-2 pl-4 text-lg">
 
                 <h2>✓ I develop the user interface.</h2>
                 <h2>✓ Web page development.</h2>
@@ -203,7 +236,7 @@
           <div class="backend">
             <h3 class="text-primary text-xl text-bold">Backend Development</h3>
             <div class=" grid grid-cols-1 md:grid-cols-2 justify-between">
-              <div class=" text-lg">
+              <div class="pt-2 pl-4 text-lg">
 
                 <h2>✓ Create Server From scratch with NodeJS and ExpressJS.</h2>
                 <h2>✓ With In Database Management system - MongoDB.</h2>
@@ -228,7 +261,7 @@
           <div class="UI/UX ">
             <h3 class="text-primary text-xl text-bold">UI/UX Design</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 ">
-              <div class=" text-lg ">
+              <div class="pt-2 pl-4 text-lg ">
 
                 <h2>✓ Familiarity with design software such as Figma, Pixso,
                   Abode XD</h2>
@@ -554,6 +587,70 @@ function sendEmail() {
     </script>
 
     <!-- Emailjs setup ends -->
+
+        <!-- Script to Toggle Dropdown -->
+        <script>
+          const bar = document.getElementById('bar');
+          const cross = document.getElementById('cross');
+          const menuDropdown = document.getElementById('menuDropdown');
+          let bar_status=false;
+    
+          const checking =()=>{
+            console.log(bar_status);
+            if(!bar_status){
+              bar.classList.remove('text-primary');
+              bar_status=true;
+              console.log(bar_status);
+              
+            }
+            else{
+              console.log('Check',bar_status);
+              bar.classList.add('text-primary');
+              bar_status=false;
+            }
+    
+          }
+            
+           
+    
+    
+              bar.addEventListener('click', function () {
+              // bar.classList.toggle('hidden');
+              menuDropdown.classList.toggle('hidden');
+              // bar.classList.add('text-primary');
+              
+              // bar_status=true;
+               checking();
+              // cross.classList.remove('hidden');
+          });
+    
+            
+           
+          
+          
+         
+            
+          
+        
+          
+    
+           
+    
+          
+          
+          
+          
+          
+          
+          
+        
+    
+          // cross.addEventListener('click', function () {
+          //     cross.classList.add('hidden');
+          //     menuDropdown.classList.add('hidden');
+          //     bar.classList.remove('hidden');
+          // });
+        </script>
 
   </body>
 </html>
