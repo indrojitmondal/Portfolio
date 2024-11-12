@@ -114,11 +114,11 @@
     
             <!-- Hamburger Menu for Mobile -->
             <div class="ml-2 md:hidden">
-                <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
-                    <i class="fa-solid fa-bars text-primary" id="bar"></i>
-                    <!-- <i class="fa-solid fa-x hidden" id="cross"> </i> -->
-                </div>
-            </div>
+              <div class="btn btn-ghost border-1 lg:hidden lg:bg-primary text-lg">
+                  <i class="fa-solid fa-bars text-primary " id="bar"></i>
+                  <i class="fa-solid fa-x text-primary hidden" id="cross"> </i>
+              </div>
+          </div>
         </div>
     
         <!-- <hr class="border-gray-400"> -->
@@ -540,7 +540,7 @@ function sendEmail() {
   <!-- Emailjs setup ends -->
    
   <!-- Script to Toggle Dropdown -->
-   <script>
+  <script>
     const bar = document.getElementById('bar');
     const cross = document.getElementById('cross');
     const menuDropdown = document.getElementById('menuDropdown');
@@ -549,14 +549,18 @@ function sendEmail() {
     const checking =()=>{
       console.log(bar_status);
       if(!bar_status){
-        bar.classList.remove('text-primary');
+        //bar.classList.remove('text-primary');
+        bar.classList.add('hidden');
+        cross.classList.remove('hidden');
         bar_status=true;
         console.log(bar_status);
         
       }
       else{
         console.log('Check',bar_status);
-        bar.classList.add('text-primary');
+        //bar.classList.add('text-primary');
+        bar.classList.remove('hidden');
+        cross.classList.add('hidden');
         bar_status=false;
       }
 
@@ -566,6 +570,16 @@ function sendEmail() {
 
 
         bar.addEventListener('click', function () {
+        // bar.classList.toggle('hidden');
+        menuDropdown.classList.toggle('hidden');
+        // bar.classList.add('text-primary');
+        
+        // bar_status=true;
+         checking();
+        // cross.classList.remove('hidden');
+    });
+
+    cross.addEventListener('click', function () {
         // bar.classList.toggle('hidden');
         menuDropdown.classList.toggle('hidden');
         // bar.classList.add('text-primary');
