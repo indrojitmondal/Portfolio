@@ -12,21 +12,21 @@ for (const btn of allButtons) {
   btn.classList.add('rounded-md','outline-none');
   
 }
-const showSpinner = (status)=>{
-  const spinner = document.getElementById('spinner');
-  if(status){
-      spinner.classList.remove('hidden');
-  }
-  else{
-      spinner.classList.add('hidden');
-  }
+// const showSpinner = (status)=>{
+//   const spinner = document.getElementById('spinner');
+//   if(status){
+//       spinner.classList.remove('hidden');
+//   }
+//   else{
+//       spinner.classList.add('hidden');
+//   }
 
-}
- showSpinner(true);
+// }
+ //showSpinner(true);
 
-setTimeout( ()=>{
-  showSpinner(false);
-},2000);
+// setTimeout( ()=>{
+//   showSpinner(false);
+// },2000);
  
 // showFeaturesInLargeScreenById(idArray[1]);
 // console.log(idArray[1]);

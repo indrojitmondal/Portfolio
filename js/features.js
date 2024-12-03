@@ -53,11 +53,11 @@ function styleProjectSectionByID(id){
     console.log('typeof id :', typeof id);
     console.log(id);
 
-    showSpinner(true);
+    // showSpinner(true);
 
-    setTimeout( ()=>{
-      showSpinner(false);
-    },2000);
+    // setTimeout( ()=>{
+    //   showSpinner(false);
+    // },2000);
     
    
   
