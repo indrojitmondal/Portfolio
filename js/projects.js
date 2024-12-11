@@ -87,14 +87,14 @@ for (let i=0; i<cards.length; i++) {
 
        });
 
-       buttons[1].addEventListener('mouseover', function(event){
+      //  buttons[1].addEventListener('mouseover', function(event){
 
-        event.stopImmediatePropagation();
+      //   event.stopImmediatePropagation();
 
-        buttons[0].classList.remove('bg-btn','text-white');
-        buttons[1].classList.add('bg-btn','text-white');
+      //   buttons[0].classList.remove('bg-btn','text-white');
+      //   buttons[1].classList.add('bg-btn','text-white');
 
-       });
+      //  });
  }
 
   
