@@ -264,6 +264,36 @@
           </div>
         </div>
 
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Explain React+Tailwindcss+ DaisyUI Project Setup</div>
+          <div class="collapse-content">
+            <p class="text-lg">
+              npm create vite@latest simple-react-app -- --template react <br>
+# follow prompts <br>
+cd simple-react-app <br>
+npm install react-router-dom  <br>
+npm install localforage match-sorter sort-by  <br> 
+npm install -D tailwindcss@3 postcss autoprefixer <br>
+npx tailwindcss init -p <br>
+npm i -D daisyui@latest <br>
+#into tailwind.config.js <br>
+/** @type {import('tailwindcss').Config} */ <br>
+export default { <br>
+  content: [ <br>
+    "./index.html", <br>
+    "./src/**/*.{js,ts,jsx,tsx}", <br>
+  ], <br>
+  theme: { <br>
+    extend: {}, <br>
+  }, <br>
+  plugins: [require('daisyui')], <br>
+}
+
+            </p>
+          </div>
+        </div>
+
   
       </main>
 
